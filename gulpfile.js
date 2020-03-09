@@ -52,18 +52,23 @@ function pipeFonts(cb) {
   return src("src/fonts/**.*").pipe(dest("./dist/fonts"));
 }
 
+function pipeJs(cb) {
+  return src("src/js/**.js").pipe(dest("./dist/js"));
+}
+
 const startSeries = cssCompilerName => {
   pipeImages();
   pipeHtml();
   pipeFonts();
   pipeImages();
   compileCss(cssCompilerName);
+  pipeJs();
 };
 
 function watchChanges(cssCompilerName) {
   watch(
     "./src",
-    series(pipeImages, pipeHtml, pipeFonts, pipeImages, () =>
+    series(pipeImages, pipeHtml, pipeFonts, pipeImages, pipeJs, () =>
       compileCss(cssCompilerName)
     )
   );
