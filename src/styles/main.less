@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
+  // padding: 0;
+  // margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -22,41 +24,87 @@ body {
     .headerOne {
       display: flex;
       justify-content: space-around;
+      // flex-wrap: nowrap;
       align-items: center;
       height: 35px;
       width: 100%;
       max-width: 1260px;
       background: #646464;
-      .headerOneMenu {
-        width: 480px;
+      padding-left: 15px; //
+      padding-right: 15px; //
+      .wrapper {
         // background: yellowgreen;
-        list-style: none;
-        text-transform: uppercase;
-        display: flex;
-        padding: 0;
-        justify-content: space-between;
-        li {
-          // padding-left: 14px;
-          // padding-right: 14px;
-          a {
-            color: #FFFFFF;
-            font-size: 14px;
-            text-decoration: none;
-            font-family: 'K2D', sans-serif;
-            font-weight: 400;
-            padding: 5px;
-            // background: red; 
+        #check-menu {
+         display: none;
+        }
+        .check-menu-label {
+          display: none;
+        } 
+        .burgerLine {
+          display: none;
+        }
+        .main-menu {
+          width: 480px;
+          // background: yellowgreen;
+          list-style: none;
+          text-transform: uppercase;
+          display: flex;
+          padding: 0;
+          justify-content: space-between;
+          .mobile-menu-li {
+            // padding-left: 14px;
+            // padding-right: 14px;
+            .mobile-menu-a{
+              color: #FFFFFF;
+              font-size: 14px;
+              text-decoration: none;
+              font-family: 'K2D', sans-serif;
+              font-weight: 400;
+              padding: 5px;
+              // background: red; 
+            }
+            .mobile-menu-a:hover {
+              font-family: 'K2D', sans-serif;
+              font-weight: 400;
+              color: rgb(7, 253, 220);
+              border-bottom: rgb(7, 253, 220) solid 2px;
+              padding-bottom: 3px;
+            }
           }
-          a:hover {
-            font-family: 'K2D', sans-serif;
-            font-weight: 400;
-            color: rgb(7, 253, 220);
-            border-bottom: rgb(7, 253, 220) solid 2px;
-            padding-bottom: 3px;
-          }
+          
         }
       }
+      // .headerOneMenu {
+      //   width: 480px;
+      //   // background: yellowgreen;
+      //   list-style: none;
+      //   text-transform: uppercase;
+      //   display: flex;
+      //   padding: 0;
+      //   justify-content: space-between;
+      //   li {
+      //     // padding-left: 14px;
+      //     // padding-right: 14px;
+      //     a {
+      //       color: #FFFFFF;
+      //       font-size: 14px;
+      //       text-decoration: none;
+      //       font-family: 'K2D', sans-serif;
+      //       font-weight: 400;
+      //       padding: 5px;
+      //       // background: red; 
+      //     }
+      //     a:hover {
+      //       font-family: 'K2D', sans-serif;
+      //       font-weight: 400;
+      //       color: rgb(7, 253, 220);
+      //       border-bottom: rgb(7, 253, 220) solid 2px;
+      //       padding-bottom: 3px;
+      //     }
+      //   }
+      // }
       .language_selection {
+        // background: yellowgreen;
         input {
           display: none;
           
@@ -70,7 +118,7 @@ body {
           background-image: url("/images/flagru.jpg");
           background-size: cover;
         }
-        input:checked + .label_flagusa {
+        input:checked + .label_flageng {
           background-image: url("/images/flageng.jpg");
           background-size: cover;
         }
@@ -99,6 +147,16 @@ body {
           text-align: center;
           padding: 0;
           
+        }
+      }
+      .cart-block {
+        // background: yellowgreen;
+        .cart {
+          font-family: 'K2D', sans-serif;
+          font-size: 14px;
+          font-weight: 200;
+          text-transform: uppercase;
+          color: #ffffff;
         }
       }
     }
@@ -332,3 +390,6 @@ body {
     }
   }
 }
+
+
+@import url('main-media.less');
