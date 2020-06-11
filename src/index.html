@@ -19,7 +19,7 @@
 
       <div class="wrapper">
         <input type="checkbox" id="check-menu">
-        <label for="check-menu" class="check-menu-label"></label>
+        <label for="check-menu" class="check-menu-label">МЕНЮ</label>
         <div class="burger_line first"></div>
         <div class="burger_line second"></div>
         <div class="burger_line third"></div>
@@ -61,7 +61,11 @@
         </label>
       </div>
       <div  class="cart-block">
-        <div class="cart">корзина</div>
+        <div class="cart">
+          <!-- <input type="checkbox" name="toggle" class="toggleBasket" id="shopping-backet"> -->
+          <a href="#" class="shopping-backet"><i class="fas fa-shopping-basket"></i>Карзина</a>
+          <!-- <label for="shopping-backet" class="toggleBasket"><i class="fa"></i></label> -->
+        </div>
       </div>
         
     </div>
@@ -109,22 +113,209 @@
     </div>
 
 
-    <div class="headerThree">
+    <!-- <div class="headerThree">
       <menu class="headerThreeMenu">
-        <li><a href="#">Запасти</a></li>
-        <li><a href="#">Запчасти&nbsp;&nbsp;бренд</a></li>
-        <li><a href="#">Приспособления</a></li>
-        <li><a href="#">Аксесуары</a></li>
-        <li><a href="#">Иглы</a></li>
-        <li><a href="#">Parts list</a></li>
-        <li><a href="#">Catalog</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-v"></i>Запасти</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-v"></i>Приспособления</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-v"></i>Аксесуары</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-v"></i>Parts list</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-v"></i>Catalog</a></li>
       </menu>
+    </div> -->
+
+
+    <div class="header-www">
+      <p class="text-header-www">главная / запчасти / ..... / ..... / игольная пластина B-16 </p>
+    </div>
+
+    <div class="headerThree-menu">
+      <nav class="dws-menu">
+          <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+          <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Меню</label>
+          <ul>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+              <a href="#"><i class="fas fa-th-list"></i>Запасти</a>
+              <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-1">
+                  <a href="#">Двигатели ткани</a>
+                  <label for="sub_m1-1" class="toggleSubmenu"><i class="fa"></i></label>
+                  <ul>
+                    <li><a href="#">Двигатели ткани универсальные</a></li>
+                    <li><a href="#">Двигатели ткани BROTHER</a></li>
+                    <li><a href="#">Двигатели ткани JUKI</a></li>
+                    <li><a href="#">Двигатели ткани PFAFF</a></li>
+                    <li><a href="#">Двигатели ткани PEGASUS</a></li>
+                    <li><a href="#">Двигатели ткани SIRUBA</a></li>
+                    <li><a href="#">Двигатели ткани SINGER</a></li>
+                    <li><a href="#">Двигатели ткани UNION SPECIAL</a></li>
+                    <li><a href="#">Двигатели ткани YAMATO</a></li>
+                    <li><a href="#">Двигатели ткани ПОДОЛЬСК</a></li>
+                    <li><a href="#">Двигатели ткани РАЗНЫЕ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-2">
+                  <a href="#">Лапки</a>
+                  <label for="sub_m1-2" class="toggleSubmenu"><i class="fa"></i></label>
+                  <ul>
+                    <li><a href="#">Лапки для беспосадочных машин</a></li>
+                    <li><a href="#">Лапки для двухигольных машин</a></li>
+                    <li><a href="#">Лапки для кедера</a></li>
+                    <li><a href="#">Лапки для резинки</a></li>
+                    <li><a href="#">Лапки для оверлоков</a></li>
+                    <li><a href="#">Лапки для отстрочек</a></li>
+                    <li><a href="#">Лапки для распоштвальных машин</a></li>
+                    <li><a href="#">Лапки для сборки</a></li>
+                    <li><a href="#">Лапки для устроиств</a></li>
+                    <li><a href="#">Лапки зиг заг</a></li>
+                    <li><a href="#">Лапки змеечные</a></li>
+                    <li><a href="#">Лапки петельные</a></li>
+                    <li><a href="#">Лапки специальные</a></li>
+                    <li><a href="#">Лапки стандартные</a></li>
+                    <li><a href="#">Лапки тефлоновые</a></li>
+                    <li><a href="#">Лапки игольного продвижения</a></li>
+                    <li><a href="#">Лапки двойного продвижения</a></li>
+                    <li><a href="#">Лапки тройного продвижения</a></li>
+                    <li><a href="#">Лапки ролик</a></li>
+                    <li><a href="#">Лапки рубильник</a></li>
+                    <li><a href="#">Лапки DURKOPP</a></li>
+                    <li><a href="#">Лапки PFAFF</a></li>
+                    <li><a href="#">Лапки SIRUBA</a></li>
+                    <li><a href="#">Лапки JUKI</a></li>
+                    <li><a href="#">Лапки РАЗНЫЕ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-3">
+                  <a href="#">Петлители</a>
+                  <label for="sub_m1-3" class="toggleSubmenu"><i class="fa"></i></label>
+                  <ul>
+                    <li><a href="#">Петлители ALTIN</a></li>
+                    <li><a href="#">Петлители AMERICAN</a></li>
+                    <li><a href="#">Петлители BONIS</a></li>
+                    <li><a href="#">Петлители BORKERT</a></li>
+                    <li><a href="#">Петлители BROTHER</a></li>
+                    <li><a href="#">Петлители COLLI</a></li>
+                    <li><a href="#">Петлители COLUMBIA</a></li>
+                    <li><a href="#">Петлители DANDA</a></li>
+                    <li><a href="#">Петлители DURKOPP</a></li>
+                    <li><a href="#">Петлители EINA</a></li>
+                    <li><a href="#">Петлители EXCLUDING</a></li>
+                    <li><a href="#">Петлители FISCHBEIN</a></li>
+                    <li><a href="#">Петлители GRIBETZ</a></li>
+                    <li><a href="#">Петлители HAPPY</a></li>
+                    <li><a href="#">Петлители JANOME</a></li>
+                    <li><a href="#">Петлители JIANNLIAN</a></li>
+                    <li><a href="#">Петлители JUKI</a></li>
+                    <li><a href="#">Петлители KANSAI</a></li>
+                    <li><a href="#">Петлители KINGTEX</a></li>
+                    <li><a href="#">Петлители LEWIS</a></li>
+                    <li><a href="#">Петлители MAUSER</a></li>
+                    <li><a href="#">Петлители MECA</a></li>
+                    <li><a href="#">Петлители MERROW</a></li>
+                    <li><a href="#">Петлители NEWLONG</a></li>
+                    <li><a href="#">Петлители PEGASUS</a></li>
+                    <li><a href="#">Петлители PFAFF</a></li>
+                    <li><a href="#">Петлители PORTER</a></li>
+                    <li><a href="#">Петлители REECE</a></li>
+                    <li><a href="#">Петлители RENOWN</a></li>
+                    <li><a href="#">Петлители RIMOLDI</a></li>
+                    <li><a href="#">Петлители SEIKO</a></li>
+                    <li><a href="#">Петлители SHINGLING</a></li>
+                    <li><a href="#">Петлители SHINGRAY</a></li>
+                    <li><a href="#">Петлители SINGER</a></li>
+                    <li><a href="#">Петлители SIRUBA</a></li>
+                    <li><a href="#">Петлители STROBEL</a></li>
+                    <li><a href="#">Петлители TITAN</a></li>
+                    <li><a href="#">Петлители TOYOTA</a></li>
+                    <li><a href="#">Петлители TRUASUER</a></li>
+                    <li><a href="#">Петлители UNION</a></li>
+                    <li><a href="#">Петлители W&G</a></li>
+                    <li><a href="#">Петлители YAMATO</a></li>
+                    <li><a href="#">Петлители РАЗНЫЕ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-4">
+                  <a href="#">Ножи</a>
+                  <label for="sub_m1-4" class="toggleSubmenu"><i class="fa"></i></label>
+                  <ul>
+                    <li><a href="#">Ножи BROTHER </a></li>
+                    <li><a href="#">Ножи DURKOPP</a></li>
+                    <li><a href="#">Ножи GLOBAL</a></li>
+                    <li><a href="#">Ножи JUKI</a></li>
+                    <li><a href="#">Ножи MAUSER LOCK</a></li>
+                    <li><a href="#">Ножи MITSUBISHI</a></li>
+                    <li><a href="#">Ножи PEGASUS</a></li>
+                    <li><a href="#">Ножи PFAFF</a></li>
+                    <li><a href="#">Ножи REECE</a></li>
+                    <li><a href="#">Ножи RIMOLDI</a></li>
+                    <li><a href="#">Ножи SINGER</a></li>
+                    <li><a href="#">Ножи SIRUBA</a></li>
+                    <li><a href="#">Ножи SUNSTAR</a></li>
+                    <li><a href="#">Ножи TEXTIMA</a></li>
+                    <li><a href="#">Ножи TYPICAL</a></li>
+                    <li><a href="#">Ножи UNION SPECIAL</a></li>
+                    <li><a href="#">Ножи YAMATO</a></li>
+                    <li><a href="#">Ножи ПЕТЕЛЬНЫЕ</a></li>
+                    <li><a href="#">Ножи РАЗНЫЕ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-5">
+                  <a href="#">Лезвия для раскройных машин</a>
+                  <label for="sub_m1-5" class="toggleSubmenu"><i class="fa"></i></label>
+                  <ul>
+                    <li><a href="#">Лезвия САБЕЛЬНЫЕ </a></li>
+                    <li><a href="#">Лезвия КРУГЛЫЕ</a></li>
+                    <li><a href="#">Лезвия ЛЕНТОЧНЫЕ</a></li>
+                   
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-6">
+                  <a href="#">Игольные пластины </a>
+                  <label for="sub_m1-6" class="toggleSubmenu"><i class="fa"></i></label>
+                  <ul>
+                    <li><a href="#">Пластины универсальные</a></li>
+                    <li><a href="#">Пластины двухигольных машин</a></li>
+                    <li><a href="#">Пластины игольного продвижения</a></li>
+                    <li><a href="#">Игольные пластины BROTHER</a></li>
+                    <li><a href="#">Игольные пластины JUKI</a></li>
+                    <li><a href="#">Игольные пластины KANSAI</a></li>
+                    <li><a href="#">Игольные пластины PEGASUS</a></li>
+                    <li><a href="#">Игольные пластины PFAFF</a></li>
+                    <li><a href="#">Игольные пластины RIMOLDI</a></li>
+                    <li><a href="#">Игольные пластины SINGER</a></li>
+                    <li><a href="#">Игольные пластины SIRUBA</a></li>
+                    <li><a href="#">Игольные пластины TYPICAL</a></li>
+                    <li><a href="#">Игольные пластины UNION SPECIAL</a></li>
+                    <li><a href="#">Игольные пластины YAMATO</a></li>
+                    <li><a href="#">Игольные пластины РАЗНЫЕ</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </li>
+            <li><a href="#"><i class="fas fa-th-list"></i>Приспособления</a></li>
+            <li><a href="#"><i class="fas fa-th-list"></i>Аксесуары</a></li>
+            <li><a href="#"><i class="fas fa-th-list"></i>Parts list</a></li>
+            <li><a href="#"><i class="fas fa-th-list"></i>Catalog</a></li>
+          </ul>
+        
+      </nav>
     </div>
 
 
+
   </header>
+  
   <script src="https://kit.fontawesome.com/0bd948430b.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 
 </html>
+
