@@ -73,8 +73,9 @@ body {
               text-decoration: none;
               font-family: 'K2D', sans-serif;
               font-weight: 400;
-              padding: 10px 13px 10px 13px;
+              padding: 10px 13px 8px 13px;
               // background: rgb(53, 51, 51); /////////////
+              
                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+1,b5bdc8+3,30363a+60,30363a+98,30363a+98,30363a+98 */
               background: rgb(181,189,200); /* Old browsers */
               background: -moz-linear-gradient(top,  rgba(181,189,200,1) 1%, rgba(181,189,200,1) 3%, rgba(48,54,58,1) 60%, rgba(48,54,58,1) 98%, rgba(48,54,58,1) 98%, rgba(48,54,58,1) 98%); /* FF3.6-15 */
@@ -176,6 +177,10 @@ body {
           text-align: center;
           padding: 0; 
         }
+        label:hover {
+          color: rgb(255, 176, 5); ////
+          border: 1px solid rgb(255, 176, 5); /////
+        }
       }
       .cart-block {
          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+1,b5bdc8+3,30363a+60,30363a+98,30363a+98,30363a+98 */
@@ -229,24 +234,28 @@ body {
             text-transform: uppercase;
             display: flex;
             .img_basket {
-              height: 40px;
-              width: 55px;
+              height: 38px;
+              width: 58px;
               margin-top: 5px;
             }
             .text_basket {
               margin-top: 15px;
               color: #ffffff;
               font-size: 14px;
-              padding-right: -8px; 
+              margin-bottom: 12px;
+              margin-left: 5px; 
             }
           }
-          .shopping-backet:hover {
+          .shopping-backet:hover .text_basket {
             cursor: pointer;
             color: rgb(255, 176, 5);
           }
-          .shopping-backet:hover .text_basket{
+          .shopping-backet:hover .img_basket {
             cursor: pointer;
-            color: rgb(255, 176, 5);
+            background: rgb(255, 176, 5);
+            border: 2px solid rgb(78, 77, 77);
+            border-radius: 50%;
+            padding: 0;
           }
         }
       }
@@ -429,7 +438,7 @@ body {
             }
           }
           .search-btn:hover {
-            background-color: #fff;
+            background-color: rgb(255, 176, 5);
             color: #3f3f3f;
             border: 2px solid rgb(0, 0, 0);
             cursor: pointer;
