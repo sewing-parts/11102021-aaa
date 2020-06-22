@@ -10,6 +10,7 @@
         }
         .nav-menu ul li {
           float: left;
+         
         }
         .nav-menu ul li a {
           text-decoration: none;
@@ -18,35 +19,85 @@
         .nav-menu ul li a:hover {
           color: #000000; /// работает
         }
+        // .nav-menu ul li ul {
+        //   flex-direction: column;//
+        //   width: 100%;
+        //   width: 1060px; ///////////////////////// длинна блока///////
+        //   min-height: 40px;/////////////////////высота /////////
+        //   position: fixed;//////////по центру//////////
+        //   margin: auto;//////////по центру////////////
+        //   left: 0;///////////по центру////////////
+        //   right: 0;///////////по центру//////////////////
+        //   overflow: auto;
+        //   background: rgb(125, 175, 209); ////////////////////////////////фон
+        //   overflow: hidden;
+        //   transition: 0.3s;
+        //   padding: 7px; 
+        // }
+
+
+
+     
+
         .nav-menu ul li ul {
-          flex-direction: column;///
           width: 100%;
-          max-width: 1060px; ///////////////////////// длинна блока///////
-          min-height: 40px;/////////////////////высота /////////
-          position: fixed;//////////по центру//////////
-          margin: auto;//////////по центру////////////
-          left: 0;///////////по центру////////////
-          right: 0;///////////по центру//////////////////
+          width: 1160px; ///////////////////////// длинна блока///////
+          min-height: 40px;/////////////////////высота блока////////
+          position: absolute;
           background: rgb(125, 175, 209); ////////////////////////////////фон
           overflow: hidden;
           transition: 0.3s;
-          // padding: 7px; 
         }
+
+
+        .nav-menu ul li .level-li-one {
+          margin-left: 0px;
+        }
+
+        .nav-menu ul li .level-li-two {
+          margin-left: -233px;
+        }
+          
+        .nav-menu ul li .level-li-three {
+          margin-left: -562px;
+        }
+        
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -826px;
+        }
+
+        .nav-menu ul li .level-li-five {
+          margin-left: -1032px;
+        }
+
+
+
+
+
+
+
+
+
         .nav-menu ul li ul li {
           padding: 5px;
-          left: 5px; ///////////////////////////////////// отступ///////////
+          // left: 5px; ///////////////////////////////////// отступ///////////
         }
         .nav-menu ul li ul li {
-          // background: yellowgreen;
-          margin-right: 0px; /////////////////////////////////
-          margin-bottom: 5px;
-          margin-right: 5px;
+          // background: yellowgreen;//////////////////////////////////
+          // margin-right: 0px; /////////////////////////////////
+          margin-top: 2px;
+          margin-bottom: 2px;
+          margin-right: 16px;
+          margin-left: 16px;
+         
           border: none; 
         }
         .nav-menu ul li ul li a{
           width: 245px;
-          padding: 2px 5px 2px 10px;
+          height: 26px;
+          padding: 4px 5px 4px 10px;
           // padding: 5px 25px 5px 25px;
+          
           border: 1px solid rgb(253, 58, 58);
           border-left: 6px solid red;
           text-transform: uppercase;
@@ -58,7 +109,7 @@
           box-shadow: 5px 5px #000000;
           font-size: 13px;
           font-family: 'K2D', sans-serif;
-          font-weight: 600;
+          font-weight: 500;
           border-radius: 2px;  
         }
         .nav-menu ul li  ul li ul li {
@@ -74,17 +125,374 @@
 }
 
 
-@media (min-width: 797px) and (max-width: 1049px) {
+
+/////////////////////////////////////
+////////////////////////////////////
+/////////////////////////////////////
+
+
+@media (min-width: 1225px) and (max-width: 1242px) {
   body {
     header {
-      .headerThree-menu {
+      .headerThree-menu { 
         .nav-menu ul li ul {
-          max-width: 800px; ///////////////////////// длинна блока///////
+          width: 1160px;
         }
+        .nav-menu ul li .level-li-one {
+          margin-left: -10px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -236px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -562px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -822px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -1024px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        } 
+        .nav-menu ul li ul li {
+          margin-top: 2px;
+          margin-bottom: 2px;
+          margin-right: 16px;
+          margin-left: 16px;
+        } 
       }
     }
   }
 }
+
+@media (min-width: 1171px) and (max-width: 1224px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          width: 1145px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -17px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -236px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -556px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -806px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -998px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+          // left: 5px; 
+        }
+        .nav-menu ul li ul li {
+          margin-right: 13px;
+          margin-left: 13px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 1128px) and (max-width: 1170px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          width: 1110px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -20px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -230px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -536px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -777px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -960px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+          // left: 5px; 
+        }
+        .nav-menu ul li ul li {
+          margin-right: 10px;
+          margin-left: 10px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 1085px) and (max-width: 1127px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          width: 1070px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -20px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -220px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -516px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -747px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -920px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 4px;
+          margin-left: 4px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 1055px) and (max-width: 1084px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          width: 1040px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -20px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -215px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -500px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -723px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -890px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 1px;
+          margin-left: 2px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 1015px) and (max-width: 1054px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          
+          width: 1010px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -24px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -207px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -488px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -702px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -860px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 40px;
+          margin-left: 40px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 963px) and (max-width: 1014px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          
+          width: 950px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -9px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -187px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -458px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -663px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -813px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 30px;
+          margin-left: 30px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 962px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          
+          width: 890px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -9px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -170px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -428px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -620px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -758px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 20px;
+          margin-left: 20px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 845px) and (max-width: 900px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          
+          width: 840px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -7px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -155px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -403px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -584px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -708px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 11px;
+          margin-left: 11px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 797px) and (max-width: 844px) {
+  body {
+    header {
+      .headerThree-menu { 
+        .nav-menu ul li ul {
+          
+          width: 792px;
+        }
+        .nav-menu ul li .level-li-one {
+          margin-left: -2px;
+        }
+        .nav-menu ul li .level-li-two {
+          margin-left: -142px;
+        }   
+        .nav-menu ul li .level-li-three {
+          margin-left: -379px;
+        } 
+        .nav-menu ul li ul.level-li-four {
+          margin-left: -550px;
+        }
+        .nav-menu ul li .level-li-five {
+          margin-left: -665px;
+        }
+        .nav-menu ul li ul li {
+          padding: 5px;
+        }
+        .nav-menu ul li ul li {
+          margin-right: 3px;
+          margin-left: 3px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+        } 
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////
+///////////////////////////////////////////
+//////////////////////////////////////////
 
 ///////////////////// конец нижнее меню
 
@@ -274,6 +682,7 @@ body {
           font-family: 'K2D', sans-serif;
           font-weight: 400;
           text-align: center;////////////////
+          z-index: 99999;
           .check-menu-label {
             display: block;
             position: absolute;
@@ -394,6 +803,7 @@ body {
           font-family: 'K2D', sans-serif;
           font-weight: 400;
           text-align: center;////////////////////////////////////
+          z-index: 99999;
           #check-menu {
             display: none;  
           }
@@ -494,7 +904,7 @@ body {
         min-height: 260px;
         width: 100%;
         max-width: 1260px;
-        background-image: url("/images/11.png");
+        // background-image: url("/images/11.png");
         background-size: cover;
         padding: 0px 0px 0px 0px;
         #search_contact {
@@ -644,4 +1054,145 @@ body {
       }
     }  
   }  
+}
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 380px) and (max-width: 695px) {
+  body {
+    #OneX {
+      padding-left: 10px; //
+      padding-right: 10px; //
+      
+      .wrapperX {
+          
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+1,b5bdc8+3,30363a+60,30363a+98,30363a+98,30363a+98 */
+        background: rgb(181,189,200); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(181,189,200,1) 1%, rgba(181,189,200,1) 3%, rgba(48,54,58,1) 60%, rgba(48,54,58,1) 98%, rgba(48,54,58,1) 98%, rgba(48,54,58,1) 98%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 1%,rgba(181,189,200,1) 3%,rgba(48,54,58,1) 60%,rgba(48,54,58,1) 98%,rgba(48,54,58,1) 98%,rgba(48,54,58,1) 98%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(181,189,200,1) 1%,rgba(181,189,200,1) 3%,rgba(48,54,58,1) 60%,rgba(48,54,58,1) 98%,rgba(48,54,58,1) 98%,rgba(48,54,58,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#30363a',GradientType=0 ); /* IE6-9 */         
+        // background: #555454;
+        position: relative;
+        text-align: center;
+        height: 40px;//////////////////
+        margin-left: -5px;
+        width: 115px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: 'K2D', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;////////////////
+        z-index: 99999;
+        .check-menu-labelX {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          z-index: 2;
+          line-height: 35px;
+          margin-left: 10px; 
+        }
+        .check-menu-labelX:hover {
+          color: rgb(255, 176, 5); ////  
+        } 
+        .burger_lineX {
+          display: block;
+          position: absolute;
+          top: 7px;
+          right: 10px;
+          width: 20px;
+          height: 2px;
+          background: #fff;
+          left: 12px;
+        }
+        .check-menu-labelX:hover ~ div {
+          background: rgb(255, 176, 5); //// 
+        } 
+        .secondX, .thirdX {////////////////////
+          top: 16px;//////////////////////////////
+          left: 12px;////////////////////////////////
+        }/////////////////////////////
+        .fourthX {///////////////////////////////
+          top: 25px;//////////////////////////////
+        }/////////////////////////////////
+        .firstX {////////////////////////////////
+          top: 8px;///////////////////////////////
+        }///////////////////////////////////////////////
+        .main-menuX {
+          display: block;
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          transform: translateY(100%);
+          max-height: 0;
+          font-size: 0;
+          overflow: hidden;
+          transition: 1s all;
+          width: 200px;
+          .mobile-menu-liX {
+            text-align: center;
+            background: chartreuse;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            .mobile-menu-aX {
+              display: block;
+              width: 100%;
+              padding: 8px;
+              background: black;
+              color: white;
+              text-decoration: none;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              border-top: 1px solid rgb(247, 245, 245);
+              border-bottom: 3px solid rgb(247, 245, 245);
+            }
+            .mobile-menu-aX:hover {
+              color: black;
+              background: rgb(201, 204, 2);
+             
+              
+            }
+          }  
+        }
+        #check-menuX:checked ~ .main-menuX {
+          max-height: 400px;
+          font-size: 14px;
+        }
+        #check-menuX:checked ~ .firstX {
+          display: none;
+        }
+        #check-menuX:checked ~ .secondX {
+          transform: rotate(225deg);
+          transition: 1s;
+          background: rgb(7, 253, 220);
+        }
+        #check-menuX:checked ~ .thirdX {
+          transform: rotate(-225deg);
+          transition: 1s;
+          background: rgb(7, 253, 220);
+        }  
+        #check-menuX:checked ~ .fourthX {
+          display: none;
+        }
+      }
+      .cart-blockX {
+        padding: 0px 10px 0px 1px;
+        margin-right: -10px; 
+      }
+    }   
+  }     
 }
