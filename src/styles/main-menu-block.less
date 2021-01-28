@@ -8,15 +8,15 @@ body {
     flex-direction: column;
     align-items: center;
     
-    .main-menu {
+    .main-menu {/////////////////////////////// псевдо
         padding: 0;
         margin: 0;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;/////////// при псевдо нельзя
         height: 50px;
         width: 100%;
-        // max-width: 1260px;
-        width: 100vw;
+        max-width: 1260px;
+        // width: 100vw;
         
        
         justify-content: space-around;
@@ -24,6 +24,8 @@ body {
         background: #222;
         background: #45698b;
         // border-top: solid 3px #ffd000;
+        //////////////////////////////////
+        position: relative;
        
         .main-menu-section {
             margin:0 auto;
@@ -34,14 +36,16 @@ body {
             font-weight: 400;
             font-size: 17px;
             height: 50px;
-            max-width: 1260px;
             width: 100%;
+            max-width: 1260px;
+            
             // width: 100vw;
             // background: rgb(211, 65, 65);
             background: #222;
             background: #45698b;
-            padding: 0px 10px 0px 10px;
+            padding: 0% 4% 0% 4%;//////////////////////////////////////////////////////++++++
             z-index: 44444;
+            background: rgb(211, 65, 65);
 
          
             .dws-menu * {
@@ -65,7 +69,7 @@ body {
                 display: block;
                 background: #222;
                 background: #45698b;
-                padding: 5px 30px 5px 40px;
+                padding: 5px 10px 5px 10px;
                 // margin: 8px 0px;
                 height: 45px;//////////////////// //////////////  ///////////////////
                 line-height: 36px;
@@ -114,7 +118,7 @@ body {
                 // border: 1px solid rgb(216, 142, 5);
                 // border-left: 6px solid rgb(216, 142, 5);
                 // color: crimson;
-                // box-shadow: 1px 5px 10px -1px black;
+                
                 
                 // transition: 0.4s linear;
                 
@@ -134,14 +138,16 @@ body {
 
 
 
-            .dws-menu ul li ul li a:hover {
+            // .dws-menu ul li ul li a:hover {
                 
-                border: 2px solid rgb(216, 142, 5);
-                border-left: 6px solid rgb(216, 142, 5);
-                background:  #f5f6fa;
-                color: #2e2c2c;
+            //     // border: 2px solid rgb(216, 142, 5);////////+++++++
+            //     // border: solid 1px #ffd000;
+            //     border-left: 3px solid  #ffd000;//////////////+++++++++
+            //     // background:  #f5f6fa;
+            //     color:   #ffd000;
+            //     transition: 0.5s linear;
                
-            }
+            // }
 
             /////////
             .dws-menu  li ul {
@@ -157,7 +163,8 @@ body {
             .dws-menu li > ul li a {
                
                 text-transform: none;
-                background: #444; /////////////////2 уровень фон
+                // background: #444; /////////////////2 уровень фон
+                background: #5b8ab6;//////////////////////////// 2 уровень фон
                 text-transform: uppercase;
                 color:  #f5f6fa;
                 // color: rgb(255, 0, 85);
@@ -182,25 +189,23 @@ body {
             .dws-menu li:hover > ul {
                 display: block;
             }
-            // .dws-menu li > ul li ul  {
-                
-            // }
-            // .dws-menu li > ul li ul li a {
-            //     background: rgb(131, 131, 131);//////////////////////////////////////// 3 уровень вон /////////////
-            //     border-left: 7px solid crimson;
-            //     border-bottom: 2px solid crimson;
-            //     border-top: 2px solid crimson;
-            //     border-right: 2px solid crimson;
-                
-            // }
+          
             .dws-menu li > ul li ul li a {
                 background:  #497285;//////////////////////////////////////// 3 уровень вон /////////////
-                // border-left: 7px solid crimson;
-                // border-bottom: 2px solid crimson;
-                // border-top: 2px solid crimson;
-                // border-right: 2px solid crimson;
-                
+                background: #84c4ff;
+                color: #222;
+            }
+            .dws-menu li > ul li ul li a:hover {
+                background: #c8e5ff;
+                color: #222;
             }
         } 
+    }
+    .main-menu::after {
+        content: "";
+        width: 100vw;
+        height: 50px;
+        background: #45698b;
+        position: absolute;   
     }
 }

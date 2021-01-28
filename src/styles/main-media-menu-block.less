@@ -1,8 +1,10 @@
 
 
-@media (min-width: 797px) and (max-width: 3500px) {
+@media (min-width: 668px) and (max-width: 3500px) {
     body {
+      
         .main-menu {
+          
             .main-menu-section {
                 .nav-menu {
                     max-width: 1260px;
@@ -16,74 +18,78 @@
             
                 }
                 .nav-menu ul li a:hover {
-                    color: #000000; /// работает
-                    color: #ffd000; 
+                    color: #ffd000; /// работает
                     // background: rgb(216, 142, 5);
                 }
                 .nav-menu ul li ul {
-                    
-                    // width: 100%;
-                    // width: 1200px; 
-                    width: 820%;///////////////////////// длинна блока///////
-                    // width: 100vw;
+                    // min-width: 1250px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
                    
-                    // width: 100vw;
-                    float: left;
-                    min-height: 230px;/////////////////////высота блока////////
-                    position: absolute;
-                    left: 0%;
+                    width: 1245px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
+                   
+                 
+               
                     
-           
+                    float: left;
+                    // min-height: 230px;/////////////////////высота блока////////
+                    min-height: 80px;/////////////////////высота блока////////
+                    position: absolute;
+                   
+                    // left: 0%;
+                    
+                    border: solid 1px black;
                     // background: rgb(125, 175, 209); ////////////////////////////////фон
                     background: #f5f6fa;
+                    // background: blue;
                     overflow: hidden;
                     transition: 0.3s;
                     // padding-top: 15px;
                     // padding-bottom: 15px;
-                    padding: 15px;
+                    // padding: 15px 10px 15px 10px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
+                    padding: 12% 38% 12% 38%;
                     margin: 0px 0 0 0;
+                    // margin: 0 auto;
                     box-shadow: inset 0 10px 10px -10px rgb(168, 168, 168) , inset 0 -10px 10px -10px rgb(168, 168, 168) , 15px 0 15px -15px rgba(168, 168, 168, .5) , -15px 0 15px -15px rgba(168, 168, 168, .5);
+                    text-align: center;
+                    
                 }
+                .nav-menu ul li ul li { ///////////////////////////////////// отступ///////////
+                    padding: 5px 10px 5px 10px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
+                } 
   
   
                 .nav-menu ul li .level-li-one {
-                    margin-left: 0px;
+                    margin-left: -42px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
                 }
-  
                 .nav-menu ul li .level-li-two {
-                    margin-left: -233px;
+                    margin-left: -275px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555  
                 }
                 .nav-menu ul li .level-li-three {
-                    margin-left: -562px;
+                    margin-left: -556px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
                 }
                 .nav-menu ul li ul.level-li-four {
-                    margin-left: -826px;
+                    margin-left: -822px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
                 }
                 .nav-menu ul li .level-li-five {
-                    margin-left: -1032px;
+                    margin-left: -1112px;//////////////OOOOOOOO/////////////// 77777777777 55555555555555
                 }
-                .nav-menu ul li ul li {
-                    padding: 5px;
-                    // left: 5px; ///////////////////////////////////// отступ///////////
-                }
-            
+              
                 .nav-menu ul li ul li {
                     // background: yellowgreen;//////////////////////////////////
                     // margin-right: 0px; /////////////////////////////////
-                    margin-top: 2px;
-                    margin-bottom: 2px;
+                    // margin-top: 2px;////////////////////////////////////////////   777777777   5555555555
+                    // margin-bottom: 2px;///////////////////////////////////////// 7777777777  555555555555
                     // margin-right: 16px;
                     // margin-left: 16px;
                     border: none;
                     margin: auto; 
                 }
-                .nav-menu ul li ul li a{ /////////////////////////////блоки в всплывающем  блоке
-                    width: 260px;
-                    height: 35px;
+                .nav-menu ul li ul li a { /////////////////////////////блоки в всплывающем  блоке   7777777  555555
+                    width: 270px;
+                    height: 34px;
                     // padding: 4px 5px 5px 10px;
                     // padding: 5px 25px 5px 25px;
-                    border: 2px solid rgb(255, 166, 0);
-                    border-left: 6px solid rgb(255, 166, 0);
+                    // border: 2px solid rgb(255, 166, 0);/////////////////////++++
+                    // border-left: 6px solid rgb(255, 166, 0);////////////////+++++
                     // border: 2px solid rgb(214, 214, 214);
                     // border-left: 6px solid rgb(214, 214, 214);
                     // border: 2px solid crimson;
@@ -94,14 +100,23 @@
                     //   -ms-transform: skewX(-15deg); 
                     //   -o-transform: skewX(-15deg); 
                     // transform: skewX(-15deg); 
-                    box-shadow: 5px 5px rgb(133, 133, 133);
+                    // box-shadow: 5px 5px rgb(133, 133, 133);/////////////++++++++++
+                    color: #f5f6fa;
                     font-size: 17px;
                     font-family: 'Roboto', sans-serif;
-                   
-                    line-height: 22px;
                     font-weight: 400;
-                    border-radius: 2px;
-                    background: #333; 
+
+                    text-align: left;
+                    padding: 0px 0px 0px 7px;
+                    line-height: 34px;
+                   
+                    // border-radius: 2px;
+                    // background: #333;
+                   
+
+                    border-left: solid 3px #45698b;
+                    background: #45698b;
+                    transition: 0.5s linear; 
                 }
                 .nav-menu ul li  ul li ul li {
                     display: none;
@@ -124,41 +139,43 @@
   /////////////////////////////////////
   
   
-// @media (min-width: 1225px) and (max-width: 1242px) {
-//     body {
-//         .main-menu {
-//             .main-menu-section { 
-//                 .nav-menu ul li ul {
-//                     width: 1160px;
-//                 }
-//                 .nav-menu ul li .level-li-one {
-//                     margin-left: -10px;
-//                 }
-//                 .nav-menu ul li .level-li-two {
-//                     margin-left: -236px;
-//                 }   
-//                 .nav-menu ul li .level-li-three {
-//                     margin-left: -562px;
-//                 } 
-//                 .nav-menu ul li ul.level-li-four {
-//                     margin-left: -822px;
-//                 }
-//                 .nav-menu ul li .level-li-five {
-//                     margin-left: -1024px;
-//                 }
-//                 .nav-menu ul li ul li {
-//                     padding: 5px;
-//                 } 
-//                 .nav-menu ul li ul li {
-//                     margin-top: 2px;
-//                     margin-bottom: 2px;
-//                     margin-right: 16px;
-//                     margin-left: 16px;
-//                 } 
-//             }
-//         }
-//     }
-// }
+@media (min-width: 1225px) and (max-width: 1242px) {
+    body {
+        .main-menu {
+            .main-menu-section { 
+                .nav-menu ul li ul {
+                    // width: 1160px;
+                    min-width: 1224px;//////////  1111111111
+                    min-width: 1242;///////////////////   11111111111
+                }
+                .nav-menu ul li .level-li-one {
+                    margin-left: -10px;
+                }
+                .nav-menu ul li .level-li-two {
+                    margin-left: -236px;
+                }   
+                .nav-menu ul li .level-li-three {
+                    margin-left: -562px;
+                } 
+                .nav-menu ul li ul.level-li-four {
+                    margin-left: -822px;
+                }
+                .nav-menu ul li .level-li-five {
+                    margin-left: -1024px;
+                }
+                .nav-menu ul li ul li {
+                    padding: 5px;
+                } 
+                .nav-menu ul li ul li {
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                } 
+            }
+        }
+    }
+}
   
 //   @media (min-width: 1171px) and (max-width: 1224px) {
 //     body {
@@ -498,7 +515,8 @@
          
           
 
-          background: #444;
+          // background: #444;
+          background: #45698b;
 
 
           display: none;
@@ -522,10 +540,11 @@
   
   
   
-  @media all and (max-width: 796px) {
+  @media all and (max-width: 667px) {
     body {
         .main-menu{
         .main-menu-section {
+          padding: 0% 0% 0% 0%;
           .dws-menu {
             overflow: hidden;  
           }
@@ -546,6 +565,16 @@
               color: #f5f6fa;
             }
           }
+          //////////////////////////////////////////////////////////
+          // .dws-menu > ul li > a .fas {
+          //   // position: absolute;
+          //   top: 9px;
+          //   left: 12px;
+          //   font-size: 18px;
+          //   padding: 5px 0px 5px 0px;
+          //   display: block;
+          // }
+          //////////////////////////////////////////////////////
          
           .dws-menu .toggleMenu:hover {
             color: rgb(216, 142, 5);
@@ -579,6 +608,7 @@
             color: #f5f6fa; 
             // background: rgb(200, 200, 200);////////////////////////////
             background: #222;
+            background: #314b62;//////////////////////  1 уровень само меню
             border-bottom: 2px solid #f5f6fa; 
           }
           .dws-menu input.toggleMenu:checked ~ ul {
@@ -606,11 +636,13 @@
             color: #f5f6fa; 
             // background: rgb(200, 200, 200);
             background: #444;
+            background: #45698b;//////////////////////////// 2 уровень при клике
             // border-left: 10px solid #ffa920;///////////////////////////////// 
           }
           .dws-menu ul li ul li input.toggleSubmenu:checked ~ a  {
             // background: crimson;
             background: #666;
+            background: #5b8ab6;//////////////////////////// 3 уровень при клике
             font-size: 17px;
             font-weight: 500;
             color: #f5f6fa;
