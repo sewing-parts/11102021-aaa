@@ -7,8 +7,7 @@ body {
     padding: 0;
     flex-direction: column;
     align-items: center;
-    
-    .main-menu {/////////////////////////////// псевдо
+    .main-menu {
         padding: 0;
         margin: 0;
         display: flex;
@@ -17,61 +16,41 @@ body {
         width: 100%;
         max-width: 1260px;
         // width: 100vw;
-        
-       
         justify-content: space-around;
-        // background: rgb(255, 0, 119);
-        background: #222;
         background: #45698b;
-        // border-top: solid 3px #ffd000;
-        //////////////////////////////////
-        position: relative;
-       
         .main-menu-section {
             margin:0 auto;
-            // font-family: 'K2D', sans-serif;
-            // font-weight: 400;
-
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             font-size: 17px;
             height: 50px;
             width: 100%;
             max-width: 1260px;
-            
-            // width: 100vw;
-            // background: rgb(211, 65, 65);
-            background: #222;
-            background: #45698b;
+    
+            // background: #45698b;
             padding: 0% 4% 0% 4%;//////////////////////////////////////////////////////++++++
             z-index: 44444;
-            background: rgb(211, 65, 65);
-
-         
+            // background: rgb(211, 65, 65);
             .dws-menu * {
                 margin: 0;
-                padding: 0;
-               
- 
-               
+                padding: 0;  
             }
             .dws-menu ul, .dws-menu ol {
                 list-style: none;
             }
             .dws-menu > ul {
-                
                 display: flex;
                 // justify-content: center;
-                justify-content: space-around;
+                // justify-content: space-around;
                 justify-content: space-between;
             }
             .dws-menu > ul  li a {
                 display: block;
-                background: #222;
-                background: #45698b;
+               
+                background: #45698b;///////////////////////////////// 1 уровень фон
                 padding: 5px 10px 5px 10px;
                 // margin: 8px 0px;
-                height: 45px;//////////////////// //////////////  ///////////////////
+                height: 45px;
                 line-height: 36px;
                 color:  #f5f6fa;
                 font-family: 'Roboto', sans-serif;
@@ -84,9 +63,6 @@ body {
                 transition: 0.5s linear;
                 line-height: 38px;
                 height: 50px;
-                // border: solid 1px  #ff0000;
-               
-                
             }
             .dws-menu > ul  li {
                 position: relative;
@@ -107,48 +83,9 @@ body {
             //     border-right: 1px solid #babbbb;
             // }
             .dws-menu ul li a:hover {
-
-                // transition: all 0.3s ease;
-
-                color: #ffd000;
-                       
+                color: #ffd000;     
                 transition: 0.5s linear;
-                // color: #2e2c2c;
-                // background: rgb(216, 142, 5);
-                // border: 1px solid rgb(216, 142, 5);
-                // border-left: 6px solid rgb(216, 142, 5);
-                // color: crimson;
-                
-                
-                // transition: 0.4s linear;
-                
             }
-          
-
-
-
-
-            // .dws-menu ul li  a {
-            //     font-size: 17px ;
-            //     height: 45px;
-            // }
-
-
-
-
-
-
-            // .dws-menu ul li ul li a:hover {
-                
-            //     // border: 2px solid rgb(216, 142, 5);////////+++++++
-            //     // border: solid 1px #ffd000;
-            //     border-left: 3px solid  #ffd000;//////////////+++++++++
-            //     // background:  #f5f6fa;
-            //     color:   #ffd000;
-            //     transition: 0.5s linear;
-               
-            // }
-
             /////////
             .dws-menu  li ul {
                 position: absolute;
@@ -156,29 +93,19 @@ body {
                 display: none;   
             }
             .dws-menu li > ul li {
-                border: 1px solid #b8b8b8;
-               
-                
+                border: 1px solid #b8b8b8;   
             }
             .dws-menu li > ul li a {
-               
                 text-transform: none;
-                // background: #444; /////////////////2 уровень фон
                 background: #5b8ab6;//////////////////////////// 2 уровень фон
                 text-transform: uppercase;
                 color:  #f5f6fa;
-                // color: rgb(255, 0, 85);
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 font-size: 17px;
-                // letter-spacing: 0px;
-                // word-spacing: 3px;
                 text-decoration: none;
-                
                 padding-left: 5px;
                 padding-right: 2px; 
-                // text-indent: 30px; ////абзац 2 уровень
-                // border-left: 7px solid rgb(196, 196, 196)
                 margin: 0px 0px;  
             }
             .dws-menu li > ul li ul {
@@ -191,13 +118,13 @@ body {
             }
           
             .dws-menu li > ul li ul li a {
-                background:  #497285;//////////////////////////////////////// 3 уровень вон /////////////
-                background: #84c4ff;
-                color: #222;
+                // background:  #497285;
+                background: #84c4ff;//////////////////////////////////////// 3 уровень вон /////////////
+                color: #222222;
             }
             .dws-menu li > ul li ul li a:hover {
                 background: #c8e5ff;
-                color: #222;
+                color: #222222;
             }
         } 
     }
