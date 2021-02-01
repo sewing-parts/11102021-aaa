@@ -14,7 +14,7 @@ body {
         min-height: 830px;
         width: 100%;
         max-width: 1260px;
-        background: @background_main_aa;
+        background: @background_main;
         z-index: 11111;
         .aa__crumbs {
             display: flex;
@@ -23,18 +23,22 @@ body {
             // width: 100%;
             max-width: 1260px;
             // background: #f5f6fa;
-            padding-left: 60px;
-            padding-right: 60px; 
-            padding-top: 5px;
-            padding-bottom: 5px;
+            // padding-left: 60px;
+            // padding-right: 60px; 
+            // padding-top: 5px;
+            // padding-bottom: 5px;
+            padding: 15px 40px 15px 40px;
             .aa__crumbs_text {
-                font-family: 'Roboto', sans-serif;
+                a {
+                    font-family: 'Roboto', sans-serif;
                 font-weight: 400;
-                font-size: 14px;
+                font-size: @font-size_main - 3px;
                 letter-spacing: 0px;
                 word-spacing: 3px;
                 color: @color_black_main;
                 text-transform: uppercase;
+                text-decoration: none;
+                }
             }
         }
         ///////////////////////////////////////////////////////////////////////////////////
@@ -60,7 +64,7 @@ body {
                 color: @color_black_main;
                 // color: #497285;
                 text-transform: uppercase;
-                font-size: 30px;
+                font-size: @font-size_main + 12px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -84,14 +88,14 @@ body {
             .aa__c1_text_two {
                 color: @color_black_main;
                 text-indent: 30px;
-                padding: 20px 60px 20px 60px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
+                padding: 20px 40px 20px 40px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: @font-size_main;
                 letter-spacing: 0px;
                 word-spacing: 3px;
                 margin: 0px 0px 0px 0px;
-                text-align:justify
+                text-align:justify;
             }
         }
         /////////////////////////////////////////////////////////////////////////////////
@@ -165,7 +169,7 @@ body {
                         text-transform: uppercase;
                         font-family: 'Roboto', sans-serif;
                         font-weight: 400;
-                        font-size: 16px;
+                        font-size: @font-size_main;
                         letter-spacing: 0px;
                         word-spacing: 3px;
                         transition: linear 0.5s;  
@@ -225,7 +229,7 @@ body {
             .aa__c3_text_one {
                 color: @color_black_main;
                 text-transform: uppercase;
-                font-size: 30px;
+                font-size: @font-size_main + 12px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -247,10 +251,10 @@ body {
             .aa__c3_text_two {
                 color: @color_black_main;
                 text-indent: 30px;
-                padding: 20px 60px 20px 60px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
+                padding: 20px 40px 20px 40px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: @font-size_main;
                 letter-spacing: 0px;
                 word-spacing: 3px;
                 margin: 0px 0px 0px 0px;
@@ -331,8 +335,8 @@ body {
                         color: @color_white_main;
                         text-transform: uppercase;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 500;
-                        font-size: 16px;
+                        font-weight: 400;
+                        font-size: @font-size_main;
                         letter-spacing: 0px;
                         word-spacing: 3px;
                         transition: linear 0.5s;
@@ -384,8 +388,8 @@ body {
                 color: @color_white_main;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-                font-size: 16px;
+                font-weight: 400;
+                font-size: @font-size_main;
                 letter-spacing: 0px;
                 word-spacing: 0px;
                 width: 300px;
@@ -394,7 +398,7 @@ body {
                 padding: 12px 12px;
                 text-align: center;
                 // text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-                vertical-align: middle;
+                // vertical-align: middle;
                 position: relative;
                 -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
@@ -460,7 +464,7 @@ body {
                 // margin-top: 15px;
                 color: @color_black_main;
                 text-transform: uppercase;
-                font-size: 30px;
+                font-size: @font-size_main + 12px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -482,14 +486,14 @@ body {
             .aa__c5_text_two {
                 color: @color_black_main;
                 text-indent: 30px;
-                // padding: 20px;
-                padding: 20px 60px 20px 60px;
-                font-family: 'Montserrat ', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
+                padding: 20px 40px 20px 40px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: @font-size_main;
                 letter-spacing: 0px;
                 word-spacing: 3px;
                 margin: 0px 0px -15px 0px;
+                padding-bottom: 40px;
                 text-align:justify   
             }
         }
@@ -534,43 +538,45 @@ body {
                     // box-shadow: 7px 7px rgb(147, 147, 147);
                     // box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2); 
                     box-shadow: 7px 7px #dddddd;
-                    transition: linear 0.5s;
                     overflow: hidden;
+                    transition: linear 0.5s;
                     a {
                         text-decoration: none;
                         text-transform: uppercase;
                         .aa__c6c6s1_text_one {
+                            padding: 0;
+                            margin: 0;
                             color: @color_white_main;
+                            padding-top: 5px;
                             letter-spacing: 3px;
                             text-transform: uppercase;
-                            font-size: 24px;
-                            font-family: 'Montserrat', sans-serif;
+                            font-size: @font-size_main + 8px;
+                            font-family: 'Roboto', sans-serif;
                             font-weight: 700;
                             text-transform: uppercase;
                             letter-spacing: 1px;
                             word-spacing: 7px;
-                            margin: 1px; 
+                            // margin: 1px; 
                             transition: linear 0.5s;
                         }
                         .aa__c6c6s1_block1 {   
-                            margin: -2px 0px -6px 0px;  
+                            margin: -5px 0px -6px 0px;  
                             .fa-star {
                                 padding: 0;
                                 margin: 0;
                                 color: @color_white_main;
-                                // color: #487eb0;
                                 -webkit-text-stroke: 1px @color_white_main;
-                                font-size: 8px;
-                                transition: linear 0.5s;
-                                text-align: center;   
+                                font-size: @font-size_main - 10px;
+                                text-align: center;
+                                transition: linear 0.5s;   
                             }
                         }
                         .aa__c6c6s1_text_two{
                             color: @color_white_main;
-                            margin-top: 6px;
+                            padding-top: 8px;
                             text-transform: uppercase;
-                            font-size: 18px;
-                            font-family: 'Montserrat', sans-serif;
+                            font-size: @font-size_main;
+                            font-family: 'Roboto', sans-serif;
                             font-weight: 600;
                             text-transform: uppercase;
                             letter-spacing: 1px;
@@ -581,19 +587,24 @@ body {
                 } 
                 .aa__c6c6_section1:hover {  
                     background-size: 300px 130px;
-                    // box-shadow: 0px 0px #25425a;
-                    // box-shadow: 0px 0px 0px 0px #666;
                     box-shadow: 1px 1px #c7c7c7;
-                    transition: linear 0.7s;
+                    transition: linear 0.5s;
                 }
+                .aa__c6c6_section1:hover a .aa__c6c6s1_text_one {
+                    color: @color_yellow_main;
+                    transition: linear 0.5s;            
+                }   
                 .aa__c6c6_section1:hover a .fa-star {
                     transition: linear 0.5s;
-                    // color:#fbc531;
                     color: @color_yellow_main;
                     padding-left: 2px;
                     padding-right: 2px;
-                    font-size: 11px;               
-                }   
+                    font-size: @font-size_main - 10px;               
+                }
+                .aa__c6c6_section1:hover a .aa__c6c6s1_text_two {
+                    color: @color_yellow_main;
+                    transition: linear 0.5s;            
+                }      
             }
             // .content_block_1-5w::-webkit-scrollbar {
             //     width: 0px;
@@ -621,8 +632,8 @@ body {
                 color: @color_white_main;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-                font-size: 17px;
+                font-weight: 400;
+                font-size: @font-size_main;
                 letter-spacing: 0px;
                 word-spacing: 0px;
                 width: 300px;
@@ -631,7 +642,7 @@ body {
                 padding: 12px 12px;
                 text-align: center;
                 // text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-                vertical-align: middle;
+                // vertical-align: middle;
                 position: relative;
                 -webkit-transition-duration: 0.3s;
                 transition-duration: 0.3s;
@@ -696,7 +707,7 @@ body {
             .aa__c7_text_one {
                 color: @color_black_main;
                 text-transform: uppercase;
-                font-size: 30px;
+                font-size: @font-size_main + 12px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -719,10 +730,10 @@ body {
             .aa__c7_text_two {
                 color: @color_black_main;
                 text-indent: 30px;
-                padding: 20px 60px 20px 60px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
+                padding: 20px 40px 20px 40px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: @font-size_main;
                 letter-spacing: 0px;
                 word-spacing: 3px;
                 margin: 0px 0px 0px 0px;
@@ -748,7 +759,6 @@ body {
             .aa__c8_section1 {
                 height: 135px;
                 max-width: 310px;
-                // background: #f5f6fa;
                 margin: 10px 20px 25px 20px;
                 display: flex;
                 flex-wrap: wrap;
@@ -767,8 +777,6 @@ body {
                     width: 310px;
                     display: inline-block;
                     overflow: hidden;
-                    // display: flex;
-                    // justify-content: center;
                     display:flex;
                     justify-content: center; /*центрируем элемент по горизонтали */
                     align-items: center; /* и вертикали */
@@ -803,7 +811,7 @@ body {
                         text-transform: uppercase;
                         font-family: 'Roboto', sans-serif;
                         font-weight: 400;
-                        font-size: 17px;
+                        font-size: @font-size_main;
                         letter-spacing: 0px;
                         word-spacing: 3px;
                         transition: linear 0.5s;
