@@ -1,5 +1,4 @@
 
-
 body {
     display: flex;
     justify-content: space-around;
@@ -13,8 +12,8 @@ body {
         margin: 0;
         width: 100%;
         width: 100vw;
-        background: #45698b;
-        color: #f5f6fa;
+        background: @color_blue_main;
+        color: @color_white_main;
         z-index: 11111;
         .container {
             width: 100%;
@@ -26,28 +25,28 @@ body {
                 padding: 10px 20px;
                 min-width: 300px;    
             }
-            .box:hover h4 {
-                color: #ffd000;
-                transition: linear 1.0s;
-            }
             .box h4 {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 font-size: @font-size_main + 2px;
-                color: #f5f6fa; 
+                color: @color_white_main; 
                 text-transform: uppercase;
                 letter-spacing: 3px;
-                border-bottom: 2px solid #4f97db;
+                border-bottom: 2px solid @color_dlue_tone_four_main;
                 position: relative;
                 margin-bottom: 16px;
-                transition: linear 1.0s;
+                transition: linear 0.5s;
+            }
+            .box:hover h4 {
+                color: @color_yellow_main;
+                transition: linear 0.5s;
             }
             .box h4::before {
                 content: "";
                 // width: 130px;
                 width: 50%;
                 height: 100%;
-                border-bottom: 2px solid #ffd000;
+                border-bottom: 2px solid @color_yellow_main;
                 position: absolute;
                 // margin-left: 25%;
             }
@@ -63,16 +62,16 @@ body {
                 flex-wrap: wrap;
             }
             .box a {
-                color: #f5f6fa;
+                color: @color_white_main;
                 text-decoration: none;
                 display: inline-block;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 font-size: @font-size_main - 1px;
-                // padding-bottom: 15px;
+                transition: linear 0.5s;
             } 
             .box a i {
-                background: #333;
+                background: @color_black_main;
                 width: 45px;
                 // height: 40px;
                 text-align: center;
@@ -80,15 +79,18 @@ body {
                 margin-right: 10px;
                 transition: 0.5s linear;
                 border-radius: 5px;
-                border: 1px solid #5aaaf5;
-                color: #5aaaf5;
+                border: 1px solid @color_dlue_tone_five_main;
+                color: @color_dlue_tone_five_main;
+                transition: linear 0.5s;
             } 
             .box a:hover {
-                color: #ffd000;  
+                color: @color_yellow_main;
+                transition: linear 0.5s;  
             } 
             .box a:hover i {
-                border: 1px solid #ffd000; 
-                color: #ffd000; 
+                border: 1px solid @color_yellow_main; 
+                color: @color_yellow_main;
+                transition: linear 0.5s; 
             }
             .box .social {
                 margin-top: 5px;
@@ -107,6 +109,10 @@ body {
                 outline: none;
                 padding-left: 5px;
                 margin-bottom: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: @font-size_main - 1px;
+                color: @color_black_main;
             } 
             .box form label {
                 font-family: 'Roboto', sans-serif;
@@ -115,36 +121,35 @@ body {
                 text-transform: uppercase;
             }
             .box form label span {
-                color: #5aaaf5;   
+                color: @color_dlue_tone_five_main;   
             }
             .box form button {
                 width: 50%;
                 height: 25px;
                 border: none;
                 outline: none;
-                background: #333;
+                background: @color_black_main;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 600;
                 font-size: @font-size_main - 1px;
-                color:  #5aaaf5;
+                color: @color_dlue_tone_five_main;
                 letter-spacing: 4px;
-                border: 1px solid #5aaaf5;
+                border: 1px solid @color_dlue_tone_five_main;
                 border-radius: 3px;
-                transition: 0.5s linear;
-                cursor: pointer;  
+                cursor: pointer;
+                transition: linear 0.5s;  
             }
             .box form button:hover {
-                border: 1px solid #ffd000;
-                color: #ffd000;
+                border: 1px solid @color_yellow_main;
+                color: @color_yellow_main;
                 border-radius: 3px;
+                transition: linear 0.5s;
             }        
         }
         .author {
             width: 100%;
-            background: black;
-            background: #385570;
-            background: #333;
+            background: @color_black_main;
             text-align: center;
             padding: 5px;
             font-family: 'Roboto', sans-serif;
@@ -153,11 +158,12 @@ body {
             text-transform: uppercase;
             overflow: hidden;
             p {
+                color: @color_white_main;
                 .author_text_one {
-                    color: #5aaaf5;  
+                    color: @color_dlue_tone_five_main;  
                 }
                 .author_text_two {
-                    color: crimson;
+                    color: @color_red_main;
                 }
             }
         }

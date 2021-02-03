@@ -1,173 +1,39 @@
 
 @media all and (max-width: 598px) {
-@font-size_main: 15px;
-
-body {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    .main-footer{ 
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        width: 100vw;
-        background: #45698b;
-        color: #f5f6fa;
-        z-index: 11111;
-        .container {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            .box {
-                flex: 1;
-                // margin: 5px 15px;
-                // padding: 10px 20px;
-                margin: 0px 0px;///////////////////////////88788777
-                padding: 5px 10px;///////////////////////////88788777
-                min-width: 300px;    
-            }
-            .box:hover h4 {
-                color: #ffd000;
-                transition: linear 1.0s;
-            }
-            .box h4 {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main + 2px;
-                color: #f5f6fa; 
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                border-bottom: 2px solid #4f97db;
-                position: relative;
-                margin-bottom: 16px;
-                transition: linear 1.0s;
-            }
-            .box h4::before {
-                content: "";
-                // width: 130px;
-                width: 50%;
-                height: 100%;
-                border-bottom: 2px solid #ffd000;
-                position: absolute;
-                // margin-left: 25%;
-            }
-            .box p {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
-                padding-bottom: 10px;
-            }
-            .box .social {
-                min-width: 270px;
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .box a {
-                color: #f5f6fa;
-                text-decoration: none;
-                display: inline-block;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
-                // padding-bottom: 15px;
-            } 
-            .box a i {
-                background: #333;
-                width: 45px;
-                // height: 40px;
-                text-align: center;
-                line-height: 40px;
-                margin-right: 10px;
-                transition: 0.5s linear;
-                border-radius: 5px;
-                border: 1px solid #5aaaf5;
-                color: #5aaaf5;
-            } 
-            .box a:hover {
-                color: #ffd000;  
-            } 
-            .box a:hover i {
-                border: 1px solid #ffd000; 
-                color: #ffd000; 
-            }
-            .box .social {
-                margin-top: 5px;
-            }
-            .box .address a {
-                display: block;
-                margin-bottom: 16px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
-            }
-            .box form input, .box form textarea {
-                width: 100%;
-                min-height: 30px;
-                border: none;
-                outline: none;
-                padding-left: 5px;
-                margin-bottom: 10px;
-            } 
-            .box form label {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
-                text-transform: uppercase;
-            }
-            .box form label span {
-                color: #5aaaf5;   
-            }
-            .box form button {
-                width: 50%;
-                height: 25px;
-                border: none;
-                outline: none;
-                background: #333;
-                text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 600;
-                font-size: @font-size_main - 1px;
-                color:  #5aaaf5;
-                letter-spacing: 4px;
-                border: 1px solid #5aaaf5;
-                border-radius: 3px;
-                transition: 0.5s linear;
-                cursor: pointer;  
-            }
-            .box form button:hover {
-                border: 1px solid #ffd000;
-                color: #ffd000;
-                border-radius: 3px;
-            }        
-        }
-        .author {
-            width: 100%;
-            background: black;
-            background: #385570;
-            background: #333;
-            text-align: center;
-            padding: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: @font-size_main - 1px;
-            text-transform: uppercase;
-            overflow: hidden;
-            p {
-                .author_text_one {
-                    color: #5aaaf5;  
+    body {
+        .main-footer{ 
+            .container {
+                .box {
+                    margin: 0px 0px;
+                    padding: 5px 10px;   
                 }
-                .author_text_two {
-                    color: crimson;
+                .box h4 {
+                    font-size: @font-size_main;
                 }
+                .box p {
+                    font-size: @font-size_main - 2px;
+                }
+                .box a {
+                    font-size: @font-size_main - 3px;
+                } 
+                .box .address a {
+                    font-size: @font-size_main - 1px;
+                }
+                .box form input, .box form textarea {
+                    font-size: @font-size_main - 2px;
+                } 
+                .box form label {
+                    font-size: @font-size_main - 2px;
+                }
+                .box form button {
+                    font-size: @font-size_main - 3px;
+                }     
+            }
+            .author {
+                font-size: @font-size_main - 3px;
             }
         }
     }
-}
-  
 }
 
 

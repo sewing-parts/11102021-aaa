@@ -1,22 +1,21 @@
 
-
-@media (min-width: 691px) and (max-width: 3500px) {
+@media (min-width: 691px) and (max-width: 7500px) {
     body {
         .main-menu {
             .main-menu-section {
                 .nav-menu {
-                    max-width: 1260px;
+                    max-width: 1260px;   
                 }
                 .nav-menu ul li {
                     float: left;  
                 }
                 .nav-menu ul li a {
                     text-decoration: none;
-                    color: #f5f6fa;
+                    color: @color_white_main;
                     transition: all 0.5s; 
                 }
                 .nav-menu ul li a:hover {
-                    color: #ffd000;
+                    color: @color_yellow_main;
                     transition: all 0.5s; 
                 }
                 .nav-menu ul li ul {
@@ -25,8 +24,7 @@
                     float: left;
                     min-height: 80px;/////////////////////высота блока////////
                     position: absolute;
-                    // left: 0%;
-                    background: #f5f6fa;
+                    background: @color_white_main;
                     overflow: hidden;
                     transition: 0.3s;    
                     padding: 17px 0px 17px 44px;///////////////////////////////////// отступы по периметру
@@ -58,16 +56,18 @@
                     width: 270px;
                     height: 34px;
                     text-transform: uppercase;
-                    color: #f5f6fa;
-                    font-size: 17px;
+                    color: @color_white_main;
+                    font-size: @font-size_main;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 400;
-
                     text-align: left;
                     padding: 0px 0px 0px 7px;
                     line-height: 34px;
-                    // border-left: solid 3px #45698b;
-                    background: #45698b;
+                    background: @color_blue_main;
+                    transition: 0.5s linear; 
+                }
+                .nav-menu ul li ul li a:hover {
+                    color: @color_yellow_main;
                     transition: 0.5s linear; 
                 }
                 .nav-menu ul li  ul li ul li {
@@ -84,10 +84,6 @@
         }
     }
 } 
-
-
-
-
 
 @media (min-width: 1251px) and (max-width: 1260px) {
     body {
@@ -1916,7 +1912,7 @@
     }
 }
 
-  ///////////////////// конец нижнее меню
+///////////////////////////////////// концовка кода  нижнее меню /////////////////////////////////////////
   
   
 body {
@@ -1926,27 +1922,27 @@ body {
                 display: none;
             }
             .dws-menu label.toggleMenu {
-                background: #45698b;
+                background: @color_blue_main;
                 display: none;
                 padding: 10px 40px;
                 text-transform: uppercase;
-                font-size: 17px;
+                font-size: @font-size_main;
                 cursor: pointer;
                 position: relative;
-                color: #f5f6fa; 
+                color: @color_white_main; 
             }
             .dws-menu label.toggleMenu .fa {
                 position: absolute;
                 top: 11px;
                 left: 12px;
-                font-size: 18px;
+                font-size: @font-size_main + 1px;
             }
         }  
     }
 }
   
   
-/////////////////////////////////////////////  
+////////////////////////////////////////////////////////////////////////////////////////////////////  
   
 @media all and (max-width: 690px) {
     body {
@@ -1959,25 +1955,25 @@ body {
                 .dws-menu .toggleMenu {//////// меню 
                     padding: 0;
                     margin: 0;
-                    color: #f5f6fa;
+                    color: @color_white_main;
                     height: 50px;
                     line-height: 30px;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 400;
-                    font-size: 17px;
+                    font-size: @font-size_main;
                     transition: linear 0.5s;
                     .fa-bars {
                         line-height: 25px;
-                        color: #f5f6fa;
+                        color: @color_white_main;
                         transition: linear 0.5s;
                     }
                 }
                 .dws-menu .toggleMenu:hover {
-                    color: #ffd000;
+                    color: @color_yellow_main;
                     transition: linear 0.5s;
                 }
                 .dws-menu .toggleMenu:hover .fa-bars {
-                    color: #ffd000;
+                    color: @color_yellow_main;
                     transition: linear 0.5s;
                 }
                 .dws-menu ul {
@@ -1986,7 +1982,7 @@ body {
                     transition: max-height 0.3s;
                 }
                 .nav-menu ul li a {
-                    border-bottom: 2px solid #f5f6fa;
+                    border-bottom: 2px solid @color_white_main;
                 }
                 .dws-menu li>ul li ul{
                     position: absolute;
@@ -1997,13 +1993,13 @@ body {
                     display: block; 
                 }
                 .dws-menu input.toggleMenu:checked + label.toggleMenu {
-                    color: #f5f6fa; 
-                    background: #314b62;//////////////////////  1 уровень само меню
-                    border-bottom: 2px solid #f5f6fa;
+                    color: @color_white_main; 
+                    background: @color_dlue_dark_main;//////////////////////  1 уровень само меню
+                    border-bottom: 2px solid @color_white_main;
                     transition: linear 0.5s; 
                 }
                 .dws-menu input.toggleMenu:checked + label.toggleMenu:hover {
-                    color: #ffd000;
+                    color: @color_yellow_main;
                     transition: linear 0.5s;
                 }
                 .dws-menu input.toggleMenu:checked ~ ul {
@@ -2028,25 +2024,24 @@ body {
                     display: block; 
                 }
                 .dws-menu ul li input.toggleSubmenu:checked ~ a {
-                    color: #f5f6fa; 
-                    background: #45698b;//////////////////////////// 2 уровень при клике 
+                    color: @color_white_main; 
+                    background: @color_blue_main;//////////////////////////// 2 уровень при клике 
                 }
                 
                 .dws-menu ul li ul li input.toggleSubmenu:checked ~ a  {
                     // background: #666;
-                    background: #5b8ab6;//////////////////////////// 3 уровень при клике
-                    font-size: 17px;
+                    background: @color_dlue_tone_three_main;//////////////////////////// 3 уровень при клике
+                    font-size: @font-size_main;
                     font-weight: 500;
-                    color: #f5f6fa;
+                    color: @color_white_main;
                     text-align: center;
                     line-height: 38px;
                 }
                 .dws-menu label.toggleSubmenu .fa::before {
                     // content: "\f078";
                     content: "\f07b";
-                    // color: #ffa920;
-                    color: #ffd000;
-                    font-size: 25px; 
+                    color: @color_yellow_main;
+                    font-size: @font-size_main + 13px; 
                 }
                 .dws-menu label.toggleSubmenu .fa {
                     position: absolute;
@@ -2056,8 +2051,8 @@ body {
                 .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before {
                     // content: "\f077";
                     content: "\f07c";
-                    color: #0faa0f;
-                    font-size: 25px;  
+                    color: @color_green_main;
+                    font-size: @font-size_main + 13px;  
                 } 
             }  
         }
