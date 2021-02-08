@@ -8,16 +8,16 @@ body {
     flex-direction: column;
     align-items: center;
     header {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 275px;
-        width: 100%;
-        // max-width: 1260px;
-        width: 100vw;
-        justify-content: space-around;
-        .headerTwo {
+        // padding: 0;
+        // margin: 0;
+        // display: flex;
+        // flex-direction: column;
+        // min-height: 275px;
+        // width: 100%;
+        // // max-width: 1260px;
+        // width: 100vw;
+        // justify-content: space-around;
+        .block-header-two {
             padding: 0;
             margin: 0;
             display: flex;
@@ -30,7 +30,7 @@ body {
             align-items: center;
             justify-content: center;
             background: @color_white_main;
-            .container_slider_css {
+            .container-slider {
                 margin: 0;
                 padding: 0;
                 height: 100%;
@@ -40,7 +40,7 @@ body {
                 overflow: hidden;
                 position: relative;
                 z-index: 77777;
-                .photo_slider_css {
+                .photo-slider {
                     margin: 0;
                     padding: 0;
                     position: absolute; 
@@ -81,10 +81,10 @@ body {
                     margin-top: 50px;
                     z-index: 88888;
                     // position: relative;
-                    .logo_a {  
+                    a {  
                         text-decoration: none;
                         cursor: pointer;
-                        .title_logo {
+                        .block-logo {
                             padding: 0;
                             margin: 0;
                             width: 300px;
@@ -102,7 +102,7 @@ body {
 	                        background-size: 345px 216px;
                             background-repeat: no-repeat;
                         }
-                        .title_logo::before {
+                        .block-logo::before {
                             content: "";
                             padding: 0;
                             margin: 0;
@@ -118,7 +118,7 @@ body {
                         }               
                     }
                 }
-                #search_search {
+                #search {
                     margin-left: auto;
                     width: 100vw;
                     min-height: 30px;

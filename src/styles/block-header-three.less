@@ -1,0 +1,137 @@
+
+body {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    header {
+        .block-header-three {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            // flex-direction: column;/////////// при псевдо нельзя
+            height: 50px;
+            width: 100%;
+            max-width: 1260px;
+            // width: 100vw;
+            justify-content: space-around;
+            background: @color_blue_main;
+            // justify-content: center;
+            margin: 0 auto;
+            .main-menu-section {
+                margin:0 auto;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: @font-size_main;
+                height: 50px;
+                width: 100%;
+                max-width: 1260px;
+                padding: 0% 4% 0% 4%;//////////////////////////////////////////////////////++++++
+                z-index: 44444;
+                .dws-menu * {
+                    margin: 0;
+                    padding: 0;  
+                }
+                .dws-menu ul, .dws-menu ol {
+                    list-style: none;
+                }
+                .dws-menu > ul {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .dws-menu > ul  li a {
+                    display: block;
+                    background: @color_blue_main;///////////////////////////////// 1 уровень фон
+                    padding: 5px 10px 5px 10px;
+                    height: 45px;
+                    line-height: 36px;
+                    color:  @color_white_main;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: @font-size_main;
+                    letter-spacing: 0px;
+                    word-spacing: 3px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: 0.5s linear;
+                    line-height: 38px;
+                    height: 50px;
+                }
+                .dws-menu > ul  li {
+                    position: relative;
+                }
+                .dws-menu > ul li > a .fas {
+                    position: absolute;
+                    top: 9px;
+                    left: 12px;
+                    font-size: @font-size_main + 1px;
+                    padding: 5px 0px 5px 0px;
+                    display: none;
+                }
+                // .dws-menu > ul li:first-child {
+                //     border-left: 1px solid #b2b3b5;
+                    
+                // }
+                // .dws-menu > ul  li:last-child {
+                //     border-right: 1px solid #babbbb;
+                // }
+                .dws-menu ul li a:hover {
+                    color: @color_yellow_main;     
+                    transition: 0.5s linear;
+                }
+                //////////////////////////////////////////////////////////
+                .dws-menu  li ul {
+                    position: absolute;
+                    min-width: 250px;
+                    display: none;   
+                }
+                .dws-menu li > ul li {
+                    border: 1px solid @color_gray_tone_one_main;   
+                }
+                .dws-menu li > ul li a {
+                    background: @color_dlue_tone_three_main;//////////////////////////// 2 уровень фон
+                    text-transform: uppercase;
+                    color:  @color_white_main;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: @font-size_main;
+                    text-decoration: none;
+                    padding-left: 5px;
+                    padding-right: 2px; 
+                    margin: 0px 0px;  
+                }
+                .dws-menu li > ul li ul {
+                    position: absolute;
+                    right: -250px;
+                    top: 0;
+                }
+                .dws-menu li:hover > ul {
+                    display: block;
+                }
+                .dws-menu li > ul li ul li a {
+                    // background:  #497285;
+                    background: @color_dlue_tone_two_main;//////////////////////////////////////// 3 уровень вон /////////////
+                    color: @color_black_main;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: @font-size_main;
+                    text-decoration: none;
+                }
+                .dws-menu li > ul li ul li a:hover {
+                    background: @color_dlue_tone_one_main;
+                    color: @color_black_main;
+                }
+            } 
+        }
+        .block-header-three::after {
+            content: "";
+            width: 100vw;
+            height: 50px;
+            background: @color_blue_main;
+            position: absolute;   
+        }
+    }
+}

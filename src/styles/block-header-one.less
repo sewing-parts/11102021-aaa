@@ -10,17 +10,18 @@ body {
     flex-direction: column;
     align-items: center;
     header {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 230px;
-        // width: 100%;
-        // max-width: 1260px;
-        width: 100vw;
-        justify-content: space-around;
-        .headerOne {
+        // padding: 0;
+        // margin: 0;
+        // display: flex;
+        // flex-direction: column;
+        // min-height: 230px;
+        // // width: 100%;
+        // // max-width: 1260px;
+        // width: 100vw;
+        // justify-content: space-around;
+        .block-header-one {
             display: flex;
+            
             justify-content: space-around;
             align-items: center;
             height: 56px;
@@ -28,22 +29,23 @@ body {
             // max-width: 1260px;
             width: 100vw;
             background: @color_blue_main;
+            
             padding: 0px 15px 0px 15px;
-            .wrapper {
+            .quick-contact {
                 display: flex;
                 // width: 60%;
                 justify-content: space-between;
                 margin-left: -5%;
                 min-height: 1px;
-                .mobile-menu {
+                .contact-menu {
                     max-width: 530px;
                     // width: 100%;
                     list-style: none;
                     padding: 0;
                     display: flex;
                     justify-content: space-between;
-                    .mobile-menu-li {
-                        .mobile-menu-a_one {
+                    .contact-menu-li {
+                        .contact-menu-a {
                             font-family: 'Roboto', sans-serif;
                             font-weight: 400;
                             font-size: @font-size_main + 1px;
@@ -52,27 +54,14 @@ body {
                             padding: 9px 13px 9px 13px;
                             transition: linear 0.5s;
                         }
-                        .mobile-menu-a_two {
-                            font-family: 'Roboto', sans-serif;
-                            font-weight: 400;
-                            font-size: @font-size_main + 1px;
-                            color: @color_white_main;
-                            text-decoration: none;
-                            padding: 9px 13px 9px 13px;
-                            transition: linear 0.5s;
-                        }
-                        .mobile-menu-a_one:hover {
-                            transition: 0.5s linear;
-                            color: @color_yellow_main;  
-                        }
-                        .mobile-menu-a_two:hover {
+                        .contact-menu-a:hover {
                             transition: 0.5s linear;
                             color: @color_yellow_main;  
                         }
                     }
                 }
             }
-            .language_selection {
+            .language-selection {
                 width: 210px;
                 height: 50px;
                 display: flex;
@@ -82,19 +71,19 @@ body {
                 input {
                     display: none;    
                 }
-                input:checked + .label_flagua {
+                input:checked + .label-flagua {
                     background-image: url("/images/flagua.jpg");
                     background-size: cover; 
                     border: none;
                     padding: 0 5px;    
                 }
-                input:checked + .label_flagru {
+                input:checked + .label-flagru {
                     background-image: url("/images/flagru.jpg");
                     background-size: cover;
                     border: none;
                     padding: 0 6px;  
                 }
-                input:checked + .label_flageng {
+                input:checked + .label-flageng {
                     background-image: url("/images/flageng.jpg");
                     background-size: cover;
                     border: none;
@@ -114,21 +103,21 @@ body {
                     margin: -1px 0px 0px 0px;
                     transition: 0.8s linear;  
                 }
-                .label_flagua {
+                .label-flagua {
                     background-image: url('../images/flagua.jpg');
                     background-repeat:no-repeat;
                     background-size: 70% 60%;
                     background-position: 55% 50%; 
                     transition: 0.8s linear;
                 }
-                .label_flagru {
+                .label-flagru {
                     background-image: url('../images/flagru.jpg');
                     background-repeat:no-repeat;
                     background-size: 70% 60%;
                     background-position: 55% 50%; 
                     transition: 0.8s linear;
                 }
-                .label_flageng {
+                .label-flageng {
                     background-image: url('../images/flageng.jpg');
                     background-repeat:no-repeat;
                     background-size: 70% 60%;
@@ -141,7 +130,7 @@ body {
                     transition: 0.8s linear;
                 }
             }
-            .shopping_basket {
+            .shopping-basket {
                 padding: 0;
                 margin: 0;
                 height: 50px;
@@ -151,11 +140,11 @@ body {
                     padding: 2px 5px 2px 5px;
                     margin: 0px 0px;
                     transition: 0.5s linear;
-                    .a_cart {
+                    .cart-a {
                         display: flex;
                         justify-content: center;
                         text-decoration: none;
-                        .img_basket {
+                        .img-basket {
                             padding: 0;
                             margin: 0;
                             height: 44px;
@@ -214,17 +203,17 @@ body {
                         }
                     }
                 }
-                .cart:hover .a_cart .cart-block .cart-block-one span {
+                .cart:hover .cart-a .cart-block .cart-block-one span {
                     cursor: pointer;
                     color: @color_yellow_main; 
                     transition: 0.5s linear;
                 }
-                .cart:hover .a_cart .cart-block .cart-block-two span {
+                .cart:hover .cart-a .cart-block .cart-block-two span {
                     cursor: pointer;
                     color: @color_yellow_main; 
                     transition: 0.5s linear;
                 }
-                .cart:hover .a_cart .img_basket {
+                .cart:hover .cart-a .img-basket {
                     cursor: pointer;
                     filter: brightness(250%);   
                     transition: 0.2s linear;
