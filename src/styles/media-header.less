@@ -1,9 +1,178 @@
-
-@media (min-width: 691px) and (max-width: 7500px) {
+@media (min-width: 668px) and (max-width: 940px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section {
+            .block-header-upper-level {
+                padding: 0px 25px 0px 25px; 
+                .quick-contact {
+                    .contact-menu {  
+                        flex-direction: column;
+                    }
+                }
+                .shopping-basket {
+                    margin-right: -7%;
+                }    
+            }
+        }
+    } 
+}
+
+@media (min-width: 451px) and (max-width: 667px) {
+    body {
+        header {
+            .block-header-upper-level {
+                padding: 0px 3px 0px 3px;
+                .quick-contact {
+                    position: absolute;
+                    margin: 107px 0px 0px 0%;
+                    z-index: 88888;
+                    .contact-menu {
+                        background: @color_blue_main;
+                        padding: 8px 5px 8px 5px; 
+                        border-radius: 5px;
+                        border: solid 1px @color_fon_logo;////цвет под логотип
+                        .contact-menu-li {
+                            .contact-menu-a {  
+                                font-size: @font-size_main - 1px;  
+                            }
+                        }
+                    }
+                }
+                .language-selection {
+                    margin-left: -7%;
+                }
+                .shopping-basket {
+                    margin-right: -7%;
+                    .cart {
+                        padding: 2px; 
+                        .cart-a {
+                            .cart-block {
+                                width: 114px;
+                                font-size: @font-size_main - 3px;
+                                .cart-block-one {
+                                    padding: 2px 2px 0px 2px;
+                                    margin: 1px 0px 0px 0px;
+                                    height: 20px;
+                                    width: 108px;
+                                }
+                                .cart-block-two {
+                                    padding: 1px 2px 0px 2px;
+                                    margin: 2px 0px 0px 0px;
+                                    height: 20px;
+                                    width: 108px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+} 
+
+@media all and (max-width: 450px) {
+    body {
+        header {
+            .block-header-upper-level {
+                padding: 0px 3px 0px 3px;
+                .quick-contact {
+                    position: absolute;
+                    margin: 107px 0px 0px 0%;
+                    z-index: 88888;
+                    .contact-menu {
+                        background: @color_blue_main;
+                        padding: 8px 5px 8px 5px; 
+                        border-radius: 5px;
+                        border: solid 1px @color_fon_logo;////цвет под логотип
+                        .contact-menu-li {
+                            .contact-menu-a {
+                                font-size: @font-size_main - 2px;
+                            }
+                        }
+                    }
+                }
+                .language-selection {
+                    margin-left: -7%;
+                }
+                .shopping-basket {
+                    margin-right: -7%;
+                    .cart {
+                        padding: 2px; 
+                        .cart-a {
+                            .cart-block {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+/* ////////////////////////////////////////////////////// */
+@media (min-width: 375px) and (max-width: 450px) {
+    body {
+        header {
+            .block-header-slider-level {
+                .container-slider {
+                    #logo { 
+                        a {  
+                            .block-logo { 
+                                margin: 50px 0 0 10px;
+                            } 
+                        }
+                    }
+                    #search {
+                        .search-box {
+                            .search-txt {
+                                min-width: 310px;
+                                font-size: @font-size_main - 1px;  
+                            }
+                            .search-btn {
+                                width: 55px; 
+                            }
+                                
+                        }
+                    }   
+                }
+            }
+        }
+    }  
+}
+@media all and (max-width: 374px) {
+    body {
+        header {
+            .block-header-slider-level {
+                .container-slider {
+                    #logo { 
+                        a {  
+                            .block-logo { 
+                                margin: 50px 0 0 -18px;
+                            } 
+                        }
+                    }
+                    #search {
+                        .search-box {
+                            .search-txt {
+                                min-width: 250px;
+                                font-size: @font-size_main - 2px; 
+                            }
+                            .search-btn {
+                                width: 45px; 
+                            }
+                                
+                        }
+                    }   
+                }
+            }
+        }
+    }  
+}
+/*  /////////////////////////////////////////////////////// */
+@media (min-width: 761px) and (max-width: 7500px) {
+    body {
+        header {
+            .block-header-menu-level {
+                .menu-section {
                     .nav-menu {
                         max-width: 1260px;   
                     }
@@ -21,39 +190,39 @@
                     }
                     .nav-menu ul li ul {
                         width: 1258px;
-                        // width: 100vw;
                         float: left;
-                        min-height: 80px;/////////////////////высота блока////////
+                        min-height: 80px;/* высота блока выезд */
                         position: absolute;
                         background: @color_white_main;
                         overflow: hidden;
                         transition: 0.3s;    
-                        padding: 17px 0px 17px 44px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 44px;/* отступы по периметру блока выезд */
                         margin: 0px 0px 0px 0px;
                         box-shadow: inset 0 10px 10px -10px rgb(168, 168, 168) , inset 0 -10px 10px -10px rgb(168, 168, 168) , 15px 0 15px -15px rgba(168, 168, 168, .5) , -15px 0 15px -15px rgba(168, 168, 168, .5);
-                        text-align: center;    
+                        text-align: center;
+                        // border: 1px solid black;    
                     }
                     .nav-menu ul li ul li {
-                        padding: 5px 10px 5px 10px;///////////////////////////////////// отступы между блоками  
+                        padding: 5px 10px 5px 10px;/* отступы между блоками блока выезд */  
                         border: none;
                         margin: auto;
                     } 
                     .nav-menu ul li .level-li-one {
-                        margin-left: -45%;
+                        margin-left: 1%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -197%;
+                        margin-left: -184%;
                     }
                     .nav-menu ul li .level-li-three {
-                        margin-left: -434%;
+                        margin-left: -369%;
                     }
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -832px;
+                        margin-left: -831px;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1119px;
+                        margin-left: -1109px;
                     }
-                    .nav-menu ul li ul li a { /////////////////////////////блоки в всплывающем  блоке   7777777  555555
+                    .nav-menu ul li ul li a { 
                         width: 270px;
                         height: 34px;
                         text-transform: uppercase;
@@ -65,7 +234,7 @@
                         padding: 0px 0px 0px 7px;
                         line-height: 34px;
                         background: @color_blue_main;
-                        transition: 0.5s linear; 
+                        transition: 0.5s linear;/* блоки в всплывающем  блоке выезд */ 
                     }
                     .nav-menu ul li ul li a:hover {
                         color: @color_yellow_main;
@@ -90,31 +259,31 @@
 @media (min-width: 1251px) and (max-width: 1260px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.8vw;  
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -45%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -197%;
+                        margin-left: -183.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -433%;
+                        margin-left: -367.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -535.5%;
+                        margin-left: -552%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1249%;    
+                        margin-left: -736%;    
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 42px;  
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 42px;/* отступы по периметру */  
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками 
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -124,31 +293,31 @@
 @media (min-width: 1241px) and (max-width: 1250px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw;  
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -46%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -195.5%;
+                        margin-left: -182%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -430%;
+                        margin-left: -364.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -532%;
+                        margin-left: -547%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1238.5%;
+                        margin-left: -729.5%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 38px; 
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 38px;/* отступы по периметру */ 
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -158,31 +327,31 @@
 @media (min-width: 1231px) and (max-width: 1240px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -45%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -193%;
+                        margin-left: -180.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -426%;
+                        margin-left: -361%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -527%;
+                        margin-left: -542%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1228%;
+                        margin-left: -722.5%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 32px;  
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 32px;/* отступы по периметру */  
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -192,31 +361,31 @@
 @media (min-width: 1221px) and (max-width: 1230px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -45%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -192%;
+                        margin-left: -178.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -422%;
+                        margin-left: -357.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -522.5%;
+                        margin-left: -537%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1218%;
+                        margin-left: -716%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 28px; 
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 28px;/* отступы по периметру */ 
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -226,31 +395,31 @@
 @media (min-width: 1211px) and (max-width: 1220px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -44%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -190%;
+                        margin-left: -177%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -418%;
+                        margin-left: -354.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -518%;
+                        margin-left: -532%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1207%;
+                        margin-left: -709.5%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 22px;
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 22px;/* отступы по периметру */
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -260,31 +429,31 @@
 @media (min-width: 1201px) and (max-width: 1210px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -44%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -188%;
+                        margin-left: -175.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -414%;
+                        margin-left: -351%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -513%;
+                        margin-left: -527%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1196%;
+                        margin-left: -703%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 18px;
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 18px;/* отступы по периметру */
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -294,31 +463,31 @@
 @media (min-width: 1191px) and (max-width: 1200px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -44%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -186%;
+                        margin-left: -173.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -411%;
+                        margin-left: -348%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -508%;
+                        margin-left: -522%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1185%;
+                        margin-left: -696%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 12px; 
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 12px;/* отступы по периметру */ 
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -328,31 +497,31 @@
 @media (min-width: 1181px) and (max-width: 1190px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -43%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -184.5%;
+                        margin-left: -172%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -407%;
+                        margin-left: -344.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -504%;
+                        margin-left: -517%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1175%;
+                        margin-left: -689.5%;
                     }
-                    .nav-menu ul li ul { ///////////////////////////////////// отступы по периметру
-                        padding: 17px 0px 17px 8px;
+                    .nav-menu ul li ul {
+                        padding: 17px 0px 17px 8px;/* отступы по периметру */
                     }
-                    .nav-menu ul li ul li { ///////////////////////////////////// отступы между блоками
-                        padding: 5px 10px 5px 10px;
+                    .nav-menu ul li ul li {
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -363,31 +532,31 @@
 @media (min-width: 1171px) and (max-width: 1180px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -43%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -183%;
+                        margin-left: -170.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -403%;
+                        margin-left: -341%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -499%;
+                        margin-left: -512%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1164%;
+                        margin-left: -682.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 54px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 54px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 42px 5px 42px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 42px 5px 42px;/* отступы между блоками */
                     } 
                 }
             }
@@ -397,31 +566,31 @@
 @media (min-width: 1161px) and (max-width: 1170px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -43%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -181%;
+                        margin-left: -168.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -399%;
+                        margin-left: -337.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -494%;
+                        margin-left: -507%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1153%;
+                        margin-left: -676%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 53px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 53px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 40px 5px 40px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 40px 5px 40px;/* отступы между блоками */
                     } 
                 }
             }
@@ -431,31 +600,31 @@
 @media (min-width: 1151px) and (max-width: 1160px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -42%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -179%;
+                        margin-left: -167%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -395%;
+                        margin-left: -334.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -489.5%;
+                        margin-left: -502%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1142%;
+                        margin-left: -669.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 51px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 51px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 39px 5px 39px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 39px 5px 39px;/* отступы между блоками */
                     } 
                 }
             }
@@ -465,31 +634,31 @@
 @media (min-width: 1141px) and (max-width: 1150px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -42%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -177%;
+                        margin-left: -165.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -391.5%;
+                        margin-left: -331%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -485%;
+                        margin-left: -497%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1131%;
+                        margin-left: -662.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 52px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 52px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 37px 5px 37px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 37px 5px 37px;/* отступы между блоками */
                     } 
                 }
             }
@@ -499,31 +668,31 @@
 @media (min-width: 1131px) and (max-width: 1140px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -42%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -175%;
+                        margin-left: -163.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -388%;
+                        margin-left: -328%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -480%;
+                        margin-left: -492%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1120.5%;
+                        margin-left: -656%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 50px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 50px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 36px 5px 36px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 36px 5px 36px;/* отступы между блоками */
                     } 
                 }
             }
@@ -533,31 +702,31 @@
 @media (min-width: 1121px) and (max-width: 1130px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -41%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -173.5%;
+                        margin-left: -162%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -384%;
+                        margin-left: -324.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -475%;
+                        margin-left: -487%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1110%;
+                        margin-left: -649.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 49px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 49px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 35px 5px 35px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 35px 5px 35px;/* отступы между блоками */
                     } 
                 }
             }
@@ -567,31 +736,31 @@
 @media (min-width: 1111px) and (max-width: 1120px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -41%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -172%;
+                        margin-left: -160.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -380%;
+                        margin-left: -321%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -470.5%;
+                        margin-left: -482%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1099%;
+                        margin-left: -642.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 49px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 49px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 33px 5px 33px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 33px 5px 33px;/* отступы между блоками */
                     } 
                 }
             }
@@ -601,31 +770,31 @@
 @media (min-width: 1101px) and (max-width: 1110px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -40.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -170%;
+                        margin-left: -158.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -376%;
+                        margin-left: -317.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -466%;
+                        margin-left: -477%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1089%;
+                        margin-left: -636%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 47px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 47px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 32px 5px 32px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 32px 5px 32px;/* отступы между блоками */
                     } 
                 }
             }
@@ -635,31 +804,31 @@
 @media (min-width: 1091px) and (max-width: 1100px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -40%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -168%;
+                        margin-left: -156.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -372.5%;
+                        margin-left: -314.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -461%;
+                        margin-left: -472%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1077.5%;
+                        margin-left: -629.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 42px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 42px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 32px 5px 32px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 32px 5px 32px;/* отступы между блоками */
                     } 
                 }
             }
@@ -669,31 +838,31 @@
 @media (min-width: 1081px) and (max-width: 1090px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -40%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -166%;
+                        margin-left: -155%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -369%;
+                        margin-left: -311%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -456.5%;
+                        margin-left: -467%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1067%;
+                        margin-left: -623%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 40px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 40px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 31px 5px 31px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 31px 5px 31px;/* отступы между блоками */
                     } 
                 }
             }
@@ -703,31 +872,31 @@
 @media (min-width: 1071px) and (max-width: 1080px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -39%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -164%;
+                        margin-left: -153.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -365%;
+                        margin-left: -307.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -452%;
+                        margin-left: -462%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1056%;
+                        margin-left: -616%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 41px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 41px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 29px 5px 29px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 29px 5px 29px;/* отступы между блоками */
                     } 
                 }
             }
@@ -737,31 +906,31 @@
 @media (min-width: 1061px) and (max-width: 1070px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -39%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -162.5%;
+                        margin-left: -152%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -361%;
+                        margin-left: -304.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -447%;
+                        margin-left: -457%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1046%;
+                        margin-left: -609.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 42px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 42px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 27px 5px 27px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 27px 5px 27px;/* отступы между блоками */
                     } 
                 }
             }
@@ -771,31 +940,31 @@
 @media (min-width: 1051px) and (max-width: 1060px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -39%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -160.5%;
+                        margin-left: -150%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -357%;
+                        margin-left: -301%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -442%;
+                        margin-left: -452%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1035%;
+                        margin-left: -603%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 42px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 42px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 25px 5px 25px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 25px 5px 25px;/* отступы между блоками */
                     } 
                 }
             }
@@ -805,31 +974,31 @@
 @media (min-width: 1041px) and (max-width: 1050px) {
     body {
         header {
-            .mblock-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -38%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -159%;
+                        margin-left: -148.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -353%;
+                        margin-left: -297.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -437.5%;
+                        margin-left: -447%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1024%;
+                        margin-left: -596%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 42px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 42px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 24px 5px 24px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 24px 5px 24px;/* отступы между блоками */
                     } 
                 }
             }
@@ -839,31 +1008,31 @@
 @media (min-width: 1031px) and (max-width: 1040px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -38%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -157%;
+                        margin-left: -147%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -349.5%;
+                        margin-left: -294.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -433%;
+                        margin-left: -442%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1013%;
+                        margin-left: -589.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 40px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 40px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 23px 5px 23px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 23px 5px 23px;/* отступы между блоками */
                     } 
                 }
             }
@@ -873,31 +1042,31 @@
 @media (min-width: 1021px) and (max-width: 1030px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -37.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -155%;
+                        margin-left: -145.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -346%;
+                        margin-left: -291%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -428%;
+                        margin-left: -437%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -1002%;
+                        margin-left: -583%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 39px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 39px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 21px 5px 21px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 21px 5px 21px;/* отступы между блоками */
                     } 
                 }
             }
@@ -907,31 +1076,31 @@
 @media (min-width: 1011px) and (max-width: 1020px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -37.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -153%;
+                        margin-left: -143.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -342%;
+                        margin-left: -287.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -423.5%;
+                        margin-left: -432%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -991%;
+                        margin-left: -576%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 37px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 37px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 20px 5px 20px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 20px 5px 20px;/* отступы между блоками */
                     } 
                 }
             }
@@ -941,31 +1110,31 @@
 @media (min-width: 1001px) and (max-width: 1010px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -36%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -151%;
+                        margin-left: -142%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -338%;
+                        margin-left: -284.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -418.5%;
+                        margin-left: -427%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -980%;
+                        margin-left: -569.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 37px;///////////////////////////////////// отступы по периметру  
+                        padding: 17px 0px 17px 37px;/* отступы по периметру */ 
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 18px 5px 18px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 18px 5px 18px;/* отступы между блоками */
                     } 
                 }
             }
@@ -975,31 +1144,31 @@
 @media (min-width: 991px) and (max-width: 1000px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -36%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -149%;
+                        margin-left: -140.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -334%;
+                        margin-left: -281%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -414%;
+                        margin-left: -422%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -969%;
+                        margin-left: -563%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 37px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 37px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 16px 5px 16px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 16px 5px 16px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1009,31 +1178,31 @@
 @media (min-width: 981px) and (max-width: 990px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -35.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -147%;
+                        margin-left: -138.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -330%;
+                        margin-left: -278%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -409%;
+                        margin-left: -417%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -958.5%;
+                        margin-left: -556%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 36px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 36px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 15px 5px 15px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 15px 5px 15px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1043,31 +1212,31 @@
 @media (min-width: 971px) and (max-width: 980px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -35.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -145%;
+                        margin-left: -137%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -326%;
+                        margin-left: -274.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -404.5%;
+                        margin-left: -412%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -948.5%;
+                        margin-left: -549.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 36px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 36px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 14px 5px 14px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 14px 5px 14px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1077,31 +1246,31 @@
 @media (min-width: 961px) and (max-width: 970px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -35.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -144%;
+                        margin-left: -135.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -323%;
+                        margin-left: -271%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -400%;
+                        margin-left: -407%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -938%;
+                        margin-left: -543%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 34px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 34px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 13px 5px 13px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 13px 5px 13px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1111,31 +1280,31 @@
 @media (min-width: 951px) and (max-width: 960px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -34.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -142%;
+                        margin-left: -133.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -318.5%;
+                        margin-left: -267.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -395%;
+                        margin-left: -402%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -927%;
+                        margin-left: -536%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 28px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 28px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 13px 5px 13px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 13px 5px 13px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1145,31 +1314,31 @@
 @media (min-width: 941px) and (max-width: 950px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -34%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -140%;
+                        margin-left: -132%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -314.5%;
+                        margin-left: -264.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -389.5%;
+                        margin-left: -397%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -915%;
+                        margin-left: -529.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 28px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 28px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 11px 5px 11px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 11px 5px 11px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1179,31 +1348,31 @@
 @media (min-width: 931px) and (max-width: 940px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -34%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -138%;
+                        margin-left: -130.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -311%;
+                        margin-left: -261%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -385%;
+                        margin-left: -392%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -905%;
+                        margin-left: -523%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 24px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 24px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 11px 5px 11px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 11px 5px 11px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1213,31 +1382,31 @@
 @media (min-width: 921px) and (max-width: 930px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -33%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -136%;
+                        margin-left: -128.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -307%;
+                        margin-left: -257.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -380.5%;
+                        margin-left: -387%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -894%;
+                        margin-left: -516%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 20px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 20px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 11px 5px 11px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 11px 5px 11px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1247,31 +1416,31 @@
 @media (min-width: 911px) and (max-width: 920px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -33%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -134.5%;
+                        margin-left: -127%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -303%;
+                        margin-left: -254.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -375.5%;
+                        margin-left: -382%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -883%;
+                        margin-left: -509.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 18px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 18px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 10px 5px 10px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1281,31 +1450,31 @@
 @media (min-width: 901px) and (max-width: 910px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -32.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -132.5%;
+                        margin-left: -125.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -299.5%;
+                        margin-left: -251%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -371%;
+                        margin-left: -377%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -872%;
+                        margin-left: -503%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 12px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 12px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 10px 5px 10px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1315,31 +1484,31 @@
 @media (min-width: 891px) and (max-width: 900px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -32%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -131%;
+                        margin-left: -123.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -295.5%;
+                        margin-left: -247.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -366%;
+                        margin-left: -372%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -862%;
+                        margin-left: -496%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 8px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 8px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 10px 5px 10px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 10px 5px 10px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1350,31 +1519,31 @@
 @media (min-width: 881px) and (max-width: 890px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -32%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -129%;
+                        margin-left: -122%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -292%;
+                        margin-left: -244.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -361.5%;
+                        margin-left: -367%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -851%;
+                        margin-left: -489.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 80px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 80px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 44px 5px 44px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 44px 5px 44px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1384,31 +1553,31 @@
 @media (min-width: 871px) and (max-width: 880px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -31.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -127%;
+                        margin-left: -120.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -288%;
+                        margin-left: -241%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -356.5%;
+                        margin-left: -362%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -840%;
+                        margin-left: -483%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 76px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 76px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 44px 5px 44px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 44px 5px 44px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1418,31 +1587,31 @@
 @media (min-width: 861px) and (max-width: 870px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -31%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -125%;
+                        margin-left: -118.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -284%;
+                        margin-left: -237.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -352%;
+                        margin-left: -357%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -829%;
+                        margin-left: -476%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 72px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 72px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 44px 5px 44px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 44px 5px 44px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1452,31 +1621,31 @@
 @media (min-width: 851px) and (max-width: 860px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -30.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -123.5%;
+                        margin-left: -117%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -280%;
+                        margin-left: -234.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -347.5%;
+                        margin-left: -352%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -818.5%;
+                        margin-left: -469.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 68px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 68px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 44px 5px 44px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 44px 5px 44px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1486,31 +1655,31 @@
 @media (min-width: 841px) and (max-width: 850px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -30.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -121.5%;
+                        margin-left: -115.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -276.5%;
+                        margin-left: -231%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -342.5%;
+                        margin-left: -347%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -808%;
+                        margin-left: -463%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 62px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 62px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 44px 5px 44px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 44px 5px 44px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1520,31 +1689,31 @@
 @media (min-width: 831px) and (max-width: 840px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -30%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -119.5%;
+                        margin-left: -113.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -272.5%;
+                        margin-left: -227.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -338%;
+                        margin-left: -342%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -797%;
+                        margin-left: -456%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 56px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 56px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 44px 5px 44px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 44px 5px 44px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1554,31 +1723,31 @@
 @media (min-width: 821px) and (max-width: 830px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -29.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -118%;
+                        margin-left: -112%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -269%;
+                        margin-left: -224.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -333%;
+                        margin-left: -337%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -786.5%;
+                        margin-left: -449.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 56px;///////////////////////////////////// отступы по периметру  
+                        padding: 17px 0px 17px 56px;/* отступы по периметру */  
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 42px 5px 42px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 42px 5px 42px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1588,31 +1757,31 @@
 @media (min-width: 811px) and (max-width: 820px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -29%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -116%;
+                        margin-left: -110.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -265%;
+                        margin-left: -221%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -328.5%;
+                        margin-left: -332%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -775.5%;
+                        margin-left: -443%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 50px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 50px;/* отступы по периметру */ 
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 42px 5px 42px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 42px 5px 42px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1622,31 +1791,31 @@
 @media (min-width: 801px) and (max-width: 810px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -29%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -114%;
+                        margin-left: -108.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -261%;
+                        margin-left: -218%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -324%;
+                        margin-left: -327%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -765%;
+                        margin-left: -436%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 50px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 50px;/* отступы по периметру */ 
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 40px 5px 40px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 40px 5px 40px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1656,31 +1825,31 @@
 @media (min-width: 791px) and (max-width: 800px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -28.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -112.5%;
+                        margin-left: -107%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -257.5%;
+                        margin-left: -214.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -319%;
+                        margin-left: -322%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -754%;
+                        margin-left: -429.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 44px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 44px;/* отступы по периметру */ 
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 40px 5px 40px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 40px 5px 40px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1690,31 +1859,31 @@
 @media (min-width: 781px) and (max-width: 790px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -28%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -110.5%;
+                        margin-left: -105.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -253.5%;
+                        margin-left: -211%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -314.5%;
+                        margin-left: -317%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -743%;
+                        margin-left: -423%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 38px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 38px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 40px 5px 40px;///////////////////////////////////// отступы между блоками
+                        padding: 5px 40px 5px 40px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1724,31 +1893,31 @@
 @media (min-width: 771px) and (max-width: 780px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -27.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -108.5%;
+                        margin-left: -103.5%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -249.5%;
+                        margin-left: -207.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -309.5%;
+                        margin-left: -312%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -732.5%;
+                        margin-left: -416%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 32px;///////////////////////////////////// отступы по периметру 
+                        padding: 17px 0px 17px 32px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 40px 5px 40px;///////////////////////////////////// отступы между блоками 
+                        padding: 5px 40px 5px 40px;/* отступы между блоками */
                     } 
                 }
             }
@@ -1758,283 +1927,42 @@
 @media (min-width: 761px) and (max-width: 770px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section { 
+            .block-header-menu-level {
+                .menu-section { 
                     .nav-menu ul li ul {
                         width: 99.9vw; 
                     }
                     .nav-menu ul li .level-li-one {
-                        margin-left: -27.5%;
+                        margin-left: 0.5%;
                     }
                     .nav-menu ul li .level-li-two {
-                        margin-left: -107%;
+                        margin-left: -102%;
                     }   
                     .nav-menu ul li .level-li-three {
-                        margin-left: -246%;
+                        margin-left: -204.5%;
                     } 
                     .nav-menu ul li ul.level-li-four {
-                        margin-left: -305%;
+                        margin-left: -307%;
                     }
                     .nav-menu ul li .level-li-five {
-                        margin-left: -722%;
+                        margin-left: -409.5%;
                     }
                     .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 32px;///////////////////////////////////// отступы по периметру
+                        padding: 17px 0px 17px 32px;/* отступы по периметру */
                     }
                     .nav-menu ul li ul li { 
-                        padding: 5px 38px 5px 38px;///////////////////////////////////// отступы между блоками 
+                        padding: 5px 38px 5px 38px;/* отступы между блоками */
                     } 
                 }
             }
         }
     }
 }
-@media (min-width: 751px) and (max-width: 760px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -27%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -105%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -242%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -300%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -711.5%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 31px;///////////////////////////////////// отступы по периметру  
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 36px 5px 36px;///////////////////////////////////// отступы между блоками
-                    } 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 741px) and (max-width: 750px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -26.5%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -103%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -238%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -295.5%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -700%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 31px;///////////////////////////////////// отступы по периметру 
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 34px 5px 34px;///////////////////////////////////// отступы между блоками
-                    } 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 731px) and (max-width: 740px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -26%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -101.5%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -234.5%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -290.5%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -689.5%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 29px;///////////////////////////////////// отступы по периметру 
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 32px 5px 32px;///////////////////////////////////// отступы между блоками 
-                    } 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 721px) and (max-width: 730px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -25.5%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -99.5%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -230.5%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -286%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -679%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 29px;///////////////////////////////////// отступы по периметру  
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 30px 5px 30px;///////////////////////////////////// отступы между блоками 
-                    } 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 711px) and (max-width: 720px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -25.5%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -97.5%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -227%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -281.5%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -668%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 27px;///////////////////////////////////// отступы по периметру 
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 28px 5px 28px;///////////////////////////////////// отступы между блоками 
-                    } 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 701px) and (max-width: 710px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -25%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -96%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -223%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -276.5%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -657.5%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 26px;///////////////////////////////////// отступы по периметру 
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 26px 5px 26px;///////////////////////////////////// отступы между блоками 
-                    } 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 691px) and (max-width: 700px) {
-    body {
-        header {
-            .block-header-three {
-                .main-menu-section { 
-                    .nav-menu ul li ul {
-                        width: 99.9vw; 
-                    }
-                    .nav-menu ul li .level-li-one {
-                        margin-left: -25%;
-                    }
-                    .nav-menu ul li .level-li-two {
-                        margin-left: -94%;
-                    }   
-                    .nav-menu ul li .level-li-three {
-                        margin-left: -219%;
-                    } 
-                    .nav-menu ul li ul.level-li-four {
-                        margin-left: -272%;
-                    }
-                    .nav-menu ul li .level-li-five {
-                        margin-left: -647%;
-                    }
-                    .nav-menu ul li ul { 
-                        padding: 17px 0px 17px 26px;///////////////////////////////////// отступы по периметру 
-                    }
-                    .nav-menu ul li ul li { 
-                        padding: 5px 24px 5px 24px;///////////////////////////////////// отступы между блоками 
-                    } 
-                }
-            }
-        }
-    }
-}
-
-///////////////////////////////////// концовка кода  нижнее меню /////////////////////////////////////////
-  
-  
+/* концовка кода  нижнее меню начало*/  
 body {
     header {
-        .block-header-three {
-            .main-menu-section {
+        .block-header-menu-level{
+            .menu-section {
                 .dws-menu [type="checkbox"], .dws-menu label.toggleSubmenu {
                     display: none;
                 }
@@ -2043,6 +1971,8 @@ body {
                     display: none;
                     padding: 10px 40px;
                     text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
                     font-size: @font-size_main;
                     cursor: pointer;
                     position: relative;
@@ -2058,20 +1988,18 @@ body {
         }
     }
 }
-  
-  
-////////////////////////////////////////////////////////////////////////////////////////////////////  
-  
-@media all and (max-width: 690px) {
+/* концовка кода  нижнее меню конец*/    
+    
+@media all and (max-width: 760px) {
     body {
         header {
-            .block-header-three {
-                .main-menu-section {
+            .block-header-menu-level {
+                .menu-section {
                     padding: 0% 0% 0% 0%;
                     .dws-menu {
                         overflow: hidden;  
                     }
-                    .dws-menu .toggleMenu {//////// меню 
+                    .dws-menu .toggleMenu {
                         padding: 0;
                         margin: 0;
                         color: @color_white_main;
@@ -2080,7 +2008,7 @@ body {
                         font-family: 'Roboto', sans-serif;
                         font-weight: 400;
                         font-size: @font-size_main;
-                        transition: linear 0.5s;
+                        transition: linear 0.5s;/* меню */
                         .fa-bars {
                             line-height: 25px;
                             color: @color_white_main;
@@ -2101,7 +2029,32 @@ body {
                         transition: max-height 0.3s;
                     }
                     .nav-menu ul li a {
-                        border-bottom: 2px solid @color_white_main;
+                        border-bottom: 2px solid @color_white_main;/* 1 уровень */ 
+                        text-align: left;
+                        padding-left: 10px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: @font-size_main - 0px;
+                    }
+                    .nav-menu ul li ul li a {
+                        border-bottom: 2px solid @color_white_main;/* 2уровень */
+                        text-align: center;
+                        height: 40px;
+                        line-height: 40px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: @font-size_main - 2px;      
+                    }
+                    .nav-menu ul li ul li ul li a {
+                        border-bottom: 2px solid @color_white_main;/* 3уровень */
+                        text-align: center;
+                        height: 40px;
+                        line-height: 40px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: @font-size_main - 4px;     
                     }
                     .dws-menu li>ul li ul{
                         position: absolute;
@@ -2113,7 +2066,7 @@ body {
                     }
                     .dws-menu input.toggleMenu:checked + label.toggleMenu {
                         color: @color_white_main; 
-                        background: @color_dlue_dark_main;//////////////////////  1 уровень само меню
+                        background: @color_dlue_dark_main;/* уровень само меню */
                         border-bottom: 2px solid @color_white_main;
                         transition: linear 0.5s; 
                     }
@@ -2124,13 +2077,14 @@ body {
                     .dws-menu input.toggleMenu:checked ~ ul {
                         display: block;
                         position: relative;
-                        max-height: 3000px;
+                        max-height: 10000px;
                         transition: max-height 2s ease-in;
                     } 
                     .dws-menu input.toggleSubmenu:checked ~ ul {
                         display: block;
                         position: relative;
-                        max-height: 30000px;
+                        max-height: 10000px;
+                        min-height: 1px;
                         transition: max-height 2s ease-in;
                     }
                     .dws-menu label.toggleSubmenu {
@@ -2143,43 +2097,32 @@ body {
                         display: block; 
                     }
                     .dws-menu ul li input.toggleSubmenu:checked ~ a {
-                        color: @color_white_main; 
-                        background: @color_blue_main;//////////////////////////// 2 уровень при клике 
+                        color: @color_yellow_main;
+                        background: @color_blue_main; 
+                        text-align: center;/* 1 уровень при клике */
                     }
-                    
                     .dws-menu ul li ul li input.toggleSubmenu:checked ~ a  {
-                        // background: #666;
-                        background: @color_dlue_tone_three_main;//////////////////////////// 3 уровень при клике
-                        font-size: @font-size_main;
-                        font-weight: 500;
-                        color: @color_white_main;
-                        text-align: center;
-                        line-height: 38px;
+                        background: @color_dlue_tone_three_main;
+                        color: @color_yellow_main;
+                        text-align: center;/* 2 уровень при клике */    
                     }
                     .dws-menu label.toggleSubmenu .fa::before {
-                        // content: "\f078";
-                        content: "\f07b";
-                        color: @color_yellow_main;
-                        font-size: @font-size_main + 13px; 
+                        content: "\f00c";
+                        color: @color_white_main;
+                        font-size: @font-size_main;
                     }
                     .dws-menu label.toggleSubmenu .fa {
                         position: absolute;
-                        top: 7px;
-                        right: 7px;
+                        top: 10px;
+                        right: 7px;   
                     }
                     .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before {
-                        // content: "\f077";
-                        content: "\f07c";
-                        color: @color_green_main;
-                        font-size: @font-size_main + 13px;  
+                        content: "\f00c";
+                        color: @color_yellow_main;
+                        font-size: @font-size_main;  
                     } 
                 }  
             }
         }
     }
 }
-  
-  
-  
-  
-  
