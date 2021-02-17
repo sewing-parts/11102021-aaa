@@ -98,11 +98,11 @@ body {
             justify-content: center;
             margin-top: 30px;
             .content2-list-title {
-                color: @color_dlue_dark_main;
+                color: @color_black_main;
                 text-transform: uppercase;
-                font-size: @font-size_main + 3px;
+                font-size: @font-size_main + 7px;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
+                font-weight: 500;
                 text-transform: uppercase;
                 letter-spacing: 0px;
                 word-spacing: 10px;
@@ -134,7 +134,7 @@ body {
                         text-align: center;
                         padding: 0px 10px;
                         background: @color_linear_main;
-                        transition: linear 0.5s;
+                        transition: linear 0.2s;
                         .list-block-text {
                             min-width: 1px;
                             height: 40px;
@@ -150,7 +150,7 @@ body {
                                 position: relative;
                                 top: 50%;
                                 transform: translateY(-50%);
-                                transition: linear 0.3s;
+                                transition: linear 0.2s;
                                 span {
                                     font-size: @font-size_main - 17px;
                                 }  
@@ -161,20 +161,20 @@ body {
                             height: 40px;
                             background-image: url(../images/40pdf.png);
                             background-size: cover;
-                            transition: linear 0.5s;
+                            transition: linear 0.2s;
                         }    
                     }
                     .content2-list-section:hover .list-block-img {
                         margin-right: -10px;
-                        transition: linear 0.5s;
+                        transition: linear 0.2s;
                     }
                     .content2-list-section:hover {
                         background: @color_dlue_tone_three_main;
-                        transition: linear 0.5s;
+                        transition: linear 0.2s;
                     }
                     .content2-list-section:hover .list-block-text .content2-list-text {
                         color: @color_white_main;
-                        transition: linear 0.3s;
+                        transition: linear 0.2s;
                     }  
                 }
                 .content2-block-overlapping {
@@ -198,7 +198,6 @@ body {
             .pagination-wrapper {
                 min-width: 1px;
                 min-height: 1px;
-
                 .pagination {
                     padding: 0;
                     margin: 0;
@@ -208,42 +207,31 @@ body {
                     flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
-                    
                     a {
-                        
-                        // float: left;
-                        // list-style-type: none;
-                        // background-color: rgb(251, 146, 27);
-                        // border: 1px solid rgb(255, 1, 1);
-                       
                         background-color: @color_linear_main;
                         margin: 2px 2px 2px 2px;
                         text-align: center;
-                        text-decoration: none;;
+                        text-decoration: none;
+                        transition: linear 0.2s;
                         div {
                             height: 30px;
                             line-height: 30px;
                             min-width: 30px;
-                            // padding: 8px 8px;
                             text-decoration: none;
-                            // border: 1px solid rgb(1, 5, 255);
                             color: @color_blue_main;
                             text-transform: uppercase;
                             font-family: 'Roboto', sans-serif;
                             font-weight: 400;
                             font-size: @font-size_main;
-                           
-                        }
-                        
+                            transition: linear 0.2s;  
+                        }   
                     }
                     .active {
                         background-color: @color_dlue_tone_three_main;
-                        
                         .active-block {
                             color: @color_white_main;
                             font-size: @font-size_main + 1px;
                             font-weight: 500;
-
                         }
                     }
                     .space {
@@ -251,18 +239,17 @@ body {
                         line-height: 30px;
                         min-width: 30px;
                         margin: 2px 2px 2px 2px;
-                        background: @color_white_main;
-                        
+                        background: @color_white_main;   
                     }
                     a:hover {
                         background-color: @color_dlue_tone_three_main;
+                        transition: linear 0.2s;
                     }
                     a:hover div {
-                        // color: @color_yellow_main;
                         color: @color_white_main;
                         font-size: @font-size_main + 1px;
                         font-weight: 500;
-                        
+                        transition: linear 0.2s;  
                     }
                 }
             }
