@@ -52,11 +52,76 @@ body {
         ///////////////////////////////////////////////////////////////////////////////////
         .uuu {
             display: flex;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             width: 100%;
             max-width: 1260px;
             min-height: 1px;
+            
             .uuu-1 {
+                 width: 350px;/* основная ширина блока вильтр */
+                 background-color: @color_white_main * 1.015;
+                 padding-right: 10px;
+                //////////////////////////////////////////////////////////////////1111111111111
+                .content1-description {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 1px;
+                    width: 100%;
+                    // max-width: 1260px;
+                     // width: 250px;/* основная ширина блока вильтр */
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0px 0px 0px 10px;
+                    
+                    // border-bottom: 2px solid @color_blue_main;
+                    .content1-block-linear {
+                        height: 3px;
+                        width: 100%;
+                        background: @color_linear_main;
+                        margin: 0px 0px 20px 0px;
+                    }
+                    .content1-description-title {
+                        color: @color_black_main;
+                        text-transform: uppercase;
+                        font-size: @font-size_main + 2px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                        letter-spacing: 0px;
+                        // word-spacing: 5px;
+                        text-align: center;
+                        padding-top: 0px;
+                        
+                        border-bottom: 3px solid @color_blue_main;
+                        position: relative;
+
+                    }
+                    .content1-description-title:before {
+                        content: "";
+                                
+                        width: 50%;
+                        height: 100%;
+                        
+                        border-bottom: 3px solid @color_yellow_main;
+                        position: absolute;
+                        left: 0px;/////////////////////////////////////////////
+                    }
+                    .content1-description-text {
+                        color: @color_black_main;
+                        text-indent: 30px;
+                        padding: 20px 40px 20px 40px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 300;
+                        font-size: @font-size_main;
+                        letter-spacing: 0px;
+                        word-spacing: 3px;
+                        margin: 0px 0px -15px 0px;
+                        padding-bottom: 40px;
+                        text-align:justify   
+                    }
+                }
+                /////////////////////////////////////////////////////////////
                 .content-filtr {
                     padding: 0;
                     margin: 0;
@@ -65,284 +130,331 @@ body {
                     flex-direction: column;
                     min-height: 190px;
                     width: 100%;
+                    // width: 250px;/* основная ширина блока вильтр */
                     // max-width: 1260px;
-                    max-width: 240px;
+                    // max-width: 240px;
                     align-items: center;
                     justify-content: center;
                     align-items: flex-start;
                     // background: yellow;
-                    padding: 20px 20px;   
+                    padding: 20px 0px 20px 10px;   
                     /////////////////////////////////////////////////////////////////////
-                    .block-filtr {
-                        width: 190px;
-                        min-height: 1px;
-                        border-bottom: 2px solid @color_blue_main;
-                        padding: 5px 0px;
-                        margin: 10px 5px;
-                        ////////////
-                        .hide-alles {
-                            display: none;
-                        }
-                        ////////////
-                        .hide {
-                            display: none;
-                        }
-                        .hide + .label-filtr ~ .checkbox-ul {
-                            display: block; 
-                            // background: #efefef;   
-                        }
-                        .hide + .label-filtr {
-                            width: 100%;
-                            height: 26px;
-                            line-height: 26px;
-                            // background: yellow;
-                            margin: 0;
-                            padding: 0;
-                            color: @color_blue_main;
-                            text-transform: uppercase;
-                            font-size: @font-size_main;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight: 500;
-                            cursor: pointer;
-                            display: inline-block;
-                        }
-                        .hide:checked + .label-filtr {
-                            // color: red;
-                            border-bottom: 0;
-                        }
-                        /////////////////////////////
-                        .hide:checked + .label-filtr + .checkbox-ul {
-                            display: none; 
-                        }
-                        .hide:checked + .label-filtr + .radio-ul {
-                            display: none; 
-                        }
-                        /////////////////////////////////
-                        .hide + .label-filtr:before {
-                            background-color: @color_blue_main;;
-                            color: #fff;
-                            content: "\002B";
-                            display: block;
-                            float: left;
-                            font-size: 25px; 
-                            font-weight: bold;
-                            height: 20px;
-                            line-height: 20px;
-                            margin: 3px 5px;
-                            text-align: center;
-                            width: 20px;
-                            -webkit-border-radius: 50%;
-                            -moz-border-radius: 50%;
-                            border-radius: 50%;
-                        }
-                        .hide:checked + label:before {
-                            content: "\2212";
-                        }
-                        ////////////////////////////
-                        .hide:checked ~ .checkbox-nav-alles {
-                            display: none;
-                        }
-                        ///////////////////////////
-                        .checkbox-ul {
-                            width: 100%;
-                            height: 105px;
-                            padding: 5px 0px 0px 5px;
-                            justify-content: space-around;
-                            overflow-y: scroll;
-                            // scroll-behavior: smooth;
-                            // border: 1px solid @color_linear_main / 1.2;
-                            .checkbox-li {
-                                height: 20px;
-                                line-height: 20px;
-                                min-width: 1px;
-                                list-style: none;
-                                margin-bottom: 5px;
-                                // background: rgba(21, 168, 161, 0.869);
-                               
-                                a {
-                                    text-decoration: none;
-                                    input[type=checkbox] {
-                                        display: none;
-                                    }
-                                    input[type=checkbox] + label:before {
-                                        content: "\2714";
-                                        color: transparent;
-                                        display: inline-block;
-                                        border: 1px solid @color_blue_main;
-                                        background: @color_white_main;
-                                        font-size: 20px;
-                                        font-weight: 500;
-                                        text-align: center;
-                                        line-height: 18px;
-                                        text-align: center;
-                                        margin: -3px 5px 0 0;
-                                        height: 18px;
-                                        width: 18px;
-                                        text-align: center;
-                                        vertical-align: middle;
-                                        transition: color ease .3s;
-                                    }
-                    
-                                    input[type=checkbox]:checked + label:before {
-                                        color: @color_yellow_main;
-                                        background: @color_dlue_tone_three_main;
-                                        border-color: @color_blue_main;
-                                    }
-                                    label {
-                                        height: 22px;
-                                        width: 120px;
-                                        line-height: 22px;
-                                        color: @color_blue_main;
-                                        text-transform: uppercase;
-                                        font-size: @font-size_main - 3px;
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 400;
-                                        // background: yellow;
-            
-                                    }
-                                }
-                            }
-                        }
-                        .radio-ul {
+                    form {
+                        width: 100%;
+                        .block-filtr {
+                            // width: 190px;
                             width: 100%;
                             min-height: 1px;
-                            padding: 5px 0px 0px 5px;
-                            justify-content: space-around;
-                            overflow-y: scroll;
-                            // scroll-behavior: smooth;
-                            // border: 2px solid @color_linear_main / 1.2;
-                            .radio-li {
-                                
-                               
+                            border-bottom: 2px solid @color_blue_main;
+                            padding: 5px 0px;
+                            margin: 10px 5px;
+                            ////////////
+                            .hide-alles {
+                                display: none;
+                            }
+                            ////////////
+                            .hide {
+                                display: none;
+                            }
+                            .hide + .label-filtr ~ .checkbox-ul {
+                                display: block; 
+                                // background: #efefef;   
+                            }
+                            .hide + .label-filtr {
+                                width: 100%;
+                                height: 26px;
+                                line-height: 26px;
+                                // background: yellow;
+                                margin: 0;
+                                padding: 0;
+                                color: @color_blue_main;
+                                text-transform: uppercase;
+                                font-size: @font-size_main;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 500;
+                                cursor: pointer;
+                                display: inline-block;
+                            }
+                            .hide:checked + .label-filtr {
+                                // color: red;
+                                border-bottom: 0;
+                            }
+                            /////////////////////////////
+                            .hide:checked + .label-filtr + .checkbox-ul {
+                                display: none; 
+                            }
+                            .hide:checked + .label-filtr + .radio-ul {
+                                display: none; 
+                            }
+                            /////////////////////////////////
+                            .hide + .label-filtr:before {
+                                background-color: @color_blue_main;;
+                                color: #fff;
+                                content: "\002B";
+                                display: block;
+                                float: left;
+                                font-size: 25px; 
+                                font-weight: bold;
                                 height: 20px;
                                 line-height: 20px;
-                                min-width: 1px;
-                                list-style: none;
-                                margin-bottom: 5px;
-                                // background: rgb(148, 148, 22);
-                                
-                                a {
-                                    text-decoration: none;
-                                    input[type=radio] {
-                                        display: none;
+                                margin: 3px 5px;
+                                text-align: center;
+                                width: 20px;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                border-radius: 50%;
+                            }
+                            .hide:checked + label:before {
+                                content: "\2212";
+                            }
+                            ////////////////////////////
+                            .hide:checked ~ .checkbox-nav-alles {
+                                display: none;
+                            }
+                            ///////////////////////////
+                            .checkbox-ul {
+                                width: 100%;
+                                height: 105px;
+                                padding: 5px 0px 0px 5px;
+                                justify-content: space-around;
+                                overflow-y: scroll;
+                                // scroll-behavior: smooth;
+                                // border: 1px solid @color_linear_main / 1.2;
+                                .checkbox-li {
+                                    height: 20px;
+                                    line-height: 20px;
+                                    min-width: 1px;
+                                    list-style: none;
+                                    margin-bottom: 5px;
+                                    // background: rgba(21, 168, 161, 0.869);
+                                   
+                                    a {
+                                        text-decoration: none;
+                                        input[type=checkbox] {
+                                            display: none;
+                                        }
+                                        input[type=checkbox] + label:before {
+                                            content: "\2714";
+                                            color: transparent;
+                                            display: inline-block;
+                                            border: 1px solid @color_blue_main;
+                                            background: @color_white_main;
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            text-align: center;
+                                            line-height: 18px;
+                                            text-align: center;
+                                            margin: -3px 5px 0 0;
+                                            height: 18px;
+                                            width: 18px;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            transition: color ease .3s;
+                                        }
+                        
+                                        input[type=checkbox]:checked + label:before {
+                                            color: @color_yellow_main;
+                                            background: @color_dlue_tone_three_main;
+                                            border-color: @color_blue_main;
+                                        }
+                                        label {
+                                            height: 22px;
+                                            width: 120px;
+                                            line-height: 22px;
+                                            color: @color_blue_main;
+                                            text-transform: uppercase;
+                                            font-size: @font-size_main - 4px;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 400;
+                                            // background: yellow;
+                
+                                        }
+                                        label:hover  {
+                                            color: @color_blue_main / 2;
+                                        }    
                                     }
-                                    input[type=radio] + label:before {
-                                        content: "\2718";
-                                       
-                                        color: transparent;
-                                        display: inline-block;
-                                        border: 1px solid @color_blue_main;
-                                        background: @color_white_main;
-                                        font-size: 20px;
-                                        font-weight: 500;
-                                        text-align: center;
-                                        line-height: 18px;
-                                        text-align: center;
-                                        margin: -3px 5px 0 0;
-                                        height: 18px;
-                                        width: 18px;
-                                        border-radius: 50%;
-                                        text-align: center;
-                                        vertical-align: middle;
-                                        transition: color ease .3s;
-                                    }
-                                    input[type=radio]:checked + label:before {
-                                        
-                                       
-                                        color: @color_yellow_main;
-                                        background: @color_dlue_tone_three_main;
-                                        border-color: @color_dlue_tone_three_main; 
-                                    }
-                                    label {
-                                       
-                                        height: 20px;
-                                        min-width: 1px;
-                                        // line-height: 10px;
-                                        // margin-left: 35px;
-                                        color: @color_blue_main;
-                                        text-transform: uppercase;
-                                        font-size: @font-size_main - 3px;
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 400;
-                                        // background: yellow;
-            
-                                    }
-                                    label:hover  {
-                                        color: @color_blue_main / 2;
-                                    }    
                                 }
                             }
+                            .radio-ul {
+                                width: 100%;
+                                height: 105px;
+                                // min-height: 1px;
+                                padding: 5px 0px 0px 5px;
+                                justify-content: space-around;
+                                overflow-y: scroll;
+                                // scroll-behavior: smooth;
+                                // border: 2px solid @color_linear_main / 1.2;
+                                .radio-li {
+                                    
+                                   
+                                    min-height: 20px;
+                                    line-height: 20px;
+                                    min-width: 1px;
+                                    list-style: none;
+                                    margin-bottom: 5px;
+                                    // background: rgb(148, 148, 22);
+                                    
+                                    a {
+                                        text-decoration: none;
+                                        input[type=radio] {
+                                            display: none;
+                                        }
+                                        input[type=radio] + label:before {
+                                            content: "\2718";
+                                           
+                                            color: transparent;
+                                            display: inline-block;
+                                            border: 1px solid @color_blue_main;
+                                            background: @color_white_main;
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            text-align: center;
+                                            line-height: 18px;
+                                            text-align: center;
+                                            margin: -3px 5px 0 0;
+                                            height: 18px;
+                                            width: 18px;
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            transition: color ease .3s;
+                                        }
+                                        input[type=radio]:checked + label:before {
+                                            
+                                           
+                                            color: @color_yellow_main;
+                                            background: @color_dlue_tone_three_main;
+                                            border-color: @color_dlue_tone_three_main; 
+                                        }
+                                        label {
+                                           
+                                            height: 20px;
+                                            min-width: 1px;
+                                            // line-height: 10px;
+                                            // margin-left: 35px;
+                                            color: @color_blue_main;
+                                            text-transform: uppercase;
+                                            font-size: @font-size_main - 4px;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 400;
+                                            // background: yellow;
+                
+                                        }
+                                        label:hover  {
+                                            color: @color_blue_main / 2;
+                                        }    
+                                    }
+                                }
+                                
+                            }
+                            ul::-webkit-scrollbar-track {
+                                box-shadow: inset 0 0 1px @color_blue_main;
+                                background-color: @color_white_main;
+                            }
+                            ul {
+                                scrollbar-width: thin; /* mozilla */
+                                // background-color: @color_blue_main;
+                                scrollbar-color: @color_blue_main white;
+                            }
+                
+                            ul::-webkit-scrollbar {
+                                width: 7px;
+                                background-color: @color_white_main;
+                               
+                            }
+                
+                            ul::-webkit-scrollbar-thumb {
+                                background-color: @color_blue_main;
+                                border: 1px solid @color_linear_main;
+                            }
+                            ul:hover {
+                                background: @color_white_main / 1.05;
+                            }
+            
+                            
+                            .checkbox-nav-alles {
+                                text-align: center;
+                                width: 100%;
+                                height: 22px;
+                                line-height: 22px;
+                                margin-top: 5px;
+                                background-color: @color_blue_main;
+                                .label-alles {
+                                    color: @color_white_main;
+                                    text-transform: uppercase;
+                                    font-size: @font-size_main - 3px;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 400;
+                                    
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    width: 100%;
+                                    // padding: 100%;
+                                    // color:  #777;
+                                    // border: 1px solid #ddd;
+                                    
+                                }
+                                .label-alles:hover  {
+                                    color: @color_yellow_main;
+                                }
+                                 
+                            }
+                            .hide-alles ~ .checkbox-nav-alles .label-alles:after {
+                                content: "показать всё";
+                            }
+                            .hide-alles:checked ~ .checkbox-nav-alles .label-alles:after  {
+                                content: "это всё";
+                            }
+                            .hide-alles:checked ~ .checkbox-ul  {
+                                height: 100%;
+                                // min-height: 1px;
+                            }
+                            .hide-alles:checked ~ .radio-ul  {
+                                height: 100%;
+                                // min-height: 1px;
+                            }
+                            
                             
                         }
-                        ul::-webkit-scrollbar-track {
-                            box-shadow: inset 0 0 1px @color_blue_main;
-                            background-color: @color_white_main;
-                        }
-                        ul {
-                            scrollbar-width: thin; /* mozilla */
-                            // background-color: @color_blue_main;
-                            scrollbar-color: @color_blue_main white;
-                        }
-            
-                        ul::-webkit-scrollbar {
-                            width: 7px;
-                            background-color: @color_white_main;
-                           
-                        }
-            
-                        ul::-webkit-scrollbar-thumb {
-                            background-color: @color_blue_main;
-                            border: 1px solid @color_linear_main;
-                        }
-                        ul:hover {
-                            background: @color_white_main / 1.05;
-                        }
-        
-                        
-                        .checkbox-nav-alles {
-                            text-align: center;
+                        .button-filtr {
+                            display: flex;
+                            flex-direction: column;
                             width: 100%;
-                            height: 22px;
-                            line-height: 22px;
-                            margin-top: 5px;
-                            background-color: @color_blue_main;
-                            .label-alles {
-                                color: @color_white_main;
+                            min-height: 1px;
+                            padding: 5px 0px 0px 10px;
+                            button {
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                font-family: inherit;
+                                border-radius: 5px;
+                                // border: none;
+                                text-align: center;
+                                // text-decoration: none;
+
+                                display: inline-block;
+                                cursor: pointer;
+                                // vertical-align: middle;
+                                margin: 0;
+                                padding: 0;
+                                height: 32px;
+                               
+                                width: 100%;
+                                margin-top: 10px;
+                                padding: 7px;
+                                color: @color_blue_main;
                                 text-transform: uppercase;
                                 font-size: @font-size_main - 3px;
                                 font-family: 'Roboto', sans-serif;
                                 font-weight: 400;
-                                
-                                cursor: pointer;
-                                display: inline-block;
-                                width: 100%;
-                                // padding: 100%;
-                                // color:  #777;
-                                // border: 1px solid #ddd;
-                                
                             }
-                            .label-alles:hover  {
+                            button:hover {
+                                background: @color_blue_main;
                                 color: @color_yellow_main;
                             }
-                             
-                        }
-                        .hide-alles ~ .checkbox-nav-alles .label-alles:after {
-                            content: "показать всё";
-                        }
-                        .hide-alles:checked ~ .checkbox-nav-alles .label-alles:after  {
-                            content: "это всё";
-                        }
-                        .hide-alles:checked ~ .checkbox-ul  {
-                            height: 100%;
-                        }
-                        .hide-alles:checked ~ .radio-ul  {
-                            height: 100%;
-                        }
-                        
-                        
-                    }     
+                        }   
+                    }    
                 }
-
             }
             .uuu-2 {
                
