@@ -1,0 +1,35 @@
+body {
+    #main { 
+        .crumbs {
+            display: flex;
+            align-items: center;
+            min-height: 25px;
+            max-width: 1260px;
+            padding: 15px 40px 15px 40px;
+            .crumbs-text {
+                li {
+                    height: 25px;
+                    line-height: 25px;
+                    list-style: none;
+                    float: left;
+                    min-width: 1px;
+                    a {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: @font-size_main - 3px;
+                        letter-spacing: 0px;
+                        word-spacing: 3px;
+                        color: @color_black_main;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .fas {
+                        padding: 0px 5px;
+                        font-size: 15px;
+                        color: @color_dlue_tone_four_main;
+                    }
+                }  
+            }
+        }
+    }
+}

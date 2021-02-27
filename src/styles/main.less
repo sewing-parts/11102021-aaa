@@ -40,13 +40,42 @@
   padding: 0;
   margin: 0;
 }
+body {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  header {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 @import url("header.less");
+body {
+  #main { 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 830px;
+    width: 100%;
+    max-width: 1260px;
+    background: @color_white_main;
+    z-index: 11111;
+  }
+}
+@import url("crumbs.less");
+@import url("helpful.less");
 @import url('page-main.less');
 @import url("page-parts-list-brand.less");
 @import url("page-parts-list-pdf.less");
 @import url("page-catalog-pdf.less");
 @import url("page-array-product-cards.less");
+@import url("pagination.less");
 @import url('footer.less');
 
 @import url("media-header.less");

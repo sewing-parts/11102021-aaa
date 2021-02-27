@@ -1,0 +1,74 @@
+body {
+    #main { 
+        .pagination {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 80px;
+            width: 100%;
+            max-width: 1260px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+            .pagination-wrapper {
+                min-width: 1px;
+                min-height: 1px;
+                .pagination-section {
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    // display: inline-block;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        background-color: @color_linear_main;
+                        margin: 2px 2px 2px 2px;
+                        text-align: center;
+                        text-decoration: none;
+                        transition: linear 0.2s;
+                        div {
+                            height: 30px;
+                            line-height: 30px;
+                            min-width: 30px;
+                            text-decoration: none;
+                            color: @color_blue_main;
+                            text-transform: uppercase;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 400;
+                            font-size: @font-size_main;
+                            transition: linear 0.2s;  
+                        }   
+                    }
+                    .active {
+                        background-color: @color_dlue_tone_three_main;
+                        .active-block {
+                            color: @color_white_main;
+                            font-size: @font-size_main + 1px;
+                            font-weight: 500;
+                        }
+                    }
+                    .space {
+                        height: 30px;
+                        line-height: 30px;
+                        min-width: 30px;
+                        margin: 2px 2px 2px 2px;
+                        background: @color_white_main;   
+                    }
+                    a:hover {
+                        background-color: @color_dlue_tone_three_main;
+                        transition: linear 0.2s;
+                    }
+                    a:hover div {
+                        color: @color_white_main;
+                        font-size: @font-size_main + 1px;
+                        font-weight: 500;
+                        transition: linear 0.2s;  
+                    }
+                }
+            }
+        }
+    }
+}
