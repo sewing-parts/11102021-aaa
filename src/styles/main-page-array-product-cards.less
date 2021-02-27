@@ -1,56 +1,5 @@
 body {
-    // display: flex;
-    // justify-content: space-around;
-    // margin-top: 0;
-    // margin: 0;
-    // padding: 0;
-    // flex-direction: column;
-    // align-items: center;
-    
     #main { 
-        // padding: 0;
-        // margin: 0;
-        // display: flex;
-        // flex-direction: column;
-        // min-height: 830px;
-        // width: 100%;
-        // max-width: 1260px;
-        // background: @color_white_main;
-        // z-index: 11111;
-        // .crumbs {
-        //     display: flex;
-        //     align-items: center;
-        //     min-height: 25px;
-        //     max-width: 1260px;
-        //     padding: 15px 40px 15px 40px;
-        //     .crumbs-text {
-        //         li {
-        //             height: 25px;
-        //             line-height: 25px;
-        //             list-style: none;
-        //             float: left;
-        //             min-width: 1px;
-        //             // background: yellow;
-        //             a {
-        //                 font-family: 'Roboto', sans-serif;
-        //                 font-weight: 400;
-        //                 font-size: @font-size_main - 3px;
-        //                 letter-spacing: 0px;
-        //                 word-spacing: 3px;
-        //                 color: @color_black_main;
-        //                 text-transform: uppercase;
-        //                 text-decoration: none;
-        //             }
-        //             .fas {
-        //                 padding: 0px 5px;
-        //                 font-size: 15px;
-        //                 color: @color_dlue_tone_four_main;
-        //             }
-        //         }  
-        //     }
-        // }
-
-        ///////////////////////////////////////////////////////////////////////////////////
         .page-array-products-cards {
             display: flex;
             // flex-wrap: wrap;
@@ -58,30 +7,23 @@ body {
             max-width: 1260px;
             min-height: 1px;
             padding-left: 10px;
-            
-            
             .section-filtr {
-                 width: 350px;/* основная ширина блока вильтр */
-                 min-height: 1px;
-                 
+                width: 295px;/* основная ширина блока вильтр *///////////////////////////
+                min-height: 1px;
                 padding: 0 10px 0 10px;
-                
-                /////////////////////////////////////////////////////////////
                 .caption-filtr {
                     padding: 0;
                     margin: 0;
                     display: flex;
                     flex-direction: column;
                     min-height: 1px;
-                    width: 100%;
-                    // max-width: 1260px;
-                     // width: 250px;/* основная ширина блока вильтр */
+                    // width: 100%;
+                    width: 295px;///////////////////////////////////////////////
                     align-items: center;
                     justify-content: center;
-                    padding: 0px 0px 0px 0px;//////////////////////////////////33333333333333333333
-                    
-                    background-color: @color_white_main * 1.02;  
-                    // border-bottom: 2px solid @color_blue_main;
+                    padding: 0px 0px 0px 0px;
+                    background-color: @color_white_main * 1.02; 
+                    // background: yellow; 
                     .filtr-block-linear {
                         height: 3px;
                         width: 98%;
@@ -91,88 +33,61 @@ body {
                     .caption-filtr-text {
                         color: @color_black_main;
                         text-transform: uppercase;
-                        font-size: @font-size_main + 2px;
+                        font-size: @font-size_main + 1px;
                         font-family: 'Roboto', sans-serif;
                         font-weight: 600;
                         letter-spacing: 0px;
                         word-spacing: 2px;
                         text-align: center;
                         padding-top: 0px;
-                        
                         border-bottom: 3px solid @color_blue_main;
                         position: relative;
                         margin-bottom: 5px;
-
                     }
                     .caption-filtr-text:before {
-                        content: "";
-                                
+                        content: "";       
                         width: 50%;
                         height: 100%;
-                        
                         border-bottom: 3px solid @color_yellow_main;
                         position: absolute;
-                        left: 0px;/////////////////////////////////////////////
+                        left: 0px;
                     }
-                    // .content1-description-text {
-                    //     color: @color_black_main;
-                    //     text-indent: 30px;
-                    //     padding: 20px 40px 20px 40px;
-                    //     font-family: 'Roboto', sans-serif;
-                    //     font-weight: 300;
-                    //     font-size: @font-size_main;
-                    //     letter-spacing: 0px;
-                    //     word-spacing: 3px;
-                    //     margin: 0px 0px -15px 0px;
-                    //     padding-bottom: 40px;
-                    //     text-align:justify   
-                    // }
                 }
-                /////////////////////////////////////////////////////////////
                 .content-filtr {
                     padding: 0;
                     margin: 0;
                     display: flex;
-                    // flex-wrap: wrap;
                     flex-direction: column;
                     min-height: 1px;
-                    width: 100%;
-                    // width: 250px;/* основная ширина блока вильтр */
-                    // max-width: 1260px;
-                    // max-width: 240px;
+                    // width: 100%;
+                    width: 295px;/////////////////////////////////////////////
                     align-items: center;
                     justify-content: center;
                     align-items: flex-start;
-                    // background: yellow;
                     padding: 20px 10px 20px 0px; 
-                    background-color: @color_white_main * 1.02;  
-                    /////////////////////////////////////////////////////////////////////
+                    background-color: @color_white_main * 1.02;
+                    // background: rgb(9, 149, 9);   
                     form {
                         width: 100%;
                         .block-filtr {
-                            // width: 190px;
                             width: 100%;
                             min-height: 1px;
                             border-bottom: 2px solid @color_blue_main;
                             padding: 5px 5px;
                             margin: 10px 5px;
-                            ////////////
-                            .hide-alles {
-                                display: none;
+                            .hide-all {
+                                display: none; /* */
                             }
-                            ////////////
                             .hide {
                                 display: none;
                             }
                             .hide + .label-filtr ~ .checkbox-ul {
-                                display: block; 
-                                // background: #efefef;   
+                                display: block;   
                             }
                             .hide + .label-filtr {
                                 width: 100%;
                                 height: 26px;
                                 line-height: 26px;
-                                // background: yellow;
                                 margin: 0;
                                 padding: 0;
                                 color: @color_blue_main;
@@ -182,20 +97,16 @@ body {
                                 font-weight: 500;
                                 cursor: pointer;
                                 display: inline-block;
-                                // background: @color_linear_main
                             }
                             .hide:checked + .label-filtr {
-                                // color: red;
                                 border-bottom: 0;
                             }
-                            /////////////////////////////
                             .hide:checked + .label-filtr + .checkbox-ul {
                                 display: none; 
                             }
                             .hide:checked + .label-filtr + .radio-ul {
                                 display: none; 
                             }
-                            /////////////////////////////////
                             .hide + .label-filtr:before {
                                 background-color: @color_blue_main;;
                                 color: @color_white_main;
@@ -216,27 +127,21 @@ body {
                             .hide:checked + label:before {
                                 content: "\2212";
                             }
-                            ////////////////////////////
                             .hide:checked ~ .checkbox-nav-alles {
                                 display: none;
                             }
-                            ///////////////////////////
                             .checkbox-ul {
                                 width: 100%;
-                                height: 105px;
+                                height: 105px;  /* приоткрытая высота блока checkbox */
                                 padding: 5px 0px 0px 5px;
                                 justify-content: space-around;
                                 overflow-y: scroll;
-                                // scroll-behavior: smooth;
-                                // border: 1px solid @color_linear_main / 1.2;
                                 .checkbox-li {
                                     height: 20px;
                                     line-height: 20px;
                                     min-width: 1px;
                                     list-style: none;
                                     margin-bottom: 5px;
-                                    // background: rgba(21, 168, 161, 0.869);
-                                   
                                     a {
                                         text-decoration: none;
                                         input[type=checkbox] {
@@ -260,7 +165,6 @@ body {
                                             vertical-align: middle;
                                             transition: color ease .3s;
                                         }
-                        
                                         input[type=checkbox]:checked + label:before {
                                             color: @color_yellow_main;
                                             background: @color_dlue_tone_three_main;
@@ -275,8 +179,6 @@ body {
                                             font-size: @font-size_main - 4px;
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
-                                            // background: yellow;
-                
                                         }
                                         label:hover  {
                                             color: @color_blue_main / 2;
@@ -286,23 +188,16 @@ body {
                             }
                             .radio-ul {
                                 width: 100%;
-                                height: 105px;
-                                // min-height: 1px;
+                                height: 110px; /* приоткрытая высота блока radio */
                                 padding: 5px 0px 0px 5px;
                                 justify-content: space-around;
                                 overflow-y: scroll;
-                                // scroll-behavior: smooth;
-                                // border: 2px solid @color_linear_main / 1.2;
                                 .radio-li {
-                                    
-                                   
                                     min-height: 20px;
                                     line-height: 20px;
                                     min-width: 1px;
                                     list-style: none;
                                     margin-bottom: 5px;
-                                    // background: rgb(148, 148, 22);
-                                    
                                     a {
                                         text-decoration: none;
                                         input[type=radio] {
@@ -310,7 +205,6 @@ body {
                                         }
                                         input[type=radio] + label:before {
                                             content: "\2718";
-                                           
                                             color: transparent;
                                             display: inline-block;
                                             border: 1px solid @color_blue_main;
@@ -329,25 +223,18 @@ body {
                                             transition: color ease .3s;
                                         }
                                         input[type=radio]:checked + label:before {
-                                            
-                                           
                                             color: @color_yellow_main;
                                             background: @color_dlue_tone_three_main;
                                             border-color: @color_dlue_tone_three_main; 
                                         }
                                         label {
-                                           
                                             height: 20px;
                                             min-width: 1px;
-                                            // line-height: 10px;
-                                            // margin-left: 35px;
                                             color: @color_blue_main;
                                             text-transform: uppercase;
                                             font-size: @font-size_main - 4px;
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
-                                            // background: yellow;
-                
                                         }
                                         label:hover  {
                                             color: @color_blue_main / 2;
@@ -362,16 +249,12 @@ body {
                             }
                             ul {
                                 scrollbar-width: thin; /* mozilla */
-                                // background-color: @color_blue_main;
                                 scrollbar-color: @color_blue_main white;
                             }
-                
                             ul::-webkit-scrollbar {
                                 width: 7px;
-                                background-color: @color_white_main;
-                               
+                                background-color: @color_white_main;   
                             }
-                
                             ul::-webkit-scrollbar-thumb {
                                 background-color: @color_blue_main;
                                 border: 1px solid @color_linear_main;
@@ -379,48 +262,39 @@ body {
                             ul:hover {
                                 background: @color_white_main / 1.05;
                             }
-            
-                            
-                            .checkbox-nav-alles {
+                            .checkbox-nav-all {
                                 text-align: center;
                                 width: 100%;
                                 height: 22px;
                                 line-height: 22px;
                                 margin-top: 5px;
                                 background-color: @color_blue_main;
-                                .label-alles {
+                                .label-all {
                                     color: @color_white_main;
                                     text-transform: uppercase;
                                     font-size: @font-size_main - 3px;
                                     font-family: 'Roboto', sans-serif;
                                     font-weight: 400;
-                                    
                                     cursor: pointer;
                                     display: inline-block;
-                                    width: 100%;
-                                    // padding: 100%;
-                                    // color:  #777;
-                                    // border: 1px solid #ddd;
-                                    
+                                    width: 100%;    
                                 }
-                                .label-alles:hover  {
+                                .label-all:hover  {
                                     color: @color_yellow_main;
                                 }
                                  
                             }
-                            .hide-alles ~ .checkbox-nav-alles .label-alles:after {
+                            .hide-all ~ .checkbox-nav-all .label-all:after {
                                 content: "показать всё";
                             }
-                            .hide-alles:checked ~ .checkbox-nav-alles .label-alles:after  {
+                            .hide-all:checked ~ .checkbox-nav-all .label-all:after  {
                                 content: "это всё";
                             }
-                            .hide-alles:checked ~ .checkbox-ul  {
+                            .hide-all:checked ~ .checkbox-ul  {
                                 height: 100%;
-                                // min-height: 1px;
                             }
-                            .hide-alles:checked ~ .radio-ul  {
-                                height: 100%;
-                                // min-height: 1px;
+                            .hide-all:checked ~ .radio-ul  {
+                                height: 100%;  
                             }
                             
                             
@@ -432,32 +306,23 @@ body {
                             min-height: 1px;
                             padding: 5px 0px 10px 10px;
                             button {
-                                
+                                margin: 0;
+                                padding: 0;
                                 -webkit-appearance: none;
                                 -moz-appearance: none;
                                 appearance: none;
-                                -webkit-border-radius: none;
-                                -moz-border-radius: none;
-                                border-radius: none;
                                 font-family: inherit;
                                 border-radius: 0px;
-                                // border: none;
                                 text-align: center;
-                                // text-decoration: none;
-
                                 display: inline-block;
                                 cursor: pointer;
-                                // vertical-align: middle;
-                                margin: 0;
-                                padding: 0;
                                 height: 32px;
-                               
                                 width: 90%;
                                 margin-top: 20px;
                                 padding: 7px;
                                 color: @color_white_main;
                                 text-transform: uppercase;
-                                font-size: @font-size_main;
+                                font-size: @font-size_main - 1px;
                                 font-family: 'Roboto', sans-serif;
                                 font-weight: 500;
                                 position: relative;
@@ -469,12 +334,9 @@ body {
                                 width: 111%;
                                 height: 40px;
                                 line-height: 38px;
-                               
                                 position: absolute;
                                 left: -5px;
                                 top: -5px;
-                                box-sizing: border-box;
-                                // border: 3px solid gray
                                 border: 1px solid @color_blue_main;
                             }
                             .button-submit:before{
@@ -483,27 +345,26 @@ body {
                                 width: 111%;
                                 height: 40px;
                                 line-height: 38px;
-                               
                                 position: absolute;
                                 left: -5px;
                                 top: -5px;
                                 box-sizing: border-box;
                                 border: 1px solid @color_blue_main;
-                                
                             }
                             button:hover:before{
                                 background: @color_blue_main;
                                 color: @color_yellow_main;
-                                border: 1px solid @color_yellow_main;
-                            }
-                           
+                                font-size: @font-size_main - 0px;
+                                font-weight: 400;
+                                border: 1px solid @color_blue_main;
+                            } 
                         }   
                     }    
                 }
             }
             .section-array-products-cards {
-               
-                        //////////////////////////////////////////////////////////////////1111111111111
+                padding: 0;
+                margin: 0;      
                 .content1-description {
                     padding: 0;
                     margin: 0;
@@ -511,7 +372,6 @@ body {
                     flex-direction: column;
                     min-height: 1px;
                     width: 100%;
-                    // max-width: 1260px;
                     max-width: 1020px;
                     align-items: center;
                     justify-content: center;
@@ -536,7 +396,6 @@ body {
                     }
                     .content1-description-title:before {
                         content: "";
-                        
                         width: 50%;
                         height: 100%;
                         border-bottom: 3px solid @color_yellow_main;
@@ -556,8 +415,6 @@ body {
                         text-align:justify   
                     }
                 }
-                /////////////////////////////////////////////////////////////
-                ////////////////////////////////////////////////////////////
                 .content2-catalog-cards-products {
                     padding: 0;
                     margin: 0;
@@ -576,28 +433,16 @@ body {
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: space-around;
-                        // overflow: hidden;
-                    
                         .catalog2-cards-products-section {
                             margin: 20px 10px 30px 10px;
                             height: 394px;
                             width: 200px;
-                            // background-image: url("../images/fon_parts_one.jpg");
-                            // background-color: @color_white_main;
                             background-size: cover; 
                             background-size: 260px 130px;
                             text-align: center;
-                            // box-shadow: 7px 7px #dddddd;
                             overflow: hidden;
                             transition: linear 0.5s;
-                            
-
                             background-color: @color_white_main;
-                            // background-color: @color_dlue_tone_two_main;
-                            // background-color: yellow;
-
-                        
-                            //////////////////////////////////////////////////////
                             .products-section-info {
                                 display: flex;
                                 justify-content: space-between; 
@@ -605,27 +450,17 @@ body {
                                 position: relative;
                                 height: 25px;
                                 width: 100%;
-                                //  width: 100%;
                                 color: #FFFFFF;
                                 font-size: 17px;
                                 font-family: 'Roboto', sans-serif;
                                 font-weight: 400;
-                                // text-align: center;
-                                z-index: 99999;//////////////////////////////////1111111111111111111
-                                // .check-menu {
-                                //     display: none;
-
-                                // }
+                                z-index: 99999;
                                 .section-info-label {
                                     font-size: @font-size_main - 2px;
                                     font-family: 'Roboto', sans-serif;
                                     font-weight: 400;
-                                    color: @color_white_main;;
-
-                                    // letter-spacing: 2px;
-                                    // word-spacing: 5px;
+                                    color: @color_white_main;
                                     transition: linear 0.5s;
-
                                     text-transform: uppercase;
                                     text-align: center;
                                     display: block;
@@ -637,9 +472,7 @@ body {
                                     cursor: pointer;
                                     z-index: 2;
                                     height: 25px;
-                                    line-height: 25px;
-                                    
-                                    
+                                    line-height: 25px; 
                                 }
                                 .section-info-label:hover {
                                     color: @color_yellow_main;
@@ -658,21 +491,16 @@ body {
                                     transition: linear 0.5s;
                                     width: 0px;
                                     margin-left: 50%;
-
-                                
                                     .section-info-li {
                                         list-style: none;
                                         margin: 0;
                                         padding: 0;
-                                        
-                                        // border-bottom: 0px solid @color_dlue_tone_three_main;
                                         .section-info-a {
                                             font-size: @font-size_main - 4px;
                                             text-decoration: none;
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
                                             background: @color_dlue_tone_three_main;
-                                            // border-top: 1px solid @color_dlue_tone_three_main;
                                             display: block;
                                             width: 100%;
                                             color: @color_white_main;
@@ -680,7 +508,6 @@ body {
                                             opacity: 0;
                                             transition: linear 0.5s;
                                             height: 33px;
-                                            // line-height: 40px;
                                             p {
                                                 position: relative;
                                                 top: 50%;
@@ -696,31 +523,22 @@ body {
                                     margin-left: 0%;
                                     max-height: 450px;
                                     font-size: 14px;
-                                    
-                                    
                                     transition: linear 0.4s;  
                                 }
                                 .section-info-label:hover ~ .section-info-nav .section-info-li .section-info-a {
                                     opacity: 1;
                                     border-top: 1px solid @color_dlue_tone_three_main;
-                                    transition: linear 0.5s;
-                                    
+                                    transition: linear 0.5s; 
                                 }
                             }
-                            //////////////////////////////////////////////////////
                             .products-section-base {
-                                // content: "";
                                 margin-top: 3px;
                                 border: 1px solid @color_blue_main;
-                                // background: @color_linear_main;
-                                // border: 1px solid @color_linear_main / 1.2;
                                 a {
                                     text-decoration: none;
                                     text-transform: uppercase;
                                     
                                     .content2-block-base-img {
-                                        
-                                        // width: 225px;
                                         width: 100%;
                                         height: 200px;
                                         img {
@@ -730,23 +548,17 @@ body {
                                     }
                                     .content2-block-base-partsname {
                                         color: @color_white_main;
-                                        // color: @color_blue_main;
                                         text-transform: uppercase;
                                         font-size: @font-size_main - 5px;
                                         font-family: 'Roboto', sans-serif;
                                         font-weight: 400;
                                         text-transform: uppercase;
-                                        // letter-spacing: 1px;
-                                        // word-spacing: 5px;
                                         transition: linear 0.5s;
                                         height: 35px;
                                         width: 100%;
-                                        // line-height: 30px;
                                         padding: 0 5px 0 5px;
                                         background: rgb(180, 66, 0);
                                         background: @color_blue_main;
-                                        // background: @color_dlue_tone_three_main;
-                                        // background: @color_white_main;
                                         p {
                                             position: relative;
                                             top: 50%;
@@ -757,17 +569,11 @@ body {
                                         padding: 0;
                                         margin: 0;
                                         color: @color_dlue_tone_two_main;
-                                        // color: @color_blue_main;
-                                        // color: @color_white_main;
-                                        // padding-top: 5px;
-                                        // letter-spacing: 3px;
                                         text-transform: uppercase;
                                         font-size: @font-size_main + 0px;
                                         font-family: 'Roboto', sans-serif;
                                         font-weight: 400;
                                         text-transform: uppercase;
-                                        // letter-spacing: 1px;
-                                        // word-spacing: 7px;
                                         transition: linear 0.5s;
                                         height: 30px;
                                         width: 100%;
@@ -775,9 +581,6 @@ body {
                                         padding: 0 5px 0 5px;
                                         background: rgb(4, 110, 9);
                                         background: @color_blue_main;
-                                        // background: @color_dlue_tone_three_main;
-                                        // background: @color_white_main;
-                                    
                                         p {
                                         
                                             position: relative;
@@ -787,23 +590,16 @@ body {
                                     }
                                     .content2-block-base-partscode {
                                         color: @color_white_main;
-                                        // color: @color_blue_main;
                                         text-transform: uppercase;
                                         font-size: @font-size_main - 3px;
                                         font-family: 'Roboto', sans-serif;
                                         font-weight: 400;
                                         text-transform: uppercase;
-                                        // letter-spacing: 1px;
-                                        // word-spacing: 5px;
                                         transition: linear 0.5s;
                                         height: 40px;
                                         width: 100%;
-                                        // line-height: 25px;
                                         background: rgb(53, 4, 48);
                                         background: @color_blue_main;
-                                        // background: @color_dlue_tone_three_main;
-                                        // background: @color_white_main;
-
                                         word-break:break-all;
                                         padding: 0 5px 0 5px;
                                         p {
@@ -811,28 +607,21 @@ body {
                                             top: 50%;
                                             transform: translateY(-50%);
                                         }
-                                    }
-                                    
+                                    } 
                                 }
                             }
                             .products-section-base:hover a div {
                                 color: @color_yellow_main;
                             }
                             .products-section-buy {
-                                // border: 1px solid @color_blue_main;
                                 margin-top: 3px;
                                 a {
                                     text-decoration: none;
                                     text-transform: uppercase;
                                     .content2-block-buy-cost {
-                                        
-            
                                         padding: 0;
                                         margin: 0;
                                         color: @color_dlue_dark_main;
-                                        // color: @color_white_main;
-                                        // padding-top: 5px;
-                                        // letter-spacing: 3px;
                                         text-transform: uppercase;
                                         font-size: @font-size_main + 5px;
                                         font-family: 'Roboto', sans-serif;
@@ -843,11 +632,8 @@ body {
                                         transition: linear 0.5s;
                                         height: 25px;
                                         width: 100%;
-                                        // line-height: 30px;
                                         background: rgb(4, 110, 9);
                                         background: @color_linear_main;
-                                        // background: @color_dlue_tone_three_main;
-                                        
                                         p {
                                             position: relative;
                                             top: 50%;
@@ -866,14 +652,10 @@ body {
                                         font-family: 'Roboto', sans-serif;
                                         font-weight: 400;
                                         text-transform: uppercase;
-                                        // letter-spacing: 2px;
-                                        // word-spacing: 5px;
                                         transition: linear 0.5s;
                                         height: 30px;
                                         width: 100%;
                                         background: @color_blue_main;
-                                        // background: @color_dlue_tone_three_main;
-                                        
                                         line-height: 30px;
                                     }
                                 }
@@ -884,240 +666,13 @@ body {
                             }
                             .products-section-buy:hover a .content2-block-buy-cost{
                                 color: @color_yellow_main;
-                                // background: @color_blue_main;
                                 background: @color_dlue_tone_three_main;
                                 
                             }
                         } 
                     }
                 }
-
-                ///////////////////////////////////////////////
-                
-
             }
         }
-        // .pagination {
-        //     padding: 0;
-        //     margin: 0;
-        //     display: flex;
-        //     flex-direction: column;
-        //     min-height: 80px;
-        //     width: 100%;
-        //     max-width: 1260px;
-        //     align-items: center;
-        //     justify-content: center;
-        //     margin-top: 0px;
-        //     .pagination-wrapper {
-        //         min-width: 1px;
-        //         min-height: 1px;
-        //         .pagination-section {
-        //             padding: 0;
-        //             margin: 0;
-        //             border: 0;
-        //             // display: inline-block;
-        //             display: flex;
-        //             flex-wrap: wrap;
-        //             align-items: center;
-        //             justify-content: center;
-        //             a {
-        //                 background-color: @color_linear_main;
-        //                 margin: 2px 2px 2px 2px;
-        //                 text-align: center;
-        //                 text-decoration: none;
-        //                 transition: linear 0.2s;
-        //                 div {
-        //                     height: 30px;
-        //                     line-height: 30px;
-        //                     min-width: 30px;
-        //                     text-decoration: none;
-        //                     color: @color_blue_main;
-        //                     text-transform: uppercase;
-        //                     font-family: 'Roboto', sans-serif;
-        //                     font-weight: 400;
-        //                     font-size: @font-size_main;
-        //                     transition: linear 0.2s;  
-        //                 }   
-        //             }
-        //             .active {
-        //                 background-color: @color_dlue_tone_three_main;
-        //                 .active-block {
-        //                     color: @color_white_main;
-        //                     font-size: @font-size_main + 1px;
-        //                     font-weight: 500;
-        //                 }
-        //             }
-        //             .space {
-        //                 height: 30px;
-        //                 line-height: 30px;
-        //                 min-width: 30px;
-        //                 margin: 2px 2px 2px 2px;
-        //                 background: @color_white_main;   
-        //             }
-        //             a:hover {
-        //                 background-color: @color_dlue_tone_three_main;
-        //                 transition: linear 0.2s;
-        //             }
-        //             a:hover div {
-        //                 color: @color_white_main;
-        //                 font-size: @font-size_main + 1px;
-        //                 font-weight: 500;
-        //                 transition: linear 0.2s;  
-        //             }
-        //         }
-        //     }
-        // }
-       
-        
-        
-        //////////////////////////////////////////////////
-        // .helpful {
-        //     .helpful-description {
-        //         padding: 0;
-        //         margin: 0;
-        //         display: flex;
-        //         flex-direction: column;
-        //         min-height: 150px;
-        //         width: 100%;
-        //         max-width: 1260px;
-        //         align-items: center;
-        //         justify-content: center;
-        //         .helpful-block-linear{
-        //             margin: 0px 0px 30px 0px;
-        //             height: 3px;
-        //             width: 90%;
-        //             background: @color_linear_main;
-        //         }
-        //         .helpful-title{
-        //             color: @color_black_main;
-        //             text-transform: uppercase;
-        //             font-size: @font-size_main + 10px;
-        //             font-family: 'Roboto', sans-serif;
-        //             font-weight: 400;
-        //             text-transform: uppercase;
-        //             letter-spacing: 0px;
-        //             word-spacing: 10px;
-        //             text-align: center;
-        //             margin-top: -10px;
-        //             border-bottom: 3px solid @color_blue_main;
-        //             position: relative;
-        //         }
-        //         .helpful-title::before {
-        //             content: "";
-        //             width: 50%;
-        //             height: 100%;
-        //             border-bottom: 3px solid @color_yellow_main;
-        //             position: absolute;
-        //         }
-        //         .helpful-text {
-        //             color: @color_black_main;
-        //             text-indent: 30px;
-        //             padding: 20px 40px 20px 40px;
-        //             font-family: 'Roboto', sans-serif;
-        //             font-weight: 300;
-        //             font-size: @font-size_main;
-        //             letter-spacing: 0px;
-        //             word-spacing: 3px;
-        //             margin: 0px 0px 0px 0px;
-        //             text-align:justify
-        //         }
-        //     }
-        //     .helpful-section {
-        //         padding: 0;
-        //         margin: 0;
-        //         display: flex;
-        //         flex-wrap: wrap;
-        //         min-height: 180px;
-        //         width: 100%;
-        //         max-width: 1260px;
-        //         justify-content: space-around;      
-        //         align-items: center;
-        //         .helpful-section-menu {
-        //             height: 95px;
-        //             max-width: 310px;
-        //             margin: 10px 20px 25px 20px;
-        //             display: flex;
-        //             flex-wrap: wrap;
-        //             justify-content: space-around;
-        //             box-shadow: 0px 10px 14px rgba(0, 0, 0, .3),
-        //             -23px 0 20px -23px rgba(0, 0, 0, .6),
-        //             23px 0 20px -23px rgba(0, 0, 0, .6),
-        //             inset 0 0 140px #96b5cc;
-        //             box-sizing: content-box;
-        //             transition: linear 0.5s;
-        //             a {
-        //                 text-decoration: none;
-        //             }
-        //             a .menu-block-img {
-        //                 height: 75px;
-        //                 width: 310px;
-        //                 display: inline-block;
-        //                 overflow: hidden;
-        //                 display:flex;
-        //                 justify-content: center; /*центрируем элемент по горизонтали */
-        //                 align-items: center; /* и вертикали */     
-        //                 .helpful-menu-img {
-        //                     height: 75px;
-        //                     height: 100%;
-        //                     padding-top: 4px;
-        //                     object-fit: cover;
-        //                     transform: scaleX(1.18);
-        //                     display: block;
-        //                     -webkit-filter: grayscale(100%);
-        //                     -moz-filter: grayscale(100%);
-        //                     -ms-filter: grayscale(100%);
-        //                     -o-filter: grayscale(100%);
-        //                     filter: grayscale(100%);
-        //                     filter: gray; 
-        //                     -webkit-transition: all 1s;
-        //                     -moz-transition: all 1s;
-        //                     -o-transition: all 1s;
-        //                     transition: all 0.5s;
-        //                     transition: linear 0.5s; 
-        //                 }
-        //             }
-        //             a .menu-block-text {
-        //                 height: 20px;
-        //                 max-width: 310px;
-        //                 margin-top: 0px;
-        //                 line-height: 20px;
-        //                 .helpful-menu-text {
-        //                     text-align: center;
-        //                     color: @color_blue_main;
-        //                     text-transform: uppercase;
-        //                     font-family: 'Roboto', sans-serif;
-        //                     font-weight: 400;
-        //                     font-size: @font-size_main - 1px;
-        //                     letter-spacing: 0px;
-        //                     word-spacing: 3px;
-        //                     transition: linear 0.5s;
-        //                 }
-        //             }     
-        //         }
-        //         .helpful-section-menu:hover {
-        //             box-shadow: 0px 5px 18px rgba(0, 0, 0, .3),
-        //             -23px 0 20px -28px rgba(0, 0, 0, .6),
-        //             23px 0 20px -28px rgba(0, 0, 0, .6),
-        //             inset 0px 0px 140px #003c6d;
-        //             box-sizing: content-box;
-        //             transition: linear 0.5s;
-        //         }
-        //         .helpful-section-menu:hover a .menu-block-text .helpful-menu-text {
-        //             color: @color_white_main;
-        //             transition: linear 0.5s;
-        //         }
-        //         .helpful-section-menu:hover a .menu-block-img .helpful-menu-img {
-        //             transform: scale(1.08);
-        //             transition: all 0.5s;
-        //             -webkit-filter: none;
-        //             -moz-filter: none;
-        //             -ms-filter: none;
-        //             -o-filter: none;
-        //             filter: none;
-        //             filter: none; 
-        //             transition: linear 0.5s;
-        //         } 
-        //     }
-        // }
     }
 }
