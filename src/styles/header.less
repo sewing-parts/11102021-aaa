@@ -315,11 +315,13 @@ body {
                             margin: 0;
                             width: 300px;
                             height: 169px;
-                            border-radius: 300px;
+                            border-radius: 50%;
                             margin: 50px 0 0 0px;
                             background-image: url('../images/uuuuu-80a.png');
                             background-size: 300px 170px;
                             background-repeat: no-repeat;
+
+                            border-bottom: 12px solid @color_yellow_main;
                             .photo-logo {
                                 height: 40px;
                                 width: 84%;
@@ -343,7 +345,20 @@ body {
                                     text-transform: uppercase;
                                 }
                             }  
-                        }     
+                        }
+                        .block-logo::before {
+                                    content: "";
+                                    padding: 0;
+                                    margin: 0;
+                                    position: absolute;
+                                    padding: 0;
+                                    margin: 0;
+                                    width: 300px;
+                                    height: 169px;
+                                    border-radius: 50%;
+                                    border-bottom: 4px solid @color_blue_main;
+                                    margin: -4px 0 0 0px; 
+                        }                  
                     }
                 }
                 #search {
