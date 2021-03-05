@@ -1,0 +1,639 @@
+body {
+    #main { 
+        .page-cards-goods {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1260px;
+            min-height: 1px;
+            // padding-left: 10px;
+            align-items: center;
+            justify-content: center;
+            
+            .page-cards-goods-wrapper {
+                padding: 0;
+                margin: 0; 
+                width: 100%; 
+                padding: 0 20px 0 20px;    
+                .content1-description {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 1px;
+                    width: 100%;
+                    max-width: 1260px;
+                    align-items: center;
+                    justify-content: center;
+                   
+                    .content1-block-linear {
+                        height: 3px;
+                        width: 90%;
+                        background: @color_linear_main;
+                        margin: 0px 0px 20px 0px;
+                    }
+                    .content1-description-title {
+                        color: @color_black_main;
+                        text-transform: uppercase;
+                        font-size: @font-size_main + 7px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        letter-spacing: 0px;
+                        word-spacing: 5px;
+                        text-align: center;
+                        padding-top: 0px;
+                        border-bottom: 3px solid @color_blue_main;
+                        position: relative;
+                    }
+                    .content1-description-title:before {
+                        content: "";
+                        width: 50%;
+                        height: 100%;
+                        border-bottom: 3px solid @color_yellow_main;
+                        position: absolute;
+                        left: 0;
+                    }
+                   
+                }
+                .content2-cards-goods-base {
+                    width: 100%;
+                    // height: 720px;
+                    // height: 50vw;
+
+
+                    // max-height: 730px;
+                    min-height: 1px;
+
+
+
+                    background: rgb(184, 207, 138);
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // justify-content: center;
+                    // justify-content: space-around;
+                    ///////////////////////////////////////////////////////////////////////////////
+                    .content2-section-pfoto {
+                        // width: 50%;///////////////////////////////============
+                        width: 100%;
+                        width: 600px;
+                        // height: 100%;
+
+
+                        // min-height: 1px;
+                        max-height: 730px;
+
+
+
+                        background: rgb(0, 47, 255);
+                        padding: 0px;
+                        .block-base-pfoto {
+                            width: 100%;
+                            max-height: 600px;
+                           
+                            background: rgb(50, 130, 205);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                // min-height: 100%;
+                                // min-width: 100%;
+                                // width: auto;
+                                // height: auto;
+                                // max-width: none;
+                                // max-height: none;
+                                // display: block;
+                                // position: relative;
+                                // top: 50%;
+                                // left: 50%;
+                                // transform: translate(-50%, 0%);
+                               
+                                
+                            }
+                        }
+                        .block-small-pfoto {
+                            width: 100%;
+                            height: 120px;
+                            background: rgb(205, 50, 184);
+                            margin-top: 10px;
+                            padding: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            .small-pfoto {
+                                width: 100px;
+                                height: 100px;
+                                margin: 0px 5px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                overflow: hidden;
+
+                                cursor: pointer;
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                    ///////////////////////////////////////////////////////////////////////////
+                    .content3-section-sale {
+                        width: 600px;
+                        // height: 100px;
+                        min-height: 1px;
+                        background: rgb(207, 166, 138);
+                        margin-left: 10px;
+                        
+                        .content3-section-sale-wrapper {
+                            margin-top: 20px;
+                            width: 100%;
+                            min-height: 1px;
+                            
+                            background: yellow;
+                            padding-bottom: 10px;
+                            
+
+                           
+                            
+                            ul {
+                                // display: flex;
+                                // align-items: center;
+                                // min-height: 25px;
+                                // max-width: 1260px;
+                                // padding: 15px 40px 15px 40px;
+                                li {
+                                    // list-style: none;
+                                    height: 30px;
+                                    margin-top: 5px;
+                                    background: rgb(255, 166, 0);
+
+                                    line-height: 30px;
+                                    height: 100%;
+                                    list-style: none;
+                                    // float: left;
+                                    min-width: 1px;
+                                    
+                                    color: black;
+                                    font-size: 17px;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 400;
+                
+                                    text-transform: uppercase;
+                                    padding-left: 10px;
+                                    
+                                    p {
+                                        // text-indent: 10px; 
+                                        span {
+                                            font-size: 17px;
+                                            font-weight: 500;
+                                            
+
+                                        }
+                                    }
+                                }
+                            }
+                            .products-section-buy {
+                                                margin-top: 0px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                justify-content: center;
+                                               
+                                                .content3-block-buy-cost {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    color: @color_dlue_dark_main;
+                                                    text-transform: uppercase;
+                                                    font-size: @font-size_main + 20px;
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-weight: 700;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: 1px;
+                                                    word-spacing: 7px;
+                                                    
+                                                    height: 45px;
+                                                    width: 220px;
+                                                    background: rgb(4, 110, 9);
+                                                    background: @color_linear_main;
+                                                    text-align: center;
+
+                                                    margin-top: 40px;
+                                                    p {
+                                                        position: relative;
+                                                        top: 50%;
+                                                        transform: translateY(-50%);
+                                                        span {
+                                                            font-size: @font-size_main + 15px;
+                                                            font-family: 'Roboto', sans-serif;
+                                                            font-weight: 400;
+                                                        }
+                                                    }
+                                                }
+                                                 ////////////////////////////////////////////
+                                                 .content3-block-buy-quantity {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    color: @color_dlue_dark_main;
+                                                    text-transform: uppercase;
+                                                    font-size: @font-size_main + 5px;
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-weight: 700;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: 1px;
+                                                    word-spacing: 7px;
+                                                    
+                                                    height: 45px;
+                                                    width: 220px;
+                                                    background: rgb(4, 110, 9);
+                                                    background: @color_linear_main;
+                                                    text-align: center;
+
+                                                    margin-top: 20px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    a {
+                                                        text-decoration: none;
+                                                        width: 50px;
+                                                        .quantity-pieces-minus {
+                                                            height: 45px;
+                                                            line-height: 45px;
+                                                            width: 100%;
+                                                            background: rgb(50, 205, 102);
+                                                            i {
+                                                                color: @color_dlue_dark_main;
+                                                            }
+    
+                                                        }
+                                                    }
+                                                    .quantity-pieces {
+
+                                                    }
+                                                    a {
+                                                        text-decoration: none;
+                                                        width: 50px;
+                                                        .quantity-pieces-plus {
+                                                            height: 45px;
+                                                            line-height: 45px;
+                                                            width: 100%;
+                                                            background: rgb(50, 205, 102);
+                                                            i {
+                                                                color: @color_dlue_dark_main;
+                                                            }
+    
+                                                        }
+                                                    }
+                                                }
+                                                ///////////////////////////////////////////////////
+                                                a {
+                                                    text-decoration: none;
+                                                    text-transform: uppercase;
+                                                    
+                                                    .content3-block-buy-card {
+                                                        color: @color_white_main;
+                                                        text-transform: uppercase;
+                                                        font-size: @font-size_main + 5px;
+                                                        font-family: 'Roboto', sans-serif;
+                                                        font-weight: 400;
+                                                        text-transform: uppercase;
+                                                        transition: linear 0.5s;
+                                                        height: 45px;
+                                                        width: 220px;
+                                                        background: @color_blue_main;
+                                                        line-height: 45px;
+                                                        text-align: center;
+                                                        margin-top: 20px;
+                                                        transition: linear 0.2s;
+                                                    }
+                                                    .content3-block-buy-card :hover {
+                                                        color: @color_yellow_main;
+                                                        transition: linear 0.2s;
+                                                        
+                                                    }
+                                                }
+                                                a {
+                                                    text-decoration: none;
+                                                    text-transform: uppercase;
+                                                    
+                                                    .content3-block-buy-cry {
+                                                        color: @color_white_main;
+                                                        text-transform: uppercase;
+                                                        font-size: @font-size_main + 3px;
+                                                        font-family: 'Roboto', sans-serif;
+                                                        font-weight: 400;
+                                                        text-transform: uppercase;
+                                                        transition: linear 0.5s;
+                                                        height: 45px;
+                                                        width: 220px;
+                                                        background: @color_blue_main;
+                                                        line-height: 45px;
+                                                        text-align: center;
+                                                        margin-top: 20px;
+                                                        transition: linear 0.2s;
+                                                    }
+                                                    .content3-block-buy-cry :hover {
+                                                        color: @color_yellow_main;
+                                                        transition: linear 0.2s;
+                                                        
+                                                    }
+                                                }
+                                            }
+                        }  
+                    }
+                }
+                .content3-cards-goods-facts {
+                    width: 100%;
+                    min-height: 1px;
+                    max-height: 730px;
+                    background: rgb(208, 145, 212);
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    .ppp1 {
+                        width: 100%;
+                        height: 100px;
+                        background: rgb(167, 61, 102);
+                        margin-top: 20px;
+
+                    }
+                    .ppp2 {
+                        width: 100%;
+                        height: 200px;
+                        background: rgb(61, 167, 167);
+                        margin-top: 20px;
+
+                    }
+                    .ppp3{
+                        width: 100%;
+                        height: 200px;
+                        background: rgb(61, 167, 61);
+                        margin-top: 20px;
+
+                    }
+                }
+                // .content2-catalog-cards-products {
+                //     padding: 0;
+                //     margin: 0;
+                //     display: flex;
+                //     flex-wrap: wrap;
+                //     min-height: 260px;
+                //     width: 100%;
+                //     max-width: 1020px;
+                //     justify-content: space-around;
+                //     overflow: hidden;
+                //     .catalog2-cards-products-wrapper {
+                //         min-height: 415px;
+                //         max-width: 100%;
+                //         padding: 0px 10px;
+                //         margin: 0;
+                //         display: flex;
+                //         flex-wrap: wrap;
+                //         justify-content: space-around;
+                //         .catalog2-cards-products-section {
+                //             margin: 20px 5px 30px 5px;
+                //             height: 394px;
+                //             width: 200px;
+                //             background-size: cover; 
+                //             background-size: 260px 130px;
+                //             text-align: center;
+                //             overflow: hidden;
+                //             transition: linear 0.5s;
+                //             background-color: @color_white_main;
+                //             .products-section-info {
+                //                 display: flex;
+                //                 justify-content: space-between; 
+                //                 background: @color_blue_main;
+                //                 position: relative;
+                //                 height: 25px;
+                //                 width: 100%;
+                //                 color: #FFFFFF;
+                //                 font-size: 17px;
+                //                 font-family: 'Roboto', sans-serif;
+                //                 font-weight: 400;
+                //                 z-index: 99999;
+                //                 .section-info-label {
+                //                     font-size: @font-size_main - 2px;
+                //                     font-family: 'Roboto', sans-serif;
+                //                     font-weight: 400;
+                //                     color: @color_white_main;
+                //                     transition: linear 0.5s;
+                //                     text-transform: uppercase;
+                //                     text-align: center;
+                //                     display: block;
+                //                     position: absolute;
+                //                     top: 0;
+                //                     left: 0;
+                //                     width: 100%;
+                //                     height: 100%;
+                //                     cursor: pointer;
+                //                     z-index: 2;
+                //                     height: 25px;
+                //                     line-height: 25px; 
+                //                 }
+                //                 .section-info-label:hover {
+                //                     color: @color_yellow_main;
+                //                     background: @color_dlue_tone_three_main;
+                //                 } 
+                //                 .section-info-nav {
+                //                     display: block;
+                //                     position: absolute;
+                //                     width: 100%;
+                //                     bottom: 0;
+                //                     left: 0;
+                //                     transform: translateY(100%);
+                //                     max-height: 0px;
+                //                     font-size: 0;
+                //                     overflow: hidden;
+                //                     transition: linear 0.5s;
+                //                     width: 0px;
+                //                     margin-left: 50%;
+                //                     .section-info-li {
+                //                         list-style: none;
+                //                         margin: 0;
+                //                         padding: 0;
+                //                         .section-info-a {
+                //                             font-size: @font-size_main - 4px;
+                //                             text-decoration: none;
+                //                             font-family: 'Roboto', sans-serif;
+                //                             font-weight: 400;
+                //                             background: @color_dlue_tone_three_main;
+                //                             display: block;
+                //                             width: 100%;
+                //                             color: @color_white_main;
+                //                             text-decoration: none;
+                //                             opacity: 0;
+                //                             transition: linear 0.5s;
+                //                             height: 33px;
+                //                             p {
+                //                                 position: relative;
+                //                                 top: 50%;
+                //                                 transform: translateY(-50%);
+                                            
+                //                             } 
+                //                         }
+                //                     }  
+                //                 }
+                //                 .section-info-label:hover ~ .section-info-nav {
+                //                     padding: 203px 0 0 0;
+                //                     width: 100%;
+                //                     margin-left: 0%;
+                //                     max-height: 450px;
+                //                     font-size: 14px;
+                //                     transition: linear 0.4s;  
+                //                 }
+                //                 .section-info-label:hover ~ .section-info-nav .section-info-li .section-info-a {
+                //                     opacity: 1;
+                //                     border-top: 1px solid @color_dlue_tone_three_main;
+                //                     transition: linear 0.5s; 
+                //                 }
+                //             }
+                //             .products-section-base {
+                //                 margin-top: 3px;
+                //                 border: 1px solid @color_blue_main;
+                //                 a {
+                //                     text-decoration: none;
+                //                     text-transform: uppercase;
+                                    
+                //                     .content2-block-base-img {
+                //                         width: 100%;
+                //                         height: 200px;
+                //                         img {
+                //                             height: 100%;
+                //                             width: 100%;
+                //                         }
+                //                     }
+                //                     .content2-block-base-partsname {
+                //                         color: @color_white_main;
+                //                         text-transform: uppercase;
+                //                         font-size: @font-size_main - 5px;
+                //                         font-family: 'Roboto', sans-serif;
+                //                         font-weight: 400;
+                //                         text-transform: uppercase;
+                //                         transition: linear 0.5s;
+                //                         height: 35px;
+                //                         width: 100%;
+                //                         padding: 0 5px 0 5px;
+                //                         background: rgb(180, 66, 0);
+                //                         background: @color_blue_main;
+                //                         p {
+                //                             position: relative;
+                //                             top: 50%;
+                //                             transform: translateY(-50%);
+                //                         }
+                //                     }
+                //                     .content2-block-base-brand {
+                //                         padding: 0;
+                //                         margin: 0;
+                //                         color: @color_dlue_tone_two_main;
+                //                         text-transform: uppercase;
+                //                         font-size: @font-size_main - 1px;
+                //                         font-family: 'Roboto', sans-serif;
+                //                         font-weight: 400;
+                //                         text-transform: uppercase;
+                //                         transition: linear 0.5s;
+                //                         height: 30px;
+                //                         width: 100%;
+                //                         // line-height: 30px;
+                //                         padding: 0 5px 0 5px;
+                //                         background: rgb(4, 110, 9);
+                //                         background: @color_blue_main;
+                //                         p {
+                                        
+                //                             position: relative;
+                //                             top: 50%;
+                //                             transform: translateY(-50%);
+                //                         }
+                //                     }
+                //                     .content2-block-base-partscode {
+                //                         color: @color_white_main;
+                //                         text-transform: uppercase;
+                //                         font-size: @font-size_main - 5px;
+                //                         font-family: 'Roboto', sans-serif;
+                //                         font-weight: 400;
+                //                         text-transform: uppercase;
+                //                         transition: linear 0.5s;
+                //                         height: 40px;
+                //                         width: 100%;
+                //                         background: rgb(53, 4, 48);
+                //                         background: @color_blue_main;
+                //                         // word-break:break-all;
+                //                         padding: 0 5px 0 5px;
+                //                         p {
+                //                             position: relative;
+                //                             top: 50%;
+                //                             transform: translateY(-50%);
+                //                         }
+                //                     } 
+                //                 }
+                //             }
+                //             .products-section-base:hover a div {
+                //                 color: @color_yellow_main;
+                //             }
+                //             .products-section-buy {
+                //                 margin-top: 4px;
+                //                 a {
+                //                     text-decoration: none;
+                //                     text-transform: uppercase;
+                //                     .content2-block-buy-cost {
+                //                         padding: 0;
+                //                         margin: 0;
+                //                         color: @color_dlue_dark_main;
+                //                         text-transform: uppercase;
+                //                         font-size: @font-size_main + 5px;
+                //                         font-family: 'Roboto', sans-serif;
+                //                         font-weight: 700;
+                //                         text-transform: uppercase;
+                //                         letter-spacing: 1px;
+                //                         word-spacing: 7px;
+                //                         transition: linear 0.5s;
+                //                         height: 25px;
+                //                         width: 100%;
+                //                         background: rgb(4, 110, 9);
+                //                         background: @color_linear_main;
+                //                         p {
+                //                             position: relative;
+                //                             top: 50%;
+                //                             transform: translateY(-50%);
+                //                             span {
+                //                                 font-size: @font-size_main + 2px;
+                //                                 font-family: 'Roboto', sans-serif;
+                //                                 font-weight: 400;
+                //                             }
+                //                         }
+                //                     }
+                //                     .content2-block-buy-card {
+                //                         color: @color_white_main;
+                //                         text-transform: uppercase;
+                //                         font-size: @font-size_main;
+                //                         font-family: 'Roboto', sans-serif;
+                //                         font-weight: 400;
+                //                         text-transform: uppercase;
+                //                         transition: linear 0.5s;
+                //                         height: 30px;
+                //                         width: 100%;
+                //                         background: @color_blue_main;
+                //                         line-height: 30px;
+                //                     }
+                //                 }
+                //             }
+                //             .products-section-buy:hover a .content2-block-buy-card{
+                //                 color: @color_yellow_main;
+                                
+                //             }
+                //             .products-section-buy:hover a .content2-block-buy-cost{
+                //                 color: @color_yellow_main;
+                //                 background: @color_dlue_tone_three_main;
+                                
+                //             }
+                //         } 
+                //     }
+                // }
+            }
+        }
+    }
+}
