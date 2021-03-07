@@ -6,7 +6,6 @@ body {
             width: 100%;
             max-width: 1260px;
             min-height: 1px;
-            // padding-left: 10px;
             align-items: center;
             justify-content: center;            
             .page-cards-goods-wrapper {
@@ -55,7 +54,6 @@ body {
                 .content2-cards-goods-base {
                     width: 100%;
                     min-height: 1px;
-                    // background: rgb(184, 207, 138);
                     margin-top: 30px;
                     display: flex;
                     justify-content: space-between;
@@ -63,17 +61,15 @@ body {
                         width: 100%;
                         width: 600px;
                         max-height: 730px;
-                        // background: rgb(0, 47, 255);
                         padding: 0px;
                         .block-base-pfoto {
                             width: 100%;
                             max-height: 600px;
-                           
-                            // background: rgb(50, 130, 205);
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             overflow: hidden;
+                            border: 2px solid @color_linear_main;
                             img {
                                 width: 100%;
                             }
@@ -81,12 +77,12 @@ body {
                         .block-small-pfoto {
                             width: 100%;
                             height: 120px;
-                            // background: rgb(205, 50, 184);
                             margin-top: 10px;
                             padding: 5px;
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
+                            border: 2px solid @color_linear_main;
                             .small-pfoto {
                                 width: 100px;
                                 height: 100px;
@@ -95,9 +91,8 @@ body {
                                 align-items: center;
                                 justify-content: center;
                                 overflow: hidden;
-
+                                border: 2px solid @color_linear_main;
                                 cursor: pointer;
-                                
                                 img {
                                     width: 100%;
                                     height: 100%;
@@ -108,24 +103,21 @@ body {
                     .content3-section-sale {
                         width: 600px;
                         min-height: 1px;
-                        // background: rgb(207, 166, 138);
                         margin-left: 10px;                        
                         .content3-section-sale-wrapper {
                             margin-top: 20px;
                             width: 100%;
                             min-height: 1px;                            
-                            // background: yellow;
                             padding-bottom: 10px;                                                                                   
                             ul {
                                 li {
                                     height: 30px;
                                     margin-top: 5px;
-                                    // background: rgb(255, 166, 0);
                                     line-height: 30px;
                                     height: 100%;
                                     list-style: none;
                                     min-width: 1px;                                    
-                                    color: black;
+                                    color: @color_black_main;
                                     font-size: 17px;
                                     font-family: 'Roboto', sans-serif;
                                     font-weight: 300;                
@@ -142,8 +134,28 @@ body {
                                     }
                                 }
                             }
-                            .products-section-buy {
+                            .star {
+                                width: 100%;  
+                                height: 30px;
+                                line-height: 30px;
                                 margin-top: 20px;
+                                margin-left: 20px;
+                                // background: yellowgreen;
+                                .fa-star {
+                                    padding: 0;
+                                    margin: 0;
+                                    padding: 2px;
+                                    color: @color_yellow_main;
+                                    -webkit-text-stroke: 1px @color_blue_main;
+                                    font-size: @font-size_main + 5px;
+                                   
+                                    vertical-align:middle;
+                                    display:inline-block;
+
+                                }
+                            }
+                            .products-section-buy {
+                                margin-top: 10px;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
@@ -161,8 +173,6 @@ body {
                                     word-spacing: 7px; 
                                     height: 45px;
                                     width: 220px;
-                                    // background: rgb(4, 110, 9);
-                                    // background: @color_linear_main;
                                     text-align: center;
                                     margin-top: 20px;
                                     p {
@@ -176,20 +186,17 @@ body {
                                         }
                                     }
                                 }
-                                ///////////////////////////////
                                 .content3-block-buy-choice {
                                     margin-top: 30px;
                                     width: 100%;
-                                    
                                     display: flex;
                                     justify-content: space-around;
-
                                     .content3-block-buy-quantity {
                                         padding: 0;
                                         margin: 0;
                                         color: @color_blue_main;
                                         text-transform: uppercase;
-                                        font-size: @font-size_main + 5px;
+                                        font-size: @font-size_main + 8px;
                                         font-family: 'Roboto', sans-serif;
                                         font-weight: 700;
                                         text-transform: uppercase;
@@ -197,16 +204,12 @@ body {
                                         word-spacing: 7px;   
                                         height: 45px;
                                         width: 120px;
-                                        // background: rgb(4, 110, 9);
-                                        // background: @color_linear_main;
                                         text-align: center;
                                         margin-top: 20px;
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
                                         border: 1px solid @color_blue_main;
-                                        // float: left;
-                                        
                                         a {
                                             text-decoration: none;
                                             width: 30px;
@@ -254,7 +257,7 @@ body {
                                             font-size: @font-size_main + 5px;
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
-                                            text-transform: uppercase;
+                                            
                                             transition: linear 0.5s;
                                             height: 45px;
                                             width: 220px;
@@ -272,32 +275,7 @@ body {
                                     }
                                 }
                                 
-                                ////////////////////////////////
-                                // a {
-                                //     text-decoration: none;
-                                //     text-transform: uppercase;  
-                                //     .content3-block-buy-cry {
-                                //         color: @color_white_main;
-                                //         text-transform: uppercase;
-                                //         font-size: @font-size_main + 3px;
-                                //         font-family: 'Roboto', sans-serif;
-                                //         font-weight: 400;
-                                //         text-transform: uppercase;
-                                //         transition: linear 0.5s;
-                                //         height: 45px;
-                                //         width: 220px;
-                                //         background: @color_blue_main;
-                                //         line-height: 45px;
-                                //         text-align: center;
-                                //         margin-top: 20px;
-                                //         transition: linear 0.2s;
-                                //     }
-                                //     .content3-block-buy-cry :hover {
-                                //         color: @color_yellow_main;
-                                //         transition: linear 0.2s;
-                                                        
-                                //     }
-                                // }
+                               
                             }
                         }  
                     }
@@ -305,10 +283,10 @@ body {
                 .content3-cards-goods-facts {
                     width: 100%;
                     min-height: 1px;
-                    max-height: 730px;
+                    // max-height: 730px;
                     // background: rgb(252, 232, 253);
                     // background: rgb(247, 248, 248);
-                    margin-top: 20px;
+                    margin-top: 50px;
                     margin-bottom: 30px;
                     .ppp1 {
                         width: 100%;
@@ -334,12 +312,12 @@ body {
                                     align-items: center;
                                     justify-content: center;
                                    
-                                    .content1-block-linear {
-                                        height: 3px;
-                                        width: 90%;
-                                        background: @color_linear_main;
-                                        margin: 0px 0px 20px 0px;
-                                    }
+                                    // .content1-block-linear {
+                                    //     height: 3px;
+                                    //     width: 90%;
+                                    //     background: @color_linear_main;
+                                    //     margin: 0px 0px 20px 0px;
+                                    // }
                                     .content1-description-title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
@@ -364,7 +342,8 @@ body {
                                    
                                 }
                             }
-                            .ttt {margin-top: 20px;
+                            .ttt {
+                                margin-top: 20px;
                                 .text-ttt {
                                     font-family: 'Roboto', sans-serif;
                                     font-weight: 400;
@@ -392,7 +371,7 @@ body {
                             padding: 0;
                             // padding-bottom: 1px;
                             // min-height: 1px;
-                            border-bottom: 2px solid @color_linear_main;
+                            // border-bottom: 2px solid @color_linear_main;
                             .eee {
                                 margin-bottom: 20px;
                                 .content1-description {
@@ -406,12 +385,12 @@ body {
                                     align-items: center;
                                     justify-content: center;
                                    
-                                    .content1-block-linear {
-                                        height: 3px;
-                                        width: 90%;
-                                        background: @color_linear_main;
-                                        margin: 0px 0px 20px 0px;
-                                    }
+                                    // .content1-block-linear {
+                                    //     height: 3px;
+                                    //     width: 90%;
+                                    //     background: @color_linear_main;
+                                    //     margin: 0px 0px 20px 0px;
+                                    // }
                                     .content1-description-title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
@@ -436,65 +415,97 @@ body {
                                    
                                 }
                             }
-                            ul {
-                                margin: 0;
-                                padding: 5px 0px;
-                                // display: flex;
-                               
-                                
-                                max-width: 1260px;
-                               
-
-
+                            .ul-wrapper {
+                                width: 100%;
+                                min-height: 1px;
                                 display: flex;
+                                flex-direction: column;
                                 justify-content: space-between;
                                 align-items: center;
-                                border-top: 2px solid @color_linear_main;
-                                border-right: 2px solid @color_linear_main;
-                                border-left: 2px solid @color_linear_main;
-                                .iii1 {
-                                    width: 30%;
+                                ul {
+                                    margin: 0 0 0px 0;
+                                    padding: 0px 0px;
+                                    // display: flex;
                                    
-                                }
-                                .iii2 {
-                                    width: 70%;
-                                }
-                                
-                                .iii {
-                                    padding: 0;
-                                    margin: 0;
-                                    padding-left: 10px;
-                                    padding-right: 10px;
-                                    // min-width: 1px;
-                                    // width: 100%;///////////////////////==========
-                                    // height: 35px;
-                                    // height: 100%;
-                                    min-height: 25px;
-                                    line-height: 25px;
                                     
-                                    // margin-bottom: 15px;
-                                    
-                                    
-                                    
-                                    
-
-                                    list-style: none;
-                                    .text {
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 400;
-                                        font-size: @font-size_main - 1px;
-                                        letter-spacing: 0px;
-                                        word-spacing: 3px;
-                                        color: @color_black_main;
-                                        text-transform: uppercase;
-                                        text-decoration: none;
+                                    // max-width: 1260px;
+                                    width: 100%;
+                                    max-width: 1260px;
+    
+    
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-top: 1px solid @color_linear_main;
+                                    border-right: 1px solid @color_linear_main;
+                                    border-left: 1px solid @color_linear_main;
+                                    border-bottom: 1px solid @color_linear_main;
+                                   
+                                    background: @color_linear_main * 1.14;
+                                    // background: rgb(201, 202, 200);
+                                    .iii1 {
+                                        width: 100%;
+                                        
+                                        
+                                        .text {
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 500;
+                                            font-size: @font-size_main;
+                                            letter-spacing: 0px;
+                                            word-spacing: 3px;
+                                            color: @color_black_main;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                           
+                                            // position: relative;
+                                            // top: 50%;
+                                            // transform: translateY(-50%);
+    
+                                        }
+                                        
                                        
-                                        // position: relative;
-                                        // top: 50%;
-                                        // transform: translateY(-50%);
-
+                                    }
+                                    .iii2 {
+                                        width: 100%;
+                                        
+                                        
+                                        
+                                        .text {
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 400;
+                                            font-size: @font-size_main;
+                                            letter-spacing: 0px;
+                                            word-spacing: 3px;
+                                            color: @color_black_main;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                           
+                                            // position: relative;
+                                            // top: 50%;
+                                            // transform: translateY(-50%);
+    
+                                        }
+                                        
+                                       
+                                    }
+                                    .iii {
+                                        padding: 3px 0;
+                                        margin: 0;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        // min-width: 1px;
+                                        // width: 100%;///////////////////////==========
+                                        // height: 35px;
+                                        // height: 100%;
+                                        min-height: 25px;
+                                        line-height: 25px;
+                                        list-style: none;
+    
+                                        
+                                        
                                     }
                                 }
+
                             }
                         }
 
@@ -509,9 +520,12 @@ body {
                             padding: 0;
                             // padding-bottom: 1px;
                             // min-height: 1px;
-                            border-bottom: 2px solid @color_linear_main;
+                            // border-bottom: 2px solid @color_linear_main;
+                            
                             .eee {
                                 margin-bottom: 20px;
+                                
+
                                 .content1-description {
                                     padding: 0;
                                     margin: 0;
@@ -523,12 +537,12 @@ body {
                                     align-items: center;
                                     justify-content: center;
                                    
-                                    .content1-block-linear {
-                                        height: 3px;
-                                        width: 90%;
-                                        background: @color_linear_main;
-                                        margin: 0px 0px 20px 0px;
-                                    }
+                                    // .content1-block-linear {
+                                    //     height: 3px;
+                                    //     width: 90%;
+                                    //     background: @color_linear_main;
+                                    //     margin: 0px 0px 20px 0px;
+                                    // }
                                     .content1-description-title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
@@ -553,64 +567,99 @@ body {
                                    
                                 }
                             }
-                            ul {
-                                margin: 0;
-                                padding: 5px 0px;
-                                // display: flex;
-                               
-                                
-                                max-width: 1260px;
-
-
+                            .ul-wrapper {
+                                width: 100%;
+                                min-height: 1px;
                                 display: flex;
+                                flex-direction: column;
                                 justify-content: space-between;
                                 align-items: center;
-                                border-top: 2px solid @color_linear_main;
-                                border-right: 2px solid @color_linear_main;
-                                border-left: 2px solid @color_linear_main;
-                                .iii1 {
-                                    width: 30%;
+                                ul {
+                                    margin: 0 0 0px 0;
+                                    padding: 0px 0px;
+                                    // display: flex;
                                    
-                                }
-                                .iii2 {
-                                    width: 70%;
+                                    
+                                    // max-width: 1260px;
+                                    width: 100%;
+                                    max-width: 1260px;
+    
+    
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-top: 1px solid @color_linear_main;
+                                    border-right: 1px solid @color_linear_main;
+                                    border-left: 1px solid @color_linear_main;
+                                    border-bottom: 1px solid @color_linear_main;
                                    
-                                }
-                                .iii {
-                                    padding: 0;
-                                    margin: 0;
-                                    padding-left: 10px;
-                                    padding-right: 10px;
-                                    // min-width: 1px;
-                                    // width: 100%;///////////////////////==========
-                                    // height: 35px;
-                                    // height: 100%;
-                                    min-height: 25px;
-                                    line-height: 25px;
-                                    
-                                    // margin-bottom: 15px;
-                                    
-                                    
-                                    
-
-                                    list-style: none;
-                                    .text {
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 400;
-                                        font-size: @font-size_main - 1px;
-                                        letter-spacing: 0px;
-                                        word-spacing: 3px;
-                                        color: @color_black_main;
-                                        text-transform: uppercase;
-                                        text-decoration: none;
+                                    background: @color_linear_main * 1.14;
+                                    // background: rgb(201, 202, 200);
+                                    .iii1 {
+                                        width: 100%;
+                                        
+                                        
+                                        .text {
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 500;
+                                            font-size: @font-size_main;
+                                            letter-spacing: 0px;
+                                            word-spacing: 3px;
+                                            color: @color_black_main;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                           
+                                            // position: relative;
+                                            // top: 50%;
+                                            // transform: translateY(-50%);
+    
+                                        }
+                                        
                                        
-                                        // position: relative;
-                                        // top: 50%;
-                                        // transform: translateY(-50%);
-
+                                    }
+                                    .iii2 {
+                                        width: 100%;
+                                        
+                                        
+                                        
+                                        .text {
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 400;
+                                            font-size: @font-size_main;
+                                            letter-spacing: 0px;
+                                            word-spacing: 3px;
+                                            color: @color_black_main;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                           
+                                            // position: relative;
+                                            // top: 50%;
+                                            // transform: translateY(-50%);
+    
+                                        }
+                                        
+                                       
+                                    }
+                                    .iii {
+                                        padding: 3px 0;
+                                        margin: 0;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        // min-width: 1px;
+                                        // width: 100%;///////////////////////==========
+                                        // height: 35px;
+                                        // height: 100%;
+                                        min-height: 25px;
+                                        line-height: 25px;
+                                        list-style: none;
+    
+                                        
+                                        
                                     }
                                 }
+
                             }
+                            
                         }
 
                     }
