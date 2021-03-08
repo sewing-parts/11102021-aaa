@@ -140,7 +140,6 @@ body {
                                 line-height: 30px;
                                 margin-top: 20px;
                                 margin-left: 20px;
-                                // background: yellowgreen;
                                 .fa-star {
                                     padding: 0;
                                     margin: 0;
@@ -148,10 +147,8 @@ body {
                                     color: @color_yellow_main;
                                     -webkit-text-stroke: 1px @color_blue_main;
                                     font-size: @font-size_main + 5px;
-                                   
                                     vertical-align:middle;
                                     display:inline-block;
-
                                 }
                             }
                             .products-section-buy {
@@ -194,22 +191,15 @@ body {
                                     .content3-block-buy-quantity {
                                         padding: 0;
                                         margin: 0;
-                                        color: @color_blue_main;
-                                        text-transform: uppercase;
-                                        font-size: @font-size_main + 8px;
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 700;
-                                        text-transform: uppercase;
-                                        letter-spacing: 1px;
-                                        word-spacing: 7px;   
-                                        height: 45px;
-                                        width: 120px;
+                                        
+                                        min-height: 1px;
+                                        min-width: 1px;
                                         text-align: center;
                                         margin-top: 20px;
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
-                                        border: 1px solid @color_blue_main;
+                                       
                                         a {
                                             text-decoration: none;
                                             width: 30px;
@@ -228,7 +218,23 @@ body {
                                             }
                                         }
                                         .quantity-pieces {
-    
+                                            height: 45px;
+                                            line-height: 45px;
+                                            width: 60px;
+                                            box-sizing: border-box;
+                                            border-top: 1px solid @color_blue_main;
+                                            border-bottom: 1px solid @color_blue_main;
+                                            background: @color_linear_main * 1.14;
+                                            p {
+                                                color: @color_blue_main;
+                                                text-transform: uppercase;
+                                                font-size: @font-size_main + 8px;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-weight: 700;
+                                                text-transform: uppercase;
+                                                letter-spacing: 1px;
+                                                word-spacing: 7px;   
+                                            }
                                         }
                                         a {
                                             text-decoration: none;
@@ -266,16 +272,13 @@ body {
                                             text-align: center;
                                             margin-top: 20px;
                                             transition: linear 0.2s;
-                                            // float: left;
                                         }
                                         .content3-block-buy-card :hover {
                                             color: @color_yellow_main;
                                             transition: linear 0.2s;     
                                         }
                                     }
-                                }
-                                
-                               
+                                }  
                             }
                         }  
                     }
@@ -283,9 +286,6 @@ body {
                 .content3-cards-goods-facts {
                     width: 100%;
                     min-height: 1px;
-                    // max-height: 730px;
-                    // background: rgb(252, 232, 253);
-                    // background: rgb(247, 248, 248);
                     margin-top: 50px;
                     margin-bottom: 30px;
                     .ppp1 {
@@ -296,9 +296,6 @@ body {
                         .ppp1-w {
                             margin: 0;
                             padding: 0;
-                            // padding-bottom: 1px;
-                            // min-height: 1px;
-                            // border-bottom: 1px solid gray;
                             .qqq {
                                 margin-bottom: 20px;
                                 .content1-description {
@@ -311,13 +308,6 @@ body {
                                     max-width: 1260px;
                                     align-items: center;
                                     justify-content: center;
-                                   
-                                    // .content1-block-linear {
-                                    //     height: 3px;
-                                    //     width: 90%;
-                                    //     background: @color_linear_main;
-                                    //     margin: 0px 0px 20px 0px;
-                                    // }
                                     .content1-description-title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
@@ -338,8 +328,7 @@ body {
                                         border-bottom: 2px solid @color_yellow_main;
                                         position: absolute;
                                         left: 0;
-                                    }
-                                   
+                                    }  
                                 }
                             }
                             .ttt {
@@ -354,24 +343,17 @@ body {
                                     text-transform: uppercase;
                                     text-decoration: none;
                                     text-indent: 20px;
-
                                 }
                             }
                         }
-
                     }
                     .ppp2 {
                         width: 100%;
                         min-height: 1px;
-                        // background: rgb(247, 248, 248);
                         margin-top: 20px;
-                        
                         .ppp2-w {
                             margin: 0;
                             padding: 0;
-                            // padding-bottom: 1px;
-                            // min-height: 1px;
-                            // border-bottom: 2px solid @color_linear_main;
                             .eee {
                                 margin-bottom: 20px;
                                 .content1-description {
@@ -384,13 +366,6 @@ body {
                                     max-width: 1260px;
                                     align-items: center;
                                     justify-content: center;
-                                   
-                                    // .content1-block-linear {
-                                    //     height: 3px;
-                                    //     width: 90%;
-                                    //     background: @color_linear_main;
-                                    //     margin: 0px 0px 20px 0px;
-                                    // }
                                     .content1-description-title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
@@ -411,8 +386,7 @@ body {
                                         border-bottom: 2px solid @color_yellow_main;
                                         position: absolute;
                                         left: 0;
-                                    }
-                                   
+                                    } 
                                 }
                             }
                             .ul-wrapper {
@@ -423,16 +397,10 @@ body {
                                 justify-content: space-between;
                                 align-items: center;
                                 ul {
-                                    margin: 0 0 0px 0;
+                                    margin: 0px;
                                     padding: 0px 0px;
-                                    // display: flex;
-                                   
-                                    
-                                    // max-width: 1260px;
                                     width: 100%;
                                     max-width: 1260px;
-    
-    
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
@@ -440,13 +408,9 @@ body {
                                     border-right: 1px solid @color_linear_main;
                                     border-left: 1px solid @color_linear_main;
                                     border-bottom: 1px solid @color_linear_main;
-                                   
                                     background: @color_linear_main * 1.14;
-                                    // background: rgb(201, 202, 200);
                                     .iii1 {
                                         width: 100%;
-                                        
-                                        
                                         .text {
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 500;
@@ -456,20 +420,10 @@ body {
                                             color: @color_black_main;
                                             text-transform: uppercase;
                                             text-decoration: none;
-                                           
-                                            // position: relative;
-                                            // top: 50%;
-                                            // transform: translateY(-50%);
-    
-                                        }
-                                        
-                                       
+                                        }  
                                     }
                                     .iii2 {
                                         width: 100%;
-                                        
-                                        
-                                        
                                         .text {
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
@@ -479,53 +433,30 @@ body {
                                             color: @color_black_main;
                                             text-transform: uppercase;
                                             text-decoration: none;
-                                           
-                                            // position: relative;
-                                            // top: 50%;
-                                            // transform: translateY(-50%);
-    
-                                        }
-                                        
-                                       
+                                        }  
                                     }
                                     .iii {
                                         padding: 3px 0;
                                         margin: 0;
                                         padding-left: 10px;
                                         padding-right: 10px;
-                                        // min-width: 1px;
-                                        // width: 100%;///////////////////////==========
-                                        // height: 35px;
-                                        // height: 100%;
                                         min-height: 25px;
                                         line-height: 25px;
-                                        list-style: none;
-    
-                                        
-                                        
+                                        list-style: none;   
                                     }
                                 }
-
                             }
                         }
-
                     }
                     .ppp3{
                         width: 100%;
                         min-height: 1px;
-                        // background: rgb(247, 248, 248);
                         margin-top: 20px;
                         .ppp3-w {
                             margin: 0;
                             padding: 0;
-                            // padding-bottom: 1px;
-                            // min-height: 1px;
-                            // border-bottom: 2px solid @color_linear_main;
-                            
                             .eee {
                                 margin-bottom: 20px;
-                                
-
                                 .content1-description {
                                     padding: 0;
                                     margin: 0;
@@ -536,13 +467,6 @@ body {
                                     max-width: 1260px;
                                     align-items: center;
                                     justify-content: center;
-                                   
-                                    // .content1-block-linear {
-                                    //     height: 3px;
-                                    //     width: 90%;
-                                    //     background: @color_linear_main;
-                                    //     margin: 0px 0px 20px 0px;
-                                    // }
                                     .content1-description-title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
@@ -577,28 +501,18 @@ body {
                                 ul {
                                     margin: 0 0 0px 0;
                                     padding: 0px 0px;
-                                    // display: flex;
-                                   
-                                    
-                                    // max-width: 1260px;
                                     width: 100%;
                                     max-width: 1260px;
-    
-    
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
                                     border-top: 1px solid @color_linear_main;
                                     border-right: 1px solid @color_linear_main;
                                     border-left: 1px solid @color_linear_main;
-                                    border-bottom: 1px solid @color_linear_main;
-                                   
+                                    border-bottom: 1px solid @color_linear_main;               
                                     background: @color_linear_main * 1.14;
-                                    // background: rgb(201, 202, 200);
                                     .iii1 {
-                                        width: 100%;
-                                        
-                                        
+                                        width: 100%; 
                                         .text {
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 500;
@@ -608,20 +522,10 @@ body {
                                             color: @color_black_main;
                                             text-transform: uppercase;
                                             text-decoration: none;
-                                           
-                                            // position: relative;
-                                            // top: 50%;
-                                            // transform: translateY(-50%);
-    
-                                        }
-                                        
-                                       
+                                        } 
                                     }
                                     .iii2 {
                                         width: 100%;
-                                        
-                                        
-                                        
                                         .text {
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
@@ -631,44 +535,26 @@ body {
                                             color: @color_black_main;
                                             text-transform: uppercase;
                                             text-decoration: none;
-                                           
-                                            // position: relative;
-                                            // top: 50%;
-                                            // transform: translateY(-50%);
-    
-                                        }
-                                        
-                                       
+                                        }  
                                     }
                                     .iii {
                                         padding: 3px 0;
                                         margin: 0;
                                         padding-left: 10px;
                                         padding-right: 10px;
-                                        // min-width: 1px;
-                                        // width: 100%;///////////////////////==========
-                                        // height: 35px;
-                                        // height: 100%;
                                         min-height: 25px;
                                         line-height: 25px;
-                                        list-style: none;
-    
-                                        
-                                        
+                                        list-style: none;   
                                     }
                                 }
-
-                            }
-                            
+                            }    
                         }
-
                     }
                 }
                 .content4-button {
                     width: 100%;
                     padding: 0px 0px 20px 0px;
-                    min-height: 1px;
-                    
+                    min-height: 1px; 
                     .content4-button-wrapper {
                         .content4-description {
                             padding: 0;
@@ -680,13 +566,6 @@ body {
                             max-width: 1260px;
                             align-items: center;
                             justify-content: center;
-                           
-                            // .content4-block-linear {
-                            //     height: 3px;
-                            //     width: 90%;
-                            //     background: @color_linear_main;
-                            //     margin: 0px 0px 20px 0px;
-                            // }
                             .content4-description-title {
                                 color: @color_black_main;
                                 text-transform: uppercase;
@@ -707,8 +586,7 @@ body {
                                 border-bottom: 2px solid @color_yellow_main;
                                 position: absolute;
                                 left: 0;
-                            }
-                           
+                            }   
                         }
                         .block-button {
                             width: 100%;
@@ -779,7 +657,6 @@ body {
                                 -ms-transform: translateY(5px);
                                 transform: translateY(5px);
                             }
-
                         }
                     }   
                 }
