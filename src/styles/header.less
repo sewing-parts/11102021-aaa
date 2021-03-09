@@ -320,7 +320,7 @@ body {
                             height: 175px;
                            
                             // border-radius: 50%;
-                            margin:20px 0px 0 0px;
+                            margin: 100px 0px 0 0px;
                             
                             // background-color: #fff;
                             
@@ -341,30 +341,34 @@ body {
                                 position: absolute;
 
 
-                                width: 100vw;
+                                max-width: 350;
                                 height: 20px;
-                                line-height: 18px;
-                                margin-top: 150px;
-                                margin-left: -20px;
+                                line-height: 20px;
+                                margin-top: 177px;
+                                margin-left: 0px;
                                 padding: 0 3px;
                                 border-radius: 3px;
-                                // background: yellow;
-                                top: -240px;
+                                background: @color_linear_main;
+                                // top: 27px;
+                                // left: 20px;
                                 
 
 
                                 // margin-left: -120px;
                                 .logo-text {
                                     // color: @color_fon_logo;
-                                    color: rgb(128, 52, 1);
+                                    color: rgb(131, 131, 131);
                                     font-family: 'Roboto', sans-serif;
                                     font-weight: 900;
-                                    font-size: @font-size_main - 4px;
+                                    font-size: @font-size_main - 1.5px;
                                     text-transform: uppercase;
+                                    
                                     display: flex;
                                     justify-content: space-between;
                                     // display: inline-block;
                                     // transform: scale(.5, 1);
+                                   
+                                    
                                 }
                             }  
                         }
@@ -384,95 +388,59 @@ body {
                     }
                 }
                 #search {
-                    margin-left: auto;
                     width: 100%;
-                    // max-width: 1260px;
-                    height: 40px;
-                            line-height: 40px;
                     position: relative;
-                    margin-top: 20px;
-                    z-index: 88888;
-                    background: yellowgreen;
-                     display: flex;
-                    
-                        // align-items: center;
-                        // justify-content: center;
-                        
+                    margin-top: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 88888; 
                     .search-box {
                         padding: 0;
                         margin: 0;
-                       
-                       display: flex;
-                    //    align-items: center;
-                       justify-content: center;
-                       
-                    //    flex-wrap: wrap;
-                    //    min-width: 1px;
-                        background: rgb(50, 143, 205);
-                        width: 100vw;
-                        height: 55px;
-                        line-height: 55px;
-                        
-                        
-
-                        
-                        // min-width: 1px;
-                        
-                       
-                         
-                        .search-txt {
-                            margin: 0;
-                            padding: 0;
-                            width: 100vw;
-                            max-width: 55vw;
-                            color: @color_black_main;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight: 400;
-                            // float: left;
-                            // padding: 5px;
-                            height: 36px;
-                            line-height: 36px;
-                            font-size: @font-size_main;
-                            
-                            
-                            border: 2px solid @color_blue_main;
-                            background-color: @color_fon_logo;/* цвет под логотип */
-                            
-                            
-                            
-                            
-                            
-                            
-                              
-                        }
-                        .search-btn {
-                            margin: 0;
-                            padding: 0;
-                            width: 60px;
-                            height: 36px;
-                            line-height: 36px;
-                            // float: left;
-                            // padding: 5px;
-                            font-size: 17px;
-                            color: @color_blue_main;
-                            
-                            
-                            border: 2px solid @color_blue_main;
-                            background-color: @color_fon_logo;/* цвет под логотип */
-                            // margin-left: 1px;
-                            transition: linear 0.5s;
-                            .fas {
-                                padding: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        form {
+                            max-height: 36px;
+                            display: flex;
+                            .search-txt {
                                 margin: 0;
-                                margin-top: 2px;
+                                padding: 0;
+                                width: 100vw;
+                                max-width: 45vw;
+                                color: @color_black_main;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                padding-left: 15px;
+                                height: 36px;
+                                line-height: 36px;
+                                font-size: @font-size_main;
+                                border: 1px solid @color_blue_main;
+                                background-color: @color_white_main;     
                             }
-                        }
-                        .search-btn:hover {
-                            background-color: @color_yellow_main;
-                            color: @color_blue_main;
-                            cursor: pointer;
-                            transition: linear 0.5s;
-                        }
+                            .search-btn {
+                                margin: 0;
+                                padding: 0;
+                                width: 60px;
+                                height: 36px;
+                                font-size: @font-size_main + 5px;
+                                color: @color_white_main;
+                                border: 2px solid @color_blue_main;
+                                background-color: @color_blue_main;
+                                transition: linear 0.3s;
+                                .fas {
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-top: 0px;
+                                }
+                            }
+                            .search-btn:hover {
+                                color: @color_yellow_main;
+                                cursor: pointer;
+                                transition: linear 0.3s;
+                            }
+                        }                        
                     }
                     .search-box::after {
                         content: "";
