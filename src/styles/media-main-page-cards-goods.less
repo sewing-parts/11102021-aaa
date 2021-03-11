@@ -1,4 +1,5 @@
-@media (min-width: 200px) and (max-width: 760px) {
+@media (min-width: 540px) and (max-width: 760px) {
+    @font-size_main: 15px;
     body {
         #main { 
             .page-cards-goods {
@@ -9,41 +10,32 @@
                             margin: 0px 0px 40px 0px;
                         }
                         .content1-description-title {
-                            // color: @color_black_main;
-                            font-size: @font-size_main + 7px;
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 500;
-                            letter-spacing: 0px;
-                            word-spacing: 5px;
+                            font-size: @font-size_main + 5px;
                         }  
                     }
                     .content2-cards-goods-base {
                         display: flex;
-                        // // justify-content: space-between;//////////////////===========1111111
-                        flex-direction: column;//////////////////////////=============11111111111
-                        align-items: center;////////////////////////==================1111111111
+                        flex-direction: column;/* */
+                        align-items: center;/* */
                         justify-content: center;
-                        // justify-content: space-around;////////////////////////============11
-                       ///////////////////////////////////////////////////////////////////////////////
                         .content2-section-pfoto {
                             width: 100%;
                             max-width: 600px;
                             max-height: 730px;
                         }
                         .content3-section-sale {
-                            width: 100%;///////////////////////////////////===============1111 7777
-                            // min-height: 1px;
-                            margin-left: 0px;///////////////////////////////////====================111111
+                            width: 100%;/* */
+                            margin-left: 0px;/* */
                             .content3-section-sale-wrapper {
                                 ul {
-                                    // min-height: 25px;
-                                    // max-width: 1260px;
                                     padding: 25px 40px 15px 0px;
                                     li {
-                                        color: @color_black_main;
-                                        font-size: 17px;
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 300;
+                                        p {
+                                            font-size: @font-size_main;
+                                            span {
+                                                font-size: @font-size_main;
+                                            }
+                                        }
                                     }
                                 }
                                 .star {
@@ -52,66 +44,54 @@
                                     justify-content: center;
                                     .fa-star {
                                         -webkit-text-stroke: 1px @color_blue_main;
-                                        font-size: @font-size_main + 5px;
+                                        font-size: @font-size_main + 3px;
                                     }
                                 }
                                 .products-section-buy {
                                     margin-top: 0px;
-                                    .content3-block-buy-cost {
-                                        font-size: @font-size_main + 20px;
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 700;
+                                    .content3-block-buy-cost {  
                                         p {
+                                            font-size: @font-size_main + 15px;
                                             span {
                                                 font-size: @font-size_main + 15px;
-                                                font-family: 'Roboto', sans-serif;
-                                                font-weight: 400;
                                             }
                                         }
                                     }
                                     .content3-block-buy-choice {
-                                        margin-top: 30px;
+                                        margin-top: 20px;
                                         width: 100%;
                                         display: flex;
-                                        flex-direction: column;////===88
-                                        align-items: center;////===88
-                                        justify-content: center;////===88
+                                        flex-direction: column;/* */
+                                        align-items: center;/* */
+                                        justify-content: center;/* */
                                         .content3-block-buy-quantity {
                                             a {
                                                 .quantity-pieces-minus {
                                                     i {
-                                                        color: @color_white_main;
-                                                        font-size: @font-size_main + 3px;
+                                                        font-size: @font-size_main;
                                                     }
                                                 }
                                             }
                                             .quantity-pieces {
                                                 p {
-                                                    color: @color_blue_main;
-                                                    text-transform: uppercase;
-                                                    font-size: @font-size_main + 8px;
-                                                    font-family: 'Roboto', sans-serif;
-                                                    font-weight: 700;
-                                                    text-transform: uppercase;
-                                                    letter-spacing: 1px;
-                                                    word-spacing: 7px;   
+                                                    font-size: @font-size_main + 5px; 
                                                 }
                                             }
                                             a {
                                                 .quantity-pieces-plus {
                                                     i {
-                                                        color: @color_white_main;
-                                                        font-size: @font-size_main + 3px;
+                                                        font-size: @font-size_main;
                                                     }
                                                 }
                                             }
                                         }
                                         a {
                                             .content3-block-buy-card {
-                                                color: @color_white_main;
-                                                font-size: @font-size_main + 5px;
-                                                font-family: 'Roboto', sans-serif;
-                                                font-weight: 400;
+                                                margin-top: 30px;
+                                               
+                                                p {
+                                                    font-size: @font-size_main + 5px;
+                                                }
                                             }
                                         }
                                     }                  
@@ -119,112 +99,284 @@
                             }  
                         }
                     }
-                    .content3-cards-goods-facts {
-                        .ppp1 {
-                            .ppp1-w {
-                                .qqq {
-                                    .content1-description {
-                                        .content1-description-title {
-                                            color: @color_black_main;
+                    .content3-product-card-detail {
+                        .section-description {
+                            .section-description-wrapper {
+                                .description {
+                                    .description-title {
+                                        .title {
                                             font-size: @font-size_main + 3px;
-                                            font-family: 'Montserrat', sans-serif;
-                                            font-weight: 500;
-                                            letter-spacing: 0px;
-                                            word-spacing: 5px;
                                         }                                      
                                     }
-                                }
-                                .ttt {
-                                    .text-ttt {
-                                        font-family: 'Roboto', sans-serif;
-                                        font-weight: 400;
-                                        font-size: @font-size_main - 1px;
-                                        letter-spacing: 0px;
-                                        word-spacing: 3px;
-                                        color: @color_black_main;
+                                    .description-text {
+                                        .text {
+                                            font-size: @font-size_main;
+                                        }
                                     }
                                 }
                             }
                         }
-                        .ppp2 {
+                        .section-characteristics {
                             width: 100%;
                             min-height: 1px;
                             margin-top: 20px;
-                            .ppp2-w {
-                                .eee {
-                                    .content1-description {
-                                        .content1-description-title {
-                                            color: @color_black_main;
+                            .section-characteristics-wrapper {
+                                .characteristics {
+                                    .characteristics-title {
+                                        .title {
                                             font-size: @font-size_main + 3px;
-                                            font-family: 'Montserrat', sans-serif;
-                                            font-weight: 500;
-                                            letter-spacing: 0px;
-                                            word-spacing: 5px;
                                         }
                                     }
                                 }
-                                ul {
-                                    .iii {
-                                        .text {
-                                            font-family: 'Roboto', sans-serif;
-                                            font-weight: 400;
-                                            font-size: @font-size_main - 1px;
-                                            letter-spacing: 0px;
-                                            word-spacing: 3px;
-                                            color: @color_black_main;
+                                .characteristics-block-wrapper {
+                                    .characteristics-block {
+                                        .subblock {
+                                            .subblock1-text {
+                                                font-size: @font-size_main;
+                                            }
+                                            .subblock2-text {
+                                                font-size: @font-size_main;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                        .ppp3{
-                            .ppp3-w {
-                                .eee {
-                                    .content1-description {
-                                        .content1-description-title {
-                                            color: @color_black_main;
+                        .section-application {
+                            .section-application-wrapper {
+                                .application {
+                                    .application-title {
+                                        .title {
                                             font-size: @font-size_main + 3px;
-                                            font-family: 'Montserrat', sans-serif;
-                                            font-weight: 500;
-                                            letter-spacing: 0px;
-                                            word-spacing: 5px;
                                         }
                                     }
                                 }
-                                .ul-wrapper {
-                                    ul {
+                                .application-block-wrapper  {
+                                    .application-block {
                                         display: flex;
-                                        .iii1 {
-                                            .text {
-                                                
-                                                font-family: 'Roboto', sans-serif;
-                                                font-weight: 400;
-                                                font-size: @font-size_main - 1px;
-                                                letter-spacing: 0px;
-                                                word-spacing: 3px;
-                                                color: @color_black_main;
-                                            }  
-                                        }
-                                        .iii2 {
-                                            .text {
-                                                font-family: 'Roboto', sans-serif;
-                                                font-weight: 400;
-                                                font-size: @font-size_main - 1px;
-                                                letter-spacing: 0px;
-                                                word-spacing: 3px;
-                                                color: @color_black_main;
-                                            }  
+                                        .subblock {
+                                            .subblock1-text {
+                                                font-size: @font-size_main;
+                                            }
+                                            .subblock2-text {
+                                                font-size: @font-size_main;
+                                            }    
                                         }
                                     }
+                                }
+                            }
+                        }   
+                    }
+                    .content4-button {
+                        .content4-button-wrapper {
+                            .content4-description {
+                                .content4-description-title {
+                                    font-size: @font-size_main + 3px;
+                                }
+                            }
+                            .block-button {
+                                display: flex;
+                                flex-direction: column;/* */
+                                justify-content: center;/* */
+                                align-items: center;/* */
+                                .button-catalog-partslist  {
+                                    font-size: @font-size_main;
                                 }
                             }
                         }
                     }
-                    .block-button {
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 539px) {
+    @font-size_main: 13px;
+    body {
+        #main { 
+            .page-cards-goods {
+                .page-cards-goods-wrapper {
+                    padding: 0 10px 0 10px;    
+                    .content1-description {
+                        .content1-block-linear {
+                            margin: 0px 0px 40px 0px;
+                        }
+                        .content1-description-title {
+                            font-size: @font-size_main + 5px;
+                        }  
+                    }
+                    .content2-cards-goods-base {
                         display: flex;
-                        flex-direction: column;//////////===888
-                        justify-content: center;//////////===888
-                        align-items: center;//////////===888
+                        flex-direction: column;/* */
+                        align-items: center;/* */
+                        justify-content: center;
+                        .content2-section-pfoto {
+                            width: 100%;
+                            max-width: 600px;
+                            max-height: 730px;
+                        }
+                        .content3-section-sale {
+                            width: 100%;/* */
+                            margin-left: 0px;/* */
+                            .content3-section-sale-wrapper {
+                                ul {
+                                    padding: 25px 40px 15px 0px;
+                                    li {
+                                        p {
+                                            font-size: @font-size_main;
+                                            span {
+                                                font-size: @font-size_main;
+                                            }
+                                        }
+                                    }
+                                }
+                                .star {
+                                    margin-left: 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    .fa-star {
+                                        -webkit-text-stroke: 1px @color_blue_main;
+                                        font-size: @font-size_main + 3px;
+                                    }
+                                }
+                                .products-section-buy {
+                                    margin-top: 0px;
+                                    .content3-block-buy-cost {  
+                                        p {
+                                            font-size: @font-size_main + 15px;
+                                            span {
+                                                font-size: @font-size_main + 15px;
+                                            }
+                                        }
+                                    }
+                                    .content3-block-buy-choice {
+                                        margin-top: 20px;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;/* */
+                                        align-items: center;/* */
+                                        justify-content: center;/* */
+                                        .content3-block-buy-quantity {
+                                            a {
+                                                .quantity-pieces-minus {
+                                                    i {
+                                                        font-size: @font-size_main;
+                                                    }
+                                                }
+                                            }
+                                            .quantity-pieces {
+                                                p {
+                                                    font-size: @font-size_main + 5px; 
+                                                }
+                                            }
+                                            a {
+                                                .quantity-pieces-plus {
+                                                    i {
+                                                        font-size: @font-size_main;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        a {
+                                            .content3-block-buy-card {
+                                                margin-top: 30px;
+                                               
+                                                p {
+                                                    font-size: @font-size_main + 5px;
+                                                }
+                                            }
+                                        }
+                                    }                  
+                                }
+                            }  
+                        }
+                    }
+                    .content3-product-card-detail {
+                        .section-description {
+                            .section-description-wrapper {
+                                .description {
+                                    .description-title {
+                                        .title {
+                                            font-size: @font-size_main + 3px;
+                                        }                                      
+                                    }
+                                    .description-text {
+                                        .text {
+                                            font-size: @font-size_main;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .section-characteristics {
+                            width: 100%;
+                            min-height: 1px;
+                            margin-top: 20px;
+                            .section-characteristics-wrapper {
+                                .characteristics {
+                                    .characteristics-title {
+                                        .title {
+                                            font-size: @font-size_main + 3px;
+                                        }
+                                    }
+                                }
+                                .characteristics-block-wrapper {
+                                    .characteristics-block {
+                                        .subblock {
+                                            .subblock1-text {
+                                                font-size: @font-size_main;
+                                            }
+                                            .subblock2-text {
+                                                font-size: @font-size_main;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .section-application {
+                            .section-application-wrapper {
+                                .application {
+                                    .application-title {
+                                        .title {
+                                            font-size: @font-size_main + 3px;
+                                        }
+                                    }
+                                }
+                                .application-block-wrapper  {
+                                    .application-block {
+                                        display: flex;
+                                        .subblock {
+                                            .subblock1-text {
+                                                font-size: @font-size_main;
+                                            }
+                                            .subblock2-text {
+                                                font-size: @font-size_main;
+                                            }    
+                                        }
+                                    }
+                                }
+                            }
+                        }   
+                    }
+                    .content4-button {
+                        .content4-button-wrapper {
+                            .content4-description {
+                                .content4-description-title {
+                                    font-size: @font-size_main + 3px;
+                                }
+                            }
+                            .block-button {
+                                display: flex;
+                                flex-direction: column;/* */
+                                justify-content: center;/* */
+                                align-items: center;/* */
+                                .button-catalog-partslist  {
+                                    font-size: @font-size_main;
+                                }
+                            }
+                        }
                     }
                 }
             }

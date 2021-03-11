@@ -25,7 +25,7 @@ body {
                     justify-content: center;                  
                     .content1-block-linear {
                         height: 3px;
-                        width: 90%;
+                        width: 96%;
                         background: @color_linear_main;
                         margin: 0px 0px 40px 0px;
                     }
@@ -117,19 +117,20 @@ body {
                                     height: 100%;
                                     list-style: none;
                                     min-width: 1px;                                    
-                                    color: @color_black_main;
-                                    font-size: 17px;
-                                    font-family: 'Roboto', sans-serif;
-                                    font-weight: 300;                
-                                    text-transform: uppercase;
                                     padding-left: 10px;                                    
                                     p {
+                                        color: @color_black_main;
+                                        font-size: @font-size_main;
+                                        font-family: 'Roboto', sans-serif;
+                                        font-weight: 300;                
+                                        text-transform: uppercase;
                                         span {
                                             padding-left: 10px;
-                                            font-size: 17px;
+                                            color: @color_black_main;
+                                            font-size: @font-size_main;
+                                            font-family: 'Roboto', sans-serif;
                                             font-weight: 500;
-                                            
-
+                                            text-transform: uppercase;
                                         }
                                     }
                                 }
@@ -138,7 +139,7 @@ body {
                                 width: 100%;  
                                 height: 30px;
                                 line-height: 30px;
-                                margin-top: 20px;
+                                margin-top: 40px;
                                 margin-left: 20px;
                                 .fa-star {
                                     padding: 0;
@@ -146,13 +147,13 @@ body {
                                     padding: 2px;
                                     color: @color_yellow_main;
                                     -webkit-text-stroke: 1px @color_blue_main;
-                                    font-size: @font-size_main + 5px;
+                                    font-size: @font-size_main + 3px;
                                     vertical-align:middle;
                                     display:inline-block;
                                 }
                             }
                             .products-section-buy {
-                                margin-top: 10px;
+                                margin-top: 0px;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
@@ -160,23 +161,24 @@ body {
                                 .content3-block-buy-cost {
                                     padding: 0;
                                     margin: 0;
-                                    color: @color_blue_main;
-                                    text-transform: uppercase;
-                                    font-size: @font-size_main + 20px;
-                                    font-family: 'Roboto', sans-serif;
-                                    font-weight: 700;
-                                    text-transform: uppercase;
-                                    letter-spacing: 1px;
-                                    word-spacing: 7px; 
                                     height: 45px;
                                     width: 220px;
                                     text-align: center;
                                     margin-top: 20px;
                                     p {
+                                        color: @color_blue_main;
+                                        text-transform: uppercase;
+                                        font-size: @font-size_main + 15px;
+                                        font-family: 'Roboto', sans-serif;
+                                        font-weight: 700;
+                                        letter-spacing: 1px;
+                                        word-spacing: 7px; 
                                         position: relative;
                                         top: 50%;
                                         transform: translateY(-50%);
                                         span {
+                                            color: @color_blue_main;
+                                            text-transform: uppercase;
                                             font-size: @font-size_main + 15px;
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
@@ -184,42 +186,41 @@ body {
                                     }
                                 }
                                 .content3-block-buy-choice {
-                                    margin-top: 30px;
+                                    margin-top: 20px;
                                     width: 100%;
+                                    min-height: 1px;
                                     display: flex;
                                     justify-content: space-around;
                                     .content3-block-buy-quantity {
                                         padding: 0;
                                         margin: 0;
-                                        
                                         min-height: 1px;
                                         min-width: 1px;
                                         text-align: center;
-                                        margin-top: 20px;
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
-                                       
                                         a {
                                             text-decoration: none;
-                                            width: 30px;
                                             .quantity-pieces-minus {
-                                                height: 45px;
-                                                line-height: 45px;
-                                                width: 100%;
+                                                height: 40px;
+                                                line-height: 40px;
+                                                width: 30px;
                                                 background: @color_blue_main;
                                                 i {
+                                                    height: 40px;
+                                                    line-height: 40px;
                                                     color: @color_white_main;
-                                                    font-size: @font-size_main + 3px;
+                                                    font-size: @font-size_main;
                                                 }
-                                                i:hover {
-                                                    color: @color_yellow_main;
-                                                }
+                                            }
+                                            .quantity-pieces-minus:hover i{
+                                                color: @color_yellow_main;
                                             }
                                         }
                                         .quantity-pieces {
-                                            height: 45px;
-                                            line-height: 45px;
+                                            height: 40px;
+                                            line-height: 40px;
                                             width: 60px;
                                             box-sizing: border-box;
                                             border-top: 1px solid @color_blue_main;
@@ -228,7 +229,7 @@ body {
                                             p {
                                                 color: @color_blue_main;
                                                 text-transform: uppercase;
-                                                font-size: @font-size_main + 8px;
+                                                font-size: @font-size_main + 5px;
                                                 font-family: 'Roboto', sans-serif;
                                                 font-weight: 700;
                                                 text-transform: uppercase;
@@ -238,19 +239,20 @@ body {
                                         }
                                         a {
                                             text-decoration: none;
-                                            width: 30px;
                                             .quantity-pieces-plus {
-                                                height: 45px;
-                                                line-height: 45px;
-                                                width: 100%;
+                                                height: 40px;
+                                                line-height: 40px;
+                                                width: 30px;
                                                 background: @color_blue_main;
                                                 i {
+                                                    height: 40px;
+                                                    line-height: 40px;
                                                     color: @color_white_main;
-                                                    font-size: @font-size_main + 3px;
+                                                    font-size: @font-size_main;
                                                 }
-                                                i:hover {
-                                                    color: @color_yellow_main;
-                                                }
+                                            }
+                                            .quantity-pieces-plus:hover i{
+                                                color: @color_yellow_main;
                                             }
                                         }
                                     }
@@ -258,22 +260,22 @@ body {
                                         text-decoration: none;
                                         text-transform: uppercase;
                                         .content3-block-buy-card {
-                                            color: @color_white_main;
-                                            text-transform: uppercase;
-                                            font-size: @font-size_main + 5px;
-                                            font-family: 'Roboto', sans-serif;
-                                            font-weight: 400;
-                                            
                                             transition: linear 0.5s;
-                                            height: 45px;
+                                            height: 40px;
                                             width: 220px;
                                             background: @color_blue_main;
-                                            line-height: 45px;
+                                            line-height: 40px;
                                             text-align: center;
-                                            margin-top: 20px;
                                             transition: linear 0.2s;
+                                            p {
+                                                color: @color_white_main;
+                                                text-transform: uppercase;
+                                                font-size: @font-size_main + 5px;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-weight: 400;
+                                            }
                                         }
-                                        .content3-block-buy-card :hover {
+                                        .content3-block-buy-card:hover p {
                                             color: @color_yellow_main;
                                             transition: linear 0.2s;     
                                         }
@@ -283,22 +285,22 @@ body {
                         }  
                     }
                 }
-                .content3-cards-goods-facts {
+                .content3-product-card-detail {
                     width: 100%;
                     min-height: 1px;
                     margin-top: 50px;
                     margin-bottom: 30px;
-                    .ppp1 {
+                    .section-description  {
                         width: 100%;
                         min-height: 1px;
                         background: rgb(247, 248, 248);
                         margin-top: 20px;
-                        .ppp1-w {
+                        .section-description-wrapper {
                             margin: 0;
                             padding: 0;
-                            .qqq {
+                            .description {
                                 margin-bottom: 20px;
-                                .content1-description {
+                                .description-title {
                                     padding: 0;
                                     margin: 0;
                                     display: flex;
@@ -308,7 +310,7 @@ body {
                                     max-width: 1260px;
                                     align-items: center;
                                     justify-content: center;
-                                    .content1-description-title {
+                                    .title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
                                         font-size: @font-size_main + 3px;
@@ -321,7 +323,7 @@ body {
                                         border-bottom: 2px solid @color_blue_main;
                                         position: relative;
                                     }
-                                    .content1-description-title:before {
+                                    .title:before {
                                         content: "";
                                         width: 50%;
                                         height: 100%;
@@ -330,33 +332,33 @@ body {
                                         left: 0;
                                     }  
                                 }
-                            }
-                            .ttt {
-                                margin-top: 20px;
-                                .text-ttt {
-                                    font-family: 'Roboto', sans-serif;
-                                    font-weight: 400;
-                                    font-size: @font-size_main - 1px;
-                                    letter-spacing: 0px;
-                                    word-spacing: 3px;
-                                    color: @color_black_main;
-                                    text-transform: uppercase;
-                                    text-decoration: none;
-                                    text-indent: 20px;
+                                .description-text {
+                                    margin-top: 20px;
+                                    .text {
+                                        font-family: 'Roboto', sans-serif;
+                                        font-weight: 300;
+                                        font-size: @font-size_main;
+                                        letter-spacing: 0px;
+                                        word-spacing: 3px;
+                                        color: @color_black_main;
+                                        text-transform: uppercase;
+                                        text-decoration: none;
+                                        text-indent: 20px;
+                                    }
                                 }
-                            }
+                            }  
                         }
                     }
-                    .ppp2 {
+                    .section-characteristics {
                         width: 100%;
                         min-height: 1px;
                         margin-top: 20px;
-                        .ppp2-w {
+                        .section-characteristics-wrapper{
                             margin: 0;
                             padding: 0;
-                            .eee {
+                            .characteristics {
                                 margin-bottom: 20px;
-                                .content1-description {
+                                .characteristics-title {
                                     padding: 0;
                                     margin: 0;
                                     display: flex;
@@ -366,7 +368,7 @@ body {
                                     max-width: 1260px;
                                     align-items: center;
                                     justify-content: center;
-                                    .content1-description-title {
+                                    .title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
                                         font-size: @font-size_main + 3px;
@@ -379,7 +381,7 @@ body {
                                         border-bottom: 2px solid @color_blue_main;
                                         position: relative;
                                     }
-                                    .content1-description-title:before {
+                                    .title:before {
                                         content: "";
                                         width: 50%;
                                         height: 100%;
@@ -389,14 +391,14 @@ body {
                                     } 
                                 }
                             }
-                            .ul-wrapper {
+                            .characteristics-block-wrapper {
                                 width: 100%;
                                 min-height: 1px;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
                                 align-items: center;
-                                ul {
+                                .characteristics-block {
                                     margin: 0px;
                                     padding: 0px 0px;
                                     width: 100%;
@@ -409,22 +411,9 @@ body {
                                     border-left: 1px solid @color_linear_main;
                                     border-bottom: 1px solid @color_linear_main;
                                     background: @color_linear_main * 1.14;
-                                    .iii1 {
+                                    .subblock1 {
                                         width: 100%;
-                                        .text {
-                                            font-family: 'Roboto', sans-serif;
-                                            font-weight: 500;
-                                            font-size: @font-size_main;
-                                            letter-spacing: 0px;
-                                            word-spacing: 3px;
-                                            color: @color_black_main;
-                                            text-transform: uppercase;
-                                            text-decoration: none;
-                                        }  
-                                    }
-                                    .iii2 {
-                                        width: 100%;
-                                        .text {
+                                        .subblock1-text {
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
                                             font-size: @font-size_main;
@@ -435,7 +424,20 @@ body {
                                             text-decoration: none;
                                         }  
                                     }
-                                    .iii {
+                                    .subblock2 {
+                                        width: 100%;
+                                        .subblock2-text {
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 300;
+                                            font-size: @font-size_main;
+                                            letter-spacing: 0px;
+                                            word-spacing: 3px;
+                                            color: @color_black_main;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                        }  
+                                    }
+                                    .subblock {
                                         padding: 3px 0;
                                         margin: 0;
                                         padding-left: 10px;
@@ -448,16 +450,16 @@ body {
                             }
                         }
                     }
-                    .ppp3{
+                    .section-application {
                         width: 100%;
                         min-height: 1px;
                         margin-top: 20px;
-                        .ppp3-w {
+                        .section-application-wrapper {
                             margin: 0;
                             padding: 0;
-                            .eee {
+                            .application {
                                 margin-bottom: 20px;
-                                .content1-description {
+                                .application-title {
                                     padding: 0;
                                     margin: 0;
                                     display: flex;
@@ -467,7 +469,7 @@ body {
                                     max-width: 1260px;
                                     align-items: center;
                                     justify-content: center;
-                                    .content1-description-title {
+                                    .title {
                                         color: @color_black_main;
                                         text-transform: uppercase;
                                         font-size: @font-size_main + 3px;
@@ -480,7 +482,7 @@ body {
                                         border-bottom: 2px solid @color_blue_main;
                                         position: relative;
                                     }
-                                    .content1-description-title:before {
+                                    .title:before {
                                         content: "";
                                         width: 50%;
                                         height: 100%;
@@ -491,14 +493,14 @@ body {
                                    
                                 }
                             }
-                            .ul-wrapper {
+                            .application-block-wrapper {
                                 width: 100%;
                                 min-height: 1px;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
                                 align-items: center;
-                                ul {
+                                .application-block {
                                     margin: 0 0 0px 0;
                                     padding: 0px 0px;
                                     width: 100%;
@@ -511,22 +513,9 @@ body {
                                     border-left: 1px solid @color_linear_main;
                                     border-bottom: 1px solid @color_linear_main;               
                                     background: @color_linear_main * 1.14;
-                                    .iii1 {
+                                    .subblock1 {
                                         width: 100%; 
-                                        .text {
-                                            font-family: 'Roboto', sans-serif;
-                                            font-weight: 500;
-                                            font-size: @font-size_main;
-                                            letter-spacing: 0px;
-                                            word-spacing: 3px;
-                                            color: @color_black_main;
-                                            text-transform: uppercase;
-                                            text-decoration: none;
-                                        } 
-                                    }
-                                    .iii2 {
-                                        width: 100%;
-                                        .text {
+                                        .subblock1-text {
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 400;
                                             font-size: @font-size_main;
@@ -535,9 +524,22 @@ body {
                                             color: @color_black_main;
                                             text-transform: uppercase;
                                             text-decoration: none;
+                                        } 
+                                    }
+                                    .subblock2 {
+                                        width: 100%;
+                                        .subblock2-text {
+                                            font-family: 'Roboto', sans-serif;
+                                            font-weight: 300;
+                                            font-size: @font-size_main;
+                                            letter-spacing: 0px;
+                                            word-spacing: 3px;
+                                            color: @color_black_main;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
                                         }  
                                     }
-                                    .iii {
+                                    .subblock {
                                         padding: 3px 0;
                                         margin: 0;
                                         padding-left: 10px;
