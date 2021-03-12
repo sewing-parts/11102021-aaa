@@ -1,45 +1,87 @@
-@media all and (max-width: 599px) {
+
+@media (min-width: 586px) and (max-width: 760px) {
+    @font-size_main: 15px;
     body {
         #main {
             .page-parts-list-brand {
                 .content1-description  {
                     .content1-description-title {
-                        font-size: @font-size_main + 8px;
+                        font-size: @font-size_main + 10px;
                     }
                     .content1-description-text{
                         text-indent: 0px;
                         padding: 20px 15px 20px 15px;
-                        font-size: @font-size_main - 2px;
+                        font-size: @font-size_main;
                         text-align: center;
                     }
                 }
                 .content2-partslist {
                     .content2-partslist-wrapper  {
                         .content2-partslist-section {
-                            margin: 5px 10px 20px 10px;
-                            height: 57px;
+                            padding-top: 8px;
+                            height: 72px;
                             width: 260px;
                             a {
-                                text-decoration: none;
-                                text-transform: uppercase;
                                 .content2-brand-text {
                                     height: 25px;
                                     width: 100%;
                                     line-height: 25px;
-                                    font-size: @font-size_main + 5px;
+                                    font-size: @font-size_main + 8px;
                                 }
                                 .content2-partslist-text {
                                     height: 22px;
                                     width: 100%;
                                     line-height: 22px;
-                                    font-size: @font-size_main - 1px;
+                                    font-size: @font-size_main;
                                 }
                             }
                         } 
                     }
                 }
             }
-        }
-        
+        }  
+    }   
+}
+@media all and (max-width: 585px) {
+    @font-size_main: 13px;
+    body {
+        #main {
+            .page-parts-list-brand {
+                .content1-description  {
+                    .content1-description-title {
+                        font-size: @font-size_main + 10px;
+                    }
+                    .content1-description-text{
+                        text-indent: 0px;
+                        padding: 20px 15px 20px 15px;
+                        font-size: @font-size_main;
+                        text-align: center;
+                    }
+                }
+                .content2-partslist {
+                    .content2-partslist-wrapper  {
+                        .content2-partslist-section {
+                            padding-top: 6px;
+                            height: 67px;
+                            width: 260px;
+                            a {
+                                .content2-brand-text {
+                                    height: 25px;
+                                    width: 100%;
+                                    line-height: 25px;
+                                    font-size: @font-size_main + 8px;
+                                }
+                                .content2-partslist-text {
+                                    height: 22px;
+                                    width: 100%;
+                                    line-height: 22px;
+                                    font-size: @font-size_main;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }  
     }   
 }

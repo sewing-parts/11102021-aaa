@@ -1,11 +1,23 @@
 
-@media all and (max-width: 727px) {
+@media (min-width: 540px) and (max-width: 760px) {
+    @font-size_main: 15px;
     body {
         #main {
             .page-parts-list-pdf {
+                .content1-description {
+                    .content1-description-title {
+                        font-size: @font-size_main + 10px;
+                    }
+                    .content1-description-text{
+                        text-indent: 0px;
+                        padding: 20px 15px 20px 15px;
+                        font-size: @font-size_main;
+                        text-align: center;
+                    }
+                }
                 .content2-list {
                     .content2-list-title {  
-                        font-size: @font-size_main + 2px;
+                        font-size: @font-size_main + 7px;
                     }
                     .content2-list-section-wrapper {
                         height: 37px;
@@ -20,9 +32,10 @@
                                     min-width: 1px;
                                     height: 37px;
                                     .content2-list-text {
-                                        font-size: @font-size_main - 3px;
+                                        font-size: @font-size_main;
                                         span {
-                                            font-size: @font-size_main - 3px;
+                                            display: inline-block;
+                                            font-size: @font-size_main;
                                             text-transform: lowercase;
                                             font-weight: 500;
                                         }  
@@ -40,22 +53,56 @@
     }
 } 
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 539px) {
+    @font-size_main: 13px;
     body {
         #main {
-            .page-parts-list-pdf { 
+            .page-parts-list-pdf {
                 .content1-description {
                     .content1-description-title {
-                        font-size: @font-size_main + 8px;
+                        font-size: @font-size_main + 10px;
                     }
                     .content1-description-text{
                         text-indent: 0px;
                         padding: 20px 15px 20px 15px;
-                        font-size: @font-size_main - 2px;
+                        font-size: @font-size_main;
                         text-align: center;
                     }
                 }
+                .content2-list {
+                    .content2-list-title {  
+                        font-size: @font-size_main + 7px;
+                    }
+                    .content2-list-section-wrapper {
+                        height: 37px;
+                        width: 95%;
+                        margin-top: 3px;
+                        a {
+                            .content2-list-section{
+                                width: 100%;
+                                height: 37px;
+                                padding: 0px 10px;
+                                .list-block-text {
+                                    min-width: 1px;
+                                    height: 37px;
+                                    .content2-list-text {
+                                        font-size: @font-size_main;
+                                        span {
+                                            display: inline-block;
+                                            font-size: @font-size_main;
+                                            text-transform: lowercase;
+                                            font-weight: 500;
+                                        }  
+                                    }
+                                }
+                                .list-block-img {
+                                    display: none;
+                                }    
+                            }  
+                        }  
+                    }   
+                }
             }
         }
-    }   
+    }
 }

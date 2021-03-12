@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>index_page_cards_goods</title>
+  <title>index_page_array_product_cards</title>
 
   <!-- DO NOT delete or change this css link tag -->
   <link rel="stylesheet" href="styles/main.css" />
@@ -27,11 +27,11 @@
       </div>
       <div class="language-selection">
         <input type="radio" name="button" id="button1" checked="">
-        <label class="label-flagua" for="button1"></label>
+        <label class="label-flageng" for="button1"></label>
         <input type="radio" name="button" id="button2" checked="">
         <label class="label-flagru" for="button2"></label>
         <input type="radio" name="button" id="button3" checked="">
-        <label class="label-flageng" for="button3"></label>
+        <label class="label-flagua" for="button3"></label>
       </div>
       <div  class="shopping-basket">
         <div class="cart">
@@ -57,8 +57,6 @@
 
           <a href="#">
             <div class="block-logo">
-              <!-- <img class="photo-logo" src="images/49240.png" alt=""> -->
-              <!-- <img class="photo-logo" src="images/uuu-1000a.png" alt="">  -->
               <div class="block-logo-text">
                 <p class="logo-text">Sewing Industrial Machines Accessories</p>
               </div>
@@ -85,7 +83,6 @@
             <ul>
               <li class="li-one">
                 <input type="checkbox" name="toggle" class="toggleSubmenu" id="submit-m1">
-                <!-- <a href="#"><i class="fas fa-th-list"></i>Запасти &#11167;</a> -->
                 <a href="#" class="li-one_a"><i class="fas fa-th-list"></i>Запчасти</a>
                 <label for="submit-m1" class="toggleSubmenu"><i class="fa"></i></label>
                 <ul class="level-li-one">
@@ -809,201 +806,1011 @@
       </ul>
     </div>
 
-    <div class="page-cards-goods">
-      <div class="page-cards-goods-wrapper">
+    <div class="page-array-products-cards">
+      <div class="section-filtr">
+        <div class="caption-filtr">
+          <div class="filtr-block-linear"></div>
+          <p class="caption-filtr-text">Фильтр выбранного товара</p>
+        </div>
+        <div class="content-filtr">
+          <form action="demo_form.asp" method="get">
+
+            <div class="block-filtr"> 
+              <input class="hide-all" id="hide-all-purpose" type="checkbox">
+              <input class="hide" id="hd-purpose" type="checkbox">
+              <label class="label-filtr" for="hd-purpose">Назначение</label> 
+              <ul class="radio-ul">
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-purpose1" name="radio-purpose" />
+                    <label for="radio-purpose1">Промышленные</label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-purpose2" name="radio-purpose"/>
+                    <label for="radio-purpose2">Бытовые</label>
+                  </a>
+                </li>
+              </ul>
+              <nav class="checkbox-nav-all"> 
+                <label class="label-all" for="hide-all-purpose"></label>
+              </nav>
+            </div>
+
+            <div class="block-filtr">
+              <input class="hide-all" id="hide-all-brand" type="checkbox">
+              <input class="hide" id="hd-brand" type="checkbox">
+              <label class="label-filtr" for="hd-brand">Выберите бренд</label>
+              <ul class="checkbox-ul">
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand1" name="check" />
+                    <label for="check-brand1">ALTIN</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand2" name="check" />
+                    <label for="check-brand2">AMERICAN</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand3" name="check" />
+                    <label for="check-brand3">Bonis</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand4" name="check" />
+                    <label for="check-brand4">Borkert</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand5" name="check" />
+                    <label for="check-brand5">Colli</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand6" name="check" />
+                    <label for="check-brand6">Columbia</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand7" name="check" />
+                    <label for="check-brand7">Danda</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand8" name="check" />
+                    <label for="check-brand8">Durkopp Adller</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand9" name="check" />
+                    <label for="check-brand9">Eina</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand10" name="check" />
+                    <label for="check-brand10">Excluding</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand11" name="check" />
+                    <label for="check-brand11">Fischbein</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand12" name="check" />
+                    <label for="check-brand12">Gribetz</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand13" name="check" />
+                    <label for="check-brand13">Happy</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand14" name="check" />
+                    <label for="check-brand14">Janome</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand15" name="check" />
+                    <label for="check-brand15">Jiannlian</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand16" name="check" />
+                    <label for="check-brand16">Juki</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand17" name="check" />
+                    <label for="check-brand17">Kanzai Special</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand18" name="check" />
+                    <label for="check-brand18">Kingtex</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand19" name="check" />
+                    <label for="check-brand19">Lewis</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand20" name="check" />
+                    <label for="check-brand20">Mauser</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand21" name="check" />
+                    <label for="check-brand21">Meca</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand22" name="check" />
+                    <label for="check-brand22">Merrow</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand23" name="check" />
+                    <label for="check-brand23">Newlong</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand24" name="check" />
+                    <label for="check-brand24">Pegasus</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand25" name="check" />
+                    <label for="check-brand25">Pfaff</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand26" name="check" />
+                    <label for="check-brand26">Porter</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand27" name="check" />
+                    <label for="check-brand27">Reece</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand28" name="check" />
+                    <label for="check-brand28">Renown</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand29" name="check" />
+                    <label for="check-brand29">Rimoldi</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand30" name="check" />
+                    <label for="check-brand30">Seiko</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand31" name="check" />
+                    <label for="check-brand31">Shingray</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand32" name="check" />
+                    <label for="check-brand32">Singer</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand33" name="check" />
+                    <label for="check-brand33">Siruba</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand34" name="check" />
+                    <label for="check-brand34">Strobel</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand35" name="check" />
+                    <label for="check-brand35">Titan</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand36" name="check" />
+                    <label for="check-brand36">Toyota</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand37" name="check" />
+                    <label for="check-brand37">Truasuer</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand38" name="check" />
+                    <label for="check-brand38">Union Special</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand39" name="check" />
+                    <label for="check-brand39">W&G</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand40" name="check" />
+                    <label for="check-brand40">Yavato</label>
+                  </a>
+                </li>
+                <li class="checkbox-li">
+                  <a href="">
+                    <input type="checkbox" id="check-brand41" name="check" />
+                    <label for="check-brand41">Разные</label>
+                  </a>
+                </li>                                    
+              </ul>
+              <nav class="checkbox-nav-all">
+                <label class="label-all" for="hide-all-brand"></label>
+              </nav>  
+            </div>
+
+            <div class="block-filtr"> 
+              <input class="hide-all" id="hide-all-manufacturer" type="checkbox">
+              <input class="hide" id="hd-manufacturer" type="checkbox">
+              <label class="label-filtr" for="hd-manufacturer">Производитель</label> 
+              <ul class="radio-ul">
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-manufacturer1" name="radio-manufacturer" />
+                    <label for="radio-manufacturer1">китай</label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-manufacturer2" name="radio-manufacturer"/>
+                    <label for="radio-manufacturer2">тайвань</label>
+                  </a>
+                </li>
+              </ul>
+              <nav class="checkbox-nav-all"> 
+                <label class="label-all" for="hide-all-manufacturer"></label>
+              </nav>
+            </div>
+
+            <div class="block-filtr"> 
+              <input class="hide-all" id="hide-all-type" type="checkbox">
+              <input class="hide" id="hd-type" type="checkbox">
+              <label class="label-filtr" for="hd-type">Положение</label> 
+              <ul class="radio-ul">
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-type1" name="radio-type" />
+                    <label for="radio-type1">Верхний петлитель</label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-type2" name="radio-type"/>
+                    <label for="radio-type2">Нижний петлитель</label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-type3" name="radio-type"/>
+                    <label for="radio-type3">Верхний укладчик</label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-type4" name="radio-type"/>
+                    <label for="radio-type4">Нижний укладчик</label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-type5" name="radio-type"/>
+                    <label for="radio-type5">Ротационный челнок специальный  (длинный стержень) малого размера </label>
+                  </a>
+                </li>
+                <li class="radio-li">
+                  <a href="">
+                    <input type="radio" id="radio-type6" name="radio-type"/>
+                    <label for="radio-type6">Успокоитель</label>
+                  </a>
+                </li>
+              </ul>
+              <nav class="checkbox-nav-all"> 
+                <label class="label-all" for="hide-all-type"></label>
+              </nav>
+            </div>
+
+            <div class="button-filtr">
+              <button class="button-reset" type="reset" value="Reset">Очистить фильтр</button>
+              <button class="button-submit" type="submit" value="Submit">Показать</button>
+            </div>
+          </form> 
+        </div>
+      </div>
+
+      <div class="section-array-products-cards">
         <div class="content1-description">
           <div class="content1-block-linear"></div>
-          <p class="content1-description-title">Петлитель juki b126-25874-4555app-ooo yyyyyyyyyyyyyy</p>
+          <p class="content1-description-title">Петлители</p>
         </div>
-        <div class="content2-cards-goods-base">
-          <div class="content2-section-pfoto">
-            <div class="block-base-pfoto">
-              <img src="images/7711.jpg" alt="">
-            </div>
-            <div class="block-small-pfoto">
-              <div class="small-pfoto small-pfoto-one">
-                <img src="images/looper-juki.jpg" alt="">
+    
+        <div class="content2-catalog-cards-products">
+          <div class="catalog2-cards-products-wrapper">
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for=""  class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Тайвань</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Barudan</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель<span> верхний</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог<span> 12345-ddd-444444 00000000000000000</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>уточните наличие<span></span></p></a>
+                  </li>
+                </nav>
               </div>
-              <div class="small-pfoto small-pfoto-two">
-                <img src="images/looper-juki.jpg" alt="">
-              </div>
-              <div class="small-pfoto small-pfoto-three">
-                <img src="images/7711.jpg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="content3-section-sale">
-            <div class="content3-section-sale-wrapper">
-              <ul class="section-info-ul">
-                <li class="section-info-li">
-                  <p>Название:<span>Петлитель</span></p>
-                </li>
-                <li class="section-info-li">
-                  <p>Бренд:<span>Juki</span></p>
-                </li>
-                <li class="section-info-li">
-                 <p>Номер:<span>b126-25874-4555app-ooo yyyyyyyyyyyyyy</span></p>
-                </li>
-                <li class="section-info-li">
-                  <p>Производитель:<span>Тайвань</span></p>
-                 </li>
-                <li class="section-info-li">
-                  <p>Код товара:<span>lpju-00100</span></p>
-                 </li>
-              </ul>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                  <div class="content2-block-base-partsname">
+                    <p>Петлитель</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Barudan Fusing</p>
+                  </div>
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555 eretxgd-454454</p>
+                  </div>
+                </a>
               </div>
               <div class="products-section-buy">
-                <div class="content3-block-buy-cost">
-                  <p>99350.00<span>&#8372;</span></p>
-                </div>
-
-                <div class="content3-block-buy-choice">
-                  <div class="content3-block-buy-quantity">
-                    <a href="">
-                      <div class="quantity-pieces-minus"><i class="fas fa-minus"></i></div>
-                    </a>
-                    <div class="quantity-pieces"><p>99</p></div>
-                    <a href="">
-                      <div class="quantity-pieces-plus"><i class="fas fa-plus"></i></div>
-                    </a>
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
                   </div>
-  
-                  <a href="">
-                    <div class="content3-block-buy-card">
-                      <p>Купить<span></span></p>
-                    </div>
-                  </a>
-                </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="content3-product-card-detail">
-          <div class="section-description">
-            <div class="section-description-wrapper">
-              <div class="description">
-                <div class="description-title">
-                  <!-- <div class="content1-block-linear"></div> -->
-                  <p class="title">Описание</p>
-                </div>
-                <div class="description-text">
-                  <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam odio voluptatem ab veritatis nulla provident obcaecati quibusdam illum, porro aspernatur ratione vel praesentium asperiores itaque culpa maiores dolor corrupti!</p>
-                </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Тайвань</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Barudan</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель<span> верхний</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог<span> 12345-ddd-444444</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>уточните наличие<span></span></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь ats-18 4 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="section-characteristics">
-            <div class="section-characteristics-wrapper">
-              <div class="characteristics">
-                <div class="characteristics-title">
-                  <!-- <div class="content1-block-linear"></div> -->
-                  <p class="title">Характеристики</p>
-                </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Тайвань</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Barudan</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель<span> верхний</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог<span> 12345-ddd-444444</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>уточните наличие<span></span></p></a>
+                  </li>
+                </nav>
               </div>
-              <div class="characteristics-block-wrapper">
-                <ul class="characteristics-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">тип</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">ротационный скоростной увеличенный длинная ножка</p>
-                  </li>
-                </ul>
-                <ul class="characteristics-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">производитель</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">тайвань</p>
-                  </li>
-                </ul>
-                <ul class="characteristics-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">положение</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">вертикальный</p>
-                  </li>
-                </ul>
-                <ul class="characteristics-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">код</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">hsh-12-15mm(tr2) nbl</p>
-                  </li>
-                </ul>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>устройство для подворота в три сложения верх 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555 yyyyyyyyy-uuu</p>
+                  </div>
+                </a>
               </div>
-              
-            </div>
-          </div>
-          <div class="section-application">
-            <div class="section-application-wrapper">
-              <div class="application">
-                <div class="application-title">
-                  <!-- <div class="content1-block-linear"></div> -->
-                  <p class="title">Применение</p>
-                </div>
-              </div>
-              <div class="application-block-wrapper">
-                <ul class="application-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">Juki</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">ddddddddddddd ffffffffff hhhhhhhhhhh dddddddddddd</p>
-                  </li>
-                </ul>
-                <ul class="application-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">Brother Brother</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">ddl-8700frt-h</p>
-                  </li>
-                </ul>
-                <ul class="application-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">Pfaff</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">zzzzzzzzzzz aaaaaaaaaaaa qqqqqqqqqqqq uuuuuuuuuu llllllllll jjjjjjjjjjjjj</p>
-                  </li>
-                </ul>
-                <ul class="application-block">
-                  <li class="subblock1 subblock">
-                    <p class="subblock1-text">Siruba</p>
-                  </li>
-                  <li class="subblock2 subblock">
-                    <p class="subblock2-text">ggggggggggg dddddddddd uuuuuuuuu</p>
-                  </li>
-                </ul>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить</p>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="content4-button">
-          <div class="content4-button-wrapper">
-            <div class="content4-description">
-              <!-- <div class="content4-block-linear"></div> -->
-              <p class="content4-description-title">Руководство</p>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Тайвань</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Barudan</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель<span> верхний</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог<span> 12345-ddd-444444</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>уточните наличие<span></span></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="block-button">
-              <a class="button-catalog-partslist" href="#">Перейти в раздел catalogs</a>
-              <a class="button-catalog-partslist" href="#">Посмотреть все Parts Lists</a>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Тайвань</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p><span>Barudan</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель<span> верхний</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог<span> 12345-ddd-444444</span></p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>уточните наличие<span></span></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="catalog2-cards-products-section">
+              <div class="products-section-info">
+                <!-- <input type="checkbox" id="check-menu"> -->
+                <label for="" class="section-info-label">Информация</label>
+                <nav class="section-info-nav">
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Тайвань</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Barudan</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Петлитель верхний</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p>Аналог 12345-ddd-444444</p></a>
+                  </li>
+                  <li class="section-info-li">
+                    <a href="#" class="section-info-a"><p></p></a>
+                  </li>
+                </nav>
+              </div>
+              <div class="products-section-base">
+                <a href=""> 
+                  <div class="content2-block-base-img">
+                    <img src="images/looper-juki.jpg" alt="">
+                  </div>
+                 
+                  <div class="content2-block-base-partsname">
+                    <p>окантователь в три сложения lp14 40 mm</p>
+                  </div>
+                  <div class="content2-block-base-brand">
+                    <p>Hashima Fusing</p>
+                  </div>
+                 
+                  <div class="content2-block-base-partscode">
+                    <p>418-6101-02B-000012-5555555555555</p>
+                  </div>
+                </a>
+              </div>
+              <div class="products-section-buy">
+                <a href="">
+                  <div class="content2-block-buy-cost">
+                    <p>350.00<span>&#8372;</span></p>
+                  </div>
+                  <div class="content2-block-buy-card">
+                    <p>Купить<span></span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
 
-   
+    <div class="pagination">
+      <div class="pagination-wrapper">
+        <div class="pagination-section">
+          <a href=""><div><i class="fas fa-angle-left"></i></div></a>
+          <a class="active" href="?page=1"><div class="active-block">1</div></a>
+          <a href="?page=2"><div>2</div></a>
+          <a href="?page=3"><div>3</div></a>
+          <a href="?page=4"><div>4</div></a>
+          <a href="?page=5"><div>5</div></a>
+          <div class="space"></div>
+          <a href="?page=11"><div>99</div></a>
+          <a href=""><div><i class="fas fa-angle-right"></i></div></a>
+       </div>
+      </div>
+    </div>
 
     <div class="helpful">
       <div class="helpful-description">
@@ -1055,8 +1862,7 @@
         <div class="helpful-section-menu">
           <a href="">
             <div class="menu-block-img">
-              <!-- <img class="helpful-menu-img" src="images/order_3.png" alt="">  -->
-              <img class="helpful-menu-img" src="images/88-w-88.png" alt=""> 
+              <img class="helpful-menu-img" src="images/order_3.png" alt=""> 
             </div> 
             <div class="menu-block-text">
               <p class="helpful-menu-text">Под заказ</p>
@@ -1110,11 +1916,11 @@
         <div class="address">
           <a href="#">
             <i class="fas fa-map-marker-alt fa-lg"></i>
-            UKRAINE
+            Ukraine
           </a>
           <a href="tel:+38095-3989891">
             <i class="fas fa-phone-square-alt fa-lg"></i>
-            +38 - 095 - 3989891
+            +380953989891
           </a>
           <a href="mailto:sima99sewing@gmail.com">
             <i class="fas fa-envelope fa-lg"></i>
@@ -1125,9 +1931,9 @@
       <div class="box">
         <h4>Контакт</h4>
         <form>
-          <label for="mail">Email <span>&#10034;</span></label>
+          <label for="mail">Введите свой email<span>&#10034;</span></label>
           <input type="email" name="mail" id="mail" required>
-          <label for="mess">Message <span>&#10034;</span></label>
+          <label for="mess">Напишите сообщение<span>&#10034;</span></label>
           <textarea name="mess" id="mess" rows="3" required></textarea>
           <button type="submit">Отправить</button>
         </form>

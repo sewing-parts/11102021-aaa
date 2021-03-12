@@ -1,37 +1,78 @@
-@media all and (max-width: 599px) {
+@media (min-width: 540px) and (max-width: 760px) {
+    @font-size_main: 15px;
     body {
         #main {
             .page-general { 
                 .content1-description  {
                     .content1-description-title {
-                        font-size: @font-size_main + 8px;
+                        font-size: @font-size_main + 10px;
+                    }
+                    .content1-description-text{
+                        text-indent: 30px;
+                        padding: 20px 40px 20px 40px;
+                        font-size: @font-size_main;
+                    }
+                }
+                .content3-button {
+                    .button-catalog {
+                        font-size: @font-size_main;
+                    }
+                }
+                .content4-description  {
+                    .content4-description-title {
+                        font-size: @font-size_main + 10px;
+                    }
+                    .content4-description-text{
+                        text-indent: 30px;
+                        padding: 20px 40px 20px 40px;
+                        font-size: @font-size_main;
+                    }
+                }
+                .content6-button {
+                    .button-partslist {
+                        font-size: @font-size_main;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 539px) {
+    @font-size_main: 13px;
+    body {
+        #main {
+            .page-general { 
+                .content1-description  {
+                    .content1-description-title {
+                        font-size: @font-size_main + 10px;
                     }
                     .content1-description-text{
                         text-indent: 0px;
                         padding: 20px 15px 20px 15px;
-                        font-size: @font-size_main - 2px;
+                        font-size: @font-size_main;
                         text-align: center;
                     }
                 }
                 .content3-button {
                     .button-catalog {
-                        font-size: @font-size_main - 2px;
+                        font-size: @font-size_main;
                     }
                 }
                 .content4-description  {
                     .content4-description-title {
-                        font-size: @font-size_main + 8px;
+                        font-size: @font-size_main + 10px;
                     }
                     .content4-description-text{
                         text-indent: 0px;
                         padding: 20px 15px 20px 15px;
-                        font-size: @font-size_main - 2px;
+                        font-size: @font-size_main;
                         text-align: center;
                     }
                 }
                 .content6-button {
                     .button-partslist {
-                        font-size: @font-size_main - 2px;
+                        font-size: @font-size_main;
                     }
                 }
             }

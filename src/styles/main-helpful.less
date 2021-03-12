@@ -46,7 +46,7 @@ body {
                     padding: 20px 40px 0px 40px;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 300;
-                    font-size: @font-size_main - 2px;
+                    font-size: @font-size_main;
                     letter-spacing: 0px;
                     word-spacing: 3px;
                     margin: 0px 0px 0px 0px;
@@ -64,8 +64,9 @@ body {
                 justify-content: space-around;      
                 align-items: center;
                 .helpful-section-menu {
-                    height: 80px;
-                    max-width: 180px;
+                    // height: 80px;
+                    height: 100px;
+                    max-width: 185px;
                     margin: 20px 10px 0px 10px;
                     display: flex;
                     flex-wrap: wrap;
@@ -80,19 +81,21 @@ body {
                         text-decoration: none;
                     }
                     a .menu-block-img {
-                        height: 55px;
-                        width: 180px;
+                        // height: 55px;
+                        height: 75px;
+                        width: 185px;
                         display: inline-block;
                         overflow: hidden;
                         display:flex;
                         justify-content: center; /*центрируем элемент по горизонтали */
                         align-items: center; /* и вертикали */     
                         .helpful-menu-img {
-                            height: 55px;
+                            // height: 55px;
+                            height: 75px;
                             height: 100%;
                             padding-top: 4px;
                             object-fit: cover;
-                            transform: scaleX(1.18);
+                            transform: scaleX(1.0);
                             display: block;
                             -webkit-filter: grayscale(100%);
                             -moz-filter: grayscale(100%);
@@ -109,19 +112,20 @@ body {
                     }
                     a .menu-block-text {
                         height: 20px;
-                        max-width: 180px;
+                        max-width: 185px;
                         margin-top: 0px;
                         line-height: 20px;
                         margin-top: 5px; 
                         .helpful-menu-text {
                             text-align: center;
-                            color: @color_blue_main;
+                            // color: @color_blue_main;
+                            color: @color_black_main;
                             text-transform: uppercase;
                             font-family: 'Roboto', sans-serif;
-                            font-weight: 400;
-                            font-size: @font-size_main - 2px;
+                            font-weight: 300;
+                            font-size: @font-size_main - 1px;
                             letter-spacing: 0px;
-                            word-spacing: 3px;
+                            word-spacing: 0px;
                             transition: linear 0.5s;
                         }
                     }     

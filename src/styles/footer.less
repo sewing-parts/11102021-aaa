@@ -21,7 +21,7 @@ body {
             }
             .box h4 {
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
+                font-weight: 300;
                 font-size: @font-size_main + 2px;
                 color: @color_white_main; 
                 text-transform: uppercase;
@@ -46,56 +46,103 @@ body {
             }
             .box p {
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
+                font-weight: 300;
+                font-size: @font-size_main;
                 padding-bottom: 5px;
             }
             .box .social {
-                min-width: 280px;
+                // width: 100%;
+                max-width: 280px;
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
+                
+                margin-top: 5px;
             }
-            .box a {
-                color: @color_white_main;
+            .box .social a {
+                
+                // line-height: 40px;
+                // color: @color_white_main;
                 text-decoration: none;
                 display: inline-block;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
+                font-weight: 300;
+                font-size: @font-size_main;////////////////////
                 transition: linear 0.5s;
+               
             } 
-            .box a i {
+            .box .social a i {
                 background: @color_black_main;
                 width: 45px;
+                height: 40px;
+                
+                // width: 45px;
                 // height: 40px;
                 text-align: center;
-                line-height: 40px;
-                margin-right: 10px;
-                transition: 0.5s linear;
+                line-height: 37px;
+                // margin-right: 10px;
+  
+
+
                 border-radius: 5px;
                 border: 1px solid @color_dlue_tone_five_main;
                 color: @color_dlue_tone_five_main;
+                font-size: @font-size_main + 10px;////////////////////
+                
                 transition: linear 0.5s;
             } 
-            .box a:hover {
-                color: @color_yellow_main;
-                transition: linear 0.5s;  
-            } 
-            .box a:hover i {
+            
+            .box .social a:hover i {
                 border: 1px solid @color_yellow_main; 
                 color: @color_yellow_main;
                 transition: linear 0.5s; 
             }
-            .box .social {
-                margin-top: 5px;
-            }
             .box .address a {
+                
                 display: block;
+                text-decoration: none;
+                width: 100%;
+               
+                
+                height: 40px;
+                // background: rgb(158, 158, 15);
+                
+                line-height: 40px;
+                padding-left: 55px;
                 margin-bottom: 16px;
+                color: @color_white_main;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
+                font-weight: 300;
+                font-size: @font-size_main;/////////////
+               
+                transition: linear 0.5s;
             }
+            .box .address a i {
+                position: absolute;
+               
+                background: @color_black_main;
+                width: 45px;
+                height: 40px;
+                
+                text-align: center;
+                line-height: 37px;////////////////
+                // margin-right: 10px;
+                margin-left: -55px;
+                border-radius: 5px;
+                border: 1px solid @color_dlue_tone_five_main;
+                color: @color_dlue_tone_five_main;
+                font-size: @font-size_main + 10px;////////////////////
+                transition: linear 0.5s;
+            }
+            .box .address a:hover {
+                color: @color_yellow_main;
+                transition: linear 0.5s;  
+            } 
+            .box .address a:hover i {
+                border: 1px solid @color_yellow_main; 
+                color: @color_yellow_main;
+                transition: linear 0.5s; 
+            } 
             .box form input, .box form textarea {
                 width: 100%;
                 min-height: 30px;
@@ -104,15 +151,14 @@ body {
                 padding-left: 5px;
                 margin-bottom: 10px;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
+                font-weight: 300;
+                font-size: @font-size_main;///////////////////
                 color: @color_black_main;
             } 
             .box form label {
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
-                text-transform: uppercase;
+                font-weight: 300;
+                font-size: @font-size_main;//////////////////////
             }
             .box form label span {
                 color: @color_dlue_tone_five_main;   
@@ -125,10 +171,9 @@ body {
                 background: @color_black_main;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: @font-size_main - 1px;
+                font-weight: 300;
+                font-size: @font-size_main;/////////////////
                 color: @color_dlue_tone_five_main;
-                // letter-spacing: 4px;
                 border: 1px solid @color_dlue_tone_five_main;
                 border-radius: 3px;
                 cursor: pointer;
@@ -147,8 +192,8 @@ body {
             text-align: center;
             padding: 5px;
             font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: @font-size_main - 1px;
+            font-weight: 300;
+            font-size: @font-size_main;////////////
             text-transform: uppercase;
             overflow: hidden;
             p {
