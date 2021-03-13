@@ -3,165 +3,159 @@
     body {
         #main { 
             .page-array-products-cards {
-                flex-direction: column;/////////////////////////////=============
-                padding-left: 0px;///////////////////=========
-                .section-filtr {
-                    width: 100%;//////////////////////////=============
-                    // width: 295px;/* основная ширина блока вильтр *//////////===============
-                    .caption-filtr {
-                        width: 100%;///////////////////////////////===============
-                        // width: 295px;/////////////////////////////////================
-                        .caption-filtr-text {
-                            font-size: @font-size_main + 2px;///////////////========
+                .array-products-cards-wrapper {
+                    flex-direction: column;
+                    padding-left: 0px;
+                    .section-filtr {
+                        width: 100%;
+                        // width: 295px;/* основная ширина блока вильтр */
+                        .caption-filtr {
+                            width: 100%;
+                            .caption-filtr-text {
+                                font-size: @font-size_main + 2px;/* без изменений */
+                            }
+                        }
+                        .content-filtr {
+                            width: 100%; 
                         }
                     }
-                    .content-filtr {
-                        width: 100%;//////////////////////////////////==============
-                        // width: 295px;////////////////////////////////////=============== 
-                       
-                    }
                 }
-            }
+            }    
         }
     }  
 }
 @media all and (max-width: 669px) {
+    @font-size_main: 15px;
     body {
-        #main { 
+        #main {
             .page-array-products-cards {
-                flex-direction: column;/////////////////////////////=============
-                padding-left: 0px;///////////////////=========
-                .section-filtr {
-                    width: 100%;//////////////////////////=============
-                    // width: 295px;/* основная ширина блока вильтр *//////////===============
-                    padding: 0 10px 0 10px;//////?????????
-                    .caption-filtr {
-                        width: 100%;///////////////////////////////===============
-                        .caption-filtr-text {
-                            font-size: @font-size_main + 3px;/////////=======1
-                            // font-family: 'Roboto', sans-serif;
-                            // font-weight: 600;
-                        }
-                    }
-                    .content-filtr {
-                        width: 100%;//////////////////////////////////==============
-                        // width: 295px;////////////////////////////////////=============== 
-                        form {
+                .array-products-cards-wrapper {
+                    flex-direction: column;
+                    padding-left: 0px;
+                    .section-filtr {
+                        width: 100%;
+                        // width: 295px;/* основная ширина блока вильтр */
+                        padding: 0 10px 0 10px;/* ????????? */
+                        .caption-filtr {
                             width: 100%;
-                            .block-filtr {
-                                .hide + .label-filtr {
-                                    font-size: @font-size_main - 2px;///////////////==========0
-                                }
-                                .checkbox-ul {
-                                    .checkbox-li {
-                                        a {
-                                            label {
-                                                font-size: @font-size_main - 5px;///////////====4
-                                            }
-                                        }
-                                    }
-                                }
-                                .radio-ul {
-                                    .radio-li {
-                                        a {
-                                            label {
-                                                font-size: @font-size_main - 5px;///////////====4
-                                            } 
-                                        }
-                                    }   
-                                }
-                                .checkbox-nav-all {
-                                    line-height: 20px;////////===22
-                                    .label-all {
-                                        font-size: @font-size_main - 4px;//////////////======3
-                                    }  
-                                }
+                            .caption-filtr-text {
+                                font-size: @font-size_main + 2px;
                             }
-                            .button-filtr {
-                                button {
-                                    font-size: @font-size_main - 2px;////////====1
-                                }
-                                button:hover:before{
-                                    font-size: @font-size_main - 1px;/////////======0
-                                } 
-                            }   
-                        }    
-                    }
-                }
-                .section-array-products-cards {     
-                    .content1-description {
-                        .content1-description-title {
-                            font-size: @font-size_main + 8px;//////======12
                         }
-                    }
-                    .content2-catalog-cards-products {
-                        .catalog2-cards-products-wrapper {
-                            padding: 0px 2px;///////////////////============0px 10px
-                            .catalog2-cards-products-section {
-                                margin: 20px 5px 20px 5px;
-                                height: 356px;///////////////////===========394
-                                width: 170px;///////////////////================
-                                // border: 1px solid red;//////////////////=========////
-                                .products-section-info {
-                                    .section-info-label {
-                                        font-size: @font-size_main - 3px;////////////////===========2
+                        .content-filtr {
+                            width: 100%;
+                            form {
+                                width: 100%;
+                                .block-filtr {
+                                    .hide + .label-filtr {
+                                        font-size: @font-size_main;
                                     }
-                                    .section-info-nav {
-                                        .section-info-li {
-                                            .section-info-a {
-                                                font-size: @font-size_main - 5px;////////////========4
-                                                height: 31px;/////////////////=======33
-                                            }
-                                        }  
-                                    }
-                                    .section-info-label:hover ~ .section-info-nav {
-                                        padding: 173px 0 0 0;/////////////////===========203? 
-                                    }
-                                }
-                                .products-section-base {
-                                    a {
-                                        .content2-block-base-img {
-                                            height: 170px;//////////////////========200
-                                        }
-                                        .content2-block-base-partsname {
-                                            font-size: @font-size_main - 7px;////////////////===========
-                                        }
-                                        .content2-block-base-partscode {
-                                            font-size: @font-size_main - 5px;/////////////////===========3
-                                        } 
-                                    }
-                                }
-                                .products-section-buy {
-                                    a {
-                                        .content2-block-buy-cost {
-                                            font-size: @font-size_main + 0px;////////////===========5
-                                            height: 20px;//////////////////////==============25
-                                            p {
-                                                span {
-                                                    font-size: @font-size_main + 0px;//////////////////===========2
+                                    .checkbox-ul {
+                                        .checkbox-li {
+                                            a {
+                                                label {
+                                                    font-size: @font-size_main - 3px;
                                                 }
                                             }
                                         }
-                                        .content2-block-buy-card {
-                                           
-                                            font-size: @font-size_main - 2px;////////////////===============0
-                                            height: 25px;//////////////////////===============30
-                                            line-height: 25px;////////////////////////==========30
-                                        }
+                                    }
+                                    .radio-ul {
+                                        .radio-li {
+                                            a {
+                                                label {
+                                                    font-size: @font-size_main - 3px;
+                                                } 
+                                            }
+                                        }   
+                                    }
+                                    .checkbox-nav-all {
+                                        line-height: 20px;
+                                        .label-all {
+                                            font-size: @font-size_main - 3px;
+                                        }  
                                     }
                                 }
-                            } 
+                                .button-filtr {
+                                    button {
+                                        font-size: @font-size_main - 1px;
+                                    }
+                                    button:hover:before {
+                                        font-size: @font-size_main;
+                                    } 
+                                }   
+                            }    
+                        }
+                    }
+                    .section-array-products-cards {     
+                        .content1-description {
+                            .content1-description-title {
+                                font-size: @font-size_main + 10px;
+                            }
+                        }
+                        .content2-catalog-cards-products {
+                            .catalog2-cards-products-wrapper {
+                                padding: 0px 2px;/* 0px 10px */
+                                .catalog2-cards-products-section {
+                                    margin: 20px 5px 20px 5px;
+                                    height: 356px;/* 394 */
+                                    width: 170px;
+                                    .products-section-info {
+                                        .section-info-label {
+                                            font-size: @font-size_main - 2px;
+                                        }
+                                        .section-info-nav {
+                                            .section-info-li {
+                                                .section-info-a {
+                                                    font-size: @font-size_main - 3px;
+                                                    height: 31px;/* 33 */
+                                                }
+                                            }  
+                                        }
+                                        .section-info-label:hover ~ .section-info-nav {
+                                            padding: 173px 0 0 0;/* 203? */
+                                        }
+                                    }
+                                    .products-section-base {
+                                        a {
+                                            .content2-block-base-img {
+                                                height: 170px;/* 200 */
+                                            }
+                                            .content2-block-base-partsname {
+                                                font-size: @font-size_main - 3px;/* ...... */
+                                            }
+                                            .content2-block-base-brand {
+                                                font-size: @font-size_main - 1px;/* ...... */
+                                            }
+                                            .content2-block-base-partscode {
+                                                font-size: @font-size_main - 3px;/* ...... */
+                                            }
+                                        }
+                                    }
+                                    .products-section-buy {
+                                        a {
+                                            .content2-block-buy-cost {
+                                                font-size: @font-size_main + 5px;
+                                                height: 20px;/*  */
+                                                p {
+                                                    span {
+                                                        font-size: @font-size_main + 2px;
+                                                    }
+                                                }
+                                            }
+                                            .content2-block-buy-card {
+                                               
+                                                font-size: @font-size_main;
+                                                height: 25px;
+                                                line-height: 25px;
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
                         }
                     }
                 }
-            }
+            }   
         }
     }  
 }
-
-
-
-
-
-
-
