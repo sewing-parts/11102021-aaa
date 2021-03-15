@@ -29,14 +29,14 @@
                     .contact-menu {
                         width: 100%;
                         max-width: 1260px;
-                        background: @color_blue_main;
-                        border-top: solid 1px @color_white_main;
+                        background: @color_dlue_tone_three_main;
                         .contact-menu-li {
                             height: 25px;
-                            line-height: 25px;
+                            line-height: 23px; 
                             .contact-menu-a { 
-                                color: @color_white_main;  
-                                font-size: @font-size_main - 1px;  
+                                color: @color_white_main; 
+                                font-size: @font-size_main - 1px;
+                                 
                             }
                         }
                     }
@@ -83,14 +83,14 @@
                     position: absolute;
                     margin: 80px 0px 0px 0%;
                     z-index: 88888;
+                    
                     .contact-menu {
                         width: 100%;
                         max-width: 1260px;
-                        background: @color_blue_main;
-                        border-top: solid 1px @color_white_main;
+                        background: @color_dlue_tone_three_main;
                         .contact-menu-li {
-                            min-height: 22px;
-                            line-height: 22px;
+                            height: 25px;
+                            line-height: 23px;
                             .contact-menu-a {
                                 color: @color_white_main;  
                                 font-size: @font-size_main - 3px;  
@@ -116,8 +116,8 @@
         }
     }  
 }
-/* ////////////////////////////////////////////////////// */
-@media (min-width: 375px) and (max-width: 450px) {
+
+@media (min-width: 375px) and (max-width: 770px) {
     body {
         header {
             .block-header-slider-level {
@@ -126,7 +126,7 @@
                     #search {
                         .search-box {
                             .search-txt {
-                                min-width: 70vw;
+                                min-width: 70vw;/* строка поиска */
                             }
                         }
                     }   
@@ -163,8 +163,8 @@
         }
     }  
 }
-/*  /////////////////////////////////////////////////////// */
-@media (min-width: 761px) and (max-width: 7500px) {
+
+@media (min-width: 761px) and (max-width: 7500px) { /*  /////////////////////////////////////////////////////// */
     body {
         header {
             .block-header-menu-level {
@@ -189,7 +189,6 @@
                         float: left;
                         min-height: 80px;/* высота блока выезд */
                         position: absolute;
-                        // background: @color_dlue_tone_one_main;
                         background: @color_dlue_tone_three_main;
                         overflow: hidden;
                         transition: 0.3s;    
@@ -222,9 +221,7 @@
                         width: 270px;
                         height: 34px;
                         text-transform: uppercase;
-                        // color: @color_blue_main;
                         color: @color_white_main;
-
                         font-size: @font-size_main - 1px;
                         font-family: 'Roboto', sans-serif;
                         font-weight: 400;
@@ -232,13 +229,11 @@
                         padding: 0px 0px 0px 7px;
                         line-height: 34px;
                         background: @color_dlue_tone_three_main;
-                        border-bottom: 1px solid @color_dlue_tone_five_main;
+                        border-bottom: 1px solid @color_white_main;
                         transition: 0.7s linear;/* блоки в всплывающем  блоке выезд */ 
                     }
                     .nav-menu ul li ul li a:hover {
                         color: @color_yellow_main;
-                        // border-bottom: 1px solid  @color_yellow_main;
-                        // transition: 0.0s linear;
                         box-shadow:
                         inset 300px 0px 0px @color_dlue_tone_three_main * 1.03;
                         transition: 0.7s linear;
