@@ -15,7 +15,6 @@
 
 // function changeURLLanguage() {
 //     let lang = selt.value;
-   
 //     location.href = window.location.pathname + '#' + lang;
 //     location.reload();
 
@@ -26,12 +25,12 @@
 // var val;
 // for(var i = 0; i < 3; i++){
 //     if(radios[i].checked === true){
-        
+
 //         val = radios[i].value;
 //         console.log(val)
 //         location.href = window.location.href + '#' + val;
-        
-            
+
+
 //     }
 // }
 
@@ -61,9 +60,9 @@
 //         val = radios[1].value;
 //         console.log(val + ' 1')
 //         // window.location.href = window.location.href + '#' + val;
-       
-        
-            
+
+
+
 //     }
 //     if(radios[2].checked === true){
 //         resLngEn.style.display = "none"
@@ -72,9 +71,9 @@
 //         val = radios[2].value;
 //         console.log(val + ' 2')
 //         // window.location.href = window.location.href + '#' + val;
-        
-        
-            
+
+
+
 //     }
 
 // }
@@ -83,7 +82,7 @@
 
 // location.href = window.location.href + '-ru';
 
-function qqqqq(){
+function qqqqq() {
     var radios = document.getElementsByName("button");
     console.log(radios)
     var val = '';
@@ -95,232 +94,232 @@ function qqqqq(){
     console.log(resIdLngEn)
     var resAaLngEn = document.getElementsByTagName('a');
     console.log(resAaLngEn)
-    // var resIdLngUa = document.getElementsById('s0-lang-ua');
-    // var resIdLngRu = document.getElementsById('s0-lang-ru');
-    // console.log(resIdLngEn);
-    // console.log(resIdLngUa);
-    // console.log(resIdLngRu);
-    
-    
-        if(radios[0].checked === true){
-            for (var i = 0; i < resLngEn.length; i++ ) {
-                resLngEn[i].style.display = "block";
-            }
-            for (var i = 0; i < resLngUa.length; i++ ) {
-                resLngUa[i].style.display = "none";
-            }
-            for (var i = 0; i < resLngRu.length; i++ ) {
-                resLngRu[i].style.display = "none";
-            }
-            val = radios[0].value;
-            console.log(val + ' флаг');
+        // var resIdLngUa = document.getElementsById('s0-lang-ua');
+        // var resIdLngRu = document.getElementsById('s0-lang-ru');
+        // console.log(resIdLngEn);
+        // console.log(resIdLngUa);
+        // console.log(resIdLngRu);
 
-            /////////  div  en ////////
-            for (var i = 0; i < resIdLngEn.length; i++ ) {
-                if(resIdLngEn[i].id === "s0-lang-ua") {
-                    resIdLngEn[i].id = "s0-lang-en"
-                }
-                if(resIdLngEn[i].id === "s0-lang-ru") {
-                    resIdLngEn[i].id = "s0-lang-en"
-                }
 
-                if(resIdLngEn[i].id === "s1-lang-ua") {
-                    resIdLngEn[i].id = "s1-lang-en"
-                }
-                if(resIdLngEn[i].id === "s1-lang-ru") {
-                    resIdLngEn[i].id = "s1-lang-en"
-                }
-            }
-
-            
-            /////////  a  en ///////
-            for (var i = 0; i < resAaLngEn.length; i++ ) {
-                if(resAaLngEn[i].hash === "#s0-lang-ua") {
-                    resAaLngEn[i].hash = "#s0-lang-en"
-                }
-                if(resAaLngEn[i].hash === "#s0-lang-ru") {
-                    resAaLngEn[i].hash = "#s0-lang-en"
-                }
-
-                if(resAaLngEn[i].hash === "#s1-lang-ua") {
-                    resAaLngEn[i].hash = "#s1-lang-en"
-                }
-                if(resAaLngEn[i].hash === "#s1-lang-ru") {
-                    resAaLngEn[i].hash = "#s1-lang-en"
-                }
-
-            }
-
-            // resIdLngEn[id] = "s0-lang-en";
-            // document.getElementById('s0-ua').id = "s0-en";
-            // document.getElementById('s0').id = "s0-en";
-            // document.getElementById('defaultOpen').href = 's0-lang-en' 
-            // location.href = window.location.href + '-' + val;
-            document.getElementById("defaultOpen").click(); 
-            window.location.href = window.location.href;       
+    if (radios[0].checked === true) {
+        for (var i = 0; i < resLngEn.length; i++) {
+            resLngEn[i].style.display = "block";
         }
-        if(radios[1].checked === true){
-            for (var i = 0; i < resLngEn.length; i++ ) {
-                resLngEn[i].style.display = "none";
-            }
-            for (var i = 0; i < resLngUa.length; i++ ) {
-                resLngUa[i].style.display = "block";
-            }
-            for (var i = 0; i < resLngRu.length; i++ ) {
-                resLngRu[i].style.display = "none";
-            }
-            val = radios[1].value;
-            console.log(val + ' флаг');
-
-            /////////  div  ua ////////
-            for (var i = 0; i < resIdLngEn.length; i++ ) {
-                if(resIdLngEn[i].id === "s0-lang-en") {
-                    resIdLngEn[i].id = "s0-lang-ua"
-                }
-                if(resIdLngEn[i].id === "s0-lang-ru") {
-                    resIdLngEn[i].id = "s0-lang-ua"
-                }
-
-                if(resIdLngEn[i].id === "s1-lang-en") {
-                    resIdLngEn[i].id = "s1-lang-ua"
-                }
-                if(resIdLngEn[i].id === "s1-lang-ru") {
-                    resIdLngEn[i].id = "s1-lang-ua"
-                }
-            }
-
-            
-            /////////  a  ua ///////
-            for (var i = 0; i < resAaLngEn.length; i++ ) {
-                if(resAaLngEn[i].hash === "#s0-lang-en") {
-                    resAaLngEn[i].hash = "#s0-lang-ua"
-                }
-                if(resAaLngEn[i].hash === "#s0-lang-ru") {
-                    resAaLngEn[i].hash = "#s0-lang-ua"
-                }
-
-                if(resAaLngEn[i].hash === "#s1-lang-en") {
-                    resAaLngEn[i].hash = "#s1-lang-ua"
-                }
-                if(resAaLngEn[i].hash === "#s1-lang-ru") {
-                    resAaLngEn[i].hash = "#s1-lang-ua"
-                }
-
-            }
-
-            
-            // document.getElementById('s0-en').id = "s0-ua";
-            // document.getElementById('s0-ru').id = "s0-ua";
-            // document.getElementById('s0').id = "s0-ua";
-            // document.getElementById('defaultOpen').href = '#s0-ua' 
-            // location.href = window.location.href + '-' + val;
-           
-            
-            // document.getElementById("defaultOpen").click();
-            document.getElementById("defaultOpen").click(); 
-            window.location.href = window.location.href;    
+        for (var i = 0; i < resLngUa.length; i++) {
+            resLngUa[i].style.display = "none";
         }
-        if(radios[2].checked === true){
-            for (var i = 0; i < resLngEn.length; i++ ) {
-                resLngEn[i].style.display = "none";
-            }
-            for (var i = 0; i < resLngUa.length; i++ ) {
-                resLngUa[i].style.display = "none";
-            }
-            for (var i = 0; i < resLngRu.length; i++ ) {
-                resLngRu[i].style.display = "block";
-            }
-            val = radios[2].value;
-            console.log(val + ' флаг');
-
-
-            /////////  div  ru////////
-            for (var i = 0; i < resIdLngEn.length; i++ ) {
-                if(resIdLngEn[i].id === "s0-lang-en") {
-                    resIdLngEn[i].id = "s0-lang-ru"
-                }
-                if(resIdLngEn[i].id === "s0-lang-ua") {
-                    resIdLngEn[i].id = "s0-lang-ru"
-                }
-
-                if(resIdLngEn[i].id === "s1-lang-en") {
-                    resIdLngEn[i].id = "s1-lang-ru"
-                }
-                if(resIdLngEn[i].id === "s1-lang-ua") {
-                    resIdLngEn[i].id = "s1-lang-ru"
-                }
-            }
-
-            
-            /////////  a  ru ///////
-            for (var i = 0; i < resAaLngEn.length; i++ ) {
-                if(resAaLngEn[i].hash === "#s0-lang-en") {
-                    resAaLngEn[i].hash = "#s0-lang-ru"
-                }
-                if(resAaLngEn[i].hash === "#s0-lang-ua") {
-                    resAaLngEn[i].hash = "#s0-lang-ru"
-                }
-
-                if(resAaLngEn[i].hash === "#s1-lang-en") {
-                    resAaLngEn[i].hash = "#s1-lang-ru"
-                }
-                if(resAaLngEn[i].hash === "#s1-lang-ua") {
-                    resAaLngEn[i].hash = "#s1-lang-ru"
-                }
-
-            }
-            // document.getElementById('s0-en').id = "s0-ru";
-            // document.getElementById('s0-ua').id = "s0-ru";
-            // document.getElementById('s0').id = "s0-ru";
-            // document.getElementById('defaultOpen').href = '#s0-ru' 
-            
-             
-            // location.href = window.location.href + '-' + val;
-            // let ddd = location.href
-            // let bbb = ddd.substr(-3)
-            // console.log(ddd + '     строка поиска')
-            // console.log(bbb + '     строка поиска последние три символа')
-            // console.log(window.location.href.substring(0, window.location.href.length-3) + '-' + val + 'rrrrryyyyy')
-            
-
-            // window.location.replace(window.location.href)
-            // window.location( window.location.toString( ) );
-            // location.reload(true/false);
-
-            // document.getElementById("defaultOpen").click();
-            document.getElementById("defaultOpen").click(); 
-            window.location.href = window.location.href;
+        for (var i = 0; i < resLngRu.length; i++) {
+            resLngRu[i].style.display = "none";
         }
-        // if (location.href.substr(-3) == '-en' || 
-        //         location.href.substr(-3) == '-ua' || 
-        //         location.href.substr(-3) == '-ru') {
-        //             location.href = window.location.href.substring(0, window.location.href.length-3) + '-' + val;
-                      
-                    
-        //     } 
-        //    else {
-        //     location.href = window.location.href + '-' + val;
-            
-                 
-        //         console.log(location.href + 'rrrrryyyyy')
-        //     } 
+        val = radios[0].value;
+        console.log(val + ' флаг');
+
+        /////////  div  en ////////
+        for (var i = 0; i < resIdLngEn.length; i++) {
+            if (resIdLngEn[i].id === "s0-lang-ua") {
+                resIdLngEn[i].id = "s0-lang-en"
+            }
+            if (resIdLngEn[i].id === "s0-lang-ru") {
+                resIdLngEn[i].id = "s0-lang-en"
+            }
+
+            if (resIdLngEn[i].id === "s1-lang-ua") {
+                resIdLngEn[i].id = "s1-lang-en"
+            }
+            if (resIdLngEn[i].id === "s1-lang-ru") {
+                resIdLngEn[i].id = "s1-lang-en"
+            }
+        }
+
+
+        /////////  a  en ///////
+        for (var i = 0; i < resAaLngEn.length; i++) {
+            if (resAaLngEn[i].hash === "#s0-lang-ua") {
+                resAaLngEn[i].hash = "#s0-lang-en"
+            }
+            if (resAaLngEn[i].hash === "#s0-lang-ru") {
+                resAaLngEn[i].hash = "#s0-lang-en"
+            }
+
+            if (resAaLngEn[i].hash === "#s1-lang-ua") {
+                resAaLngEn[i].hash = "#s1-lang-en"
+            }
+            if (resAaLngEn[i].hash === "#s1-lang-ru") {
+                resAaLngEn[i].hash = "#s1-lang-en"
+            }
+
+        }
+
+        // resIdLngEn[id] = "s0-lang-en";
+        // document.getElementById('s0-ua').id = "s0-en";
+        // document.getElementById('s0').id = "s0-en";
+        // document.getElementById('defaultOpen').href = 's0-lang-en' 
+        // location.href = window.location.href + '-' + val;
+        document.getElementById("defaultOpen").click();
+        window.location.href = window.location.href;
     }
-    qqqqq();
+    if (radios[1].checked === true) {
+        for (var i = 0; i < resLngEn.length; i++) {
+            resLngEn[i].style.display = "none";
+        }
+        for (var i = 0; i < resLngUa.length; i++) {
+            resLngUa[i].style.display = "block";
+        }
+        for (var i = 0; i < resLngRu.length; i++) {
+            resLngRu[i].style.display = "none";
+        }
+        val = radios[1].value;
+        console.log(val + ' флаг');
+
+        /////////  div  ua ////////
+        for (var i = 0; i < resIdLngEn.length; i++) {
+            if (resIdLngEn[i].id === "s0-lang-en") {
+                resIdLngEn[i].id = "s0-lang-ua"
+            }
+            if (resIdLngEn[i].id === "s0-lang-ru") {
+                resIdLngEn[i].id = "s0-lang-ua"
+            }
+
+            if (resIdLngEn[i].id === "s1-lang-en") {
+                resIdLngEn[i].id = "s1-lang-ua"
+            }
+            if (resIdLngEn[i].id === "s1-lang-ru") {
+                resIdLngEn[i].id = "s1-lang-ua"
+            }
+        }
 
 
-    /////////////////
-    ///////////////////
-    // var resUrlLngEn = document.getElementsByClassName('lng-en');
-    // var resUrlLngUa = document.getElementsByClassName('lng-ua');
-    // var resUrlLngRu = document.getElementsByClassName('lng-ru');
+        /////////  a  ua ///////
+        for (var i = 0; i < resAaLngEn.length; i++) {
+            if (resAaLngEn[i].hash === "#s0-lang-en") {
+                resAaLngEn[i].hash = "#s0-lang-ua"
+            }
+            if (resAaLngEn[i].hash === "#s0-lang-ru") {
+                resAaLngEn[i].hash = "#s0-lang-ua"
+            }
 
-    // 
+            if (resAaLngEn[i].hash === "#s1-lang-en") {
+                resAaLngEn[i].hash = "#s1-lang-ua"
+            }
+            if (resAaLngEn[i].hash === "#s1-lang-ru") {
+                resAaLngEn[i].hash = "#s1-lang-ua"
+            }
 
-    // window.onpopstate = function(event) {
-        
-    //     console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
-    //   };
-    
+        }
+
+
+        // document.getElementById('s0-en').id = "s0-ua";
+        // document.getElementById('s0-ru').id = "s0-ua";
+        // document.getElementById('s0').id = "s0-ua";
+        // document.getElementById('defaultOpen').href = '#s0-ua' 
+        // location.href = window.location.href + '-' + val;
+
+
+        // document.getElementById("defaultOpen").click();
+        document.getElementById("defaultOpen").click();
+        window.location.href = window.location.href;
+    }
+    if (radios[2].checked === true) {
+        for (var i = 0; i < resLngEn.length; i++) {
+            resLngEn[i].style.display = "none";
+        }
+        for (var i = 0; i < resLngUa.length; i++) {
+            resLngUa[i].style.display = "none";
+        }
+        for (var i = 0; i < resLngRu.length; i++) {
+            resLngRu[i].style.display = "block";
+        }
+        val = radios[2].value;
+        console.log(val + ' флаг');
+
+
+        /////////  div  ru////////
+        for (var i = 0; i < resIdLngEn.length; i++) {
+            if (resIdLngEn[i].id === "s0-lang-en") {
+                resIdLngEn[i].id = "s0-lang-ru"
+            }
+            if (resIdLngEn[i].id === "s0-lang-ua") {
+                resIdLngEn[i].id = "s0-lang-ru"
+            }
+
+            if (resIdLngEn[i].id === "s1-lang-en") {
+                resIdLngEn[i].id = "s1-lang-ru"
+            }
+            if (resIdLngEn[i].id === "s1-lang-ua") {
+                resIdLngEn[i].id = "s1-lang-ru"
+            }
+        }
+
+
+        /////////  a  ru ///////
+        for (var i = 0; i < resAaLngEn.length; i++) {
+            if (resAaLngEn[i].hash === "#s0-lang-en") {
+                resAaLngEn[i].hash = "#s0-lang-ru"
+            }
+            if (resAaLngEn[i].hash === "#s0-lang-ua") {
+                resAaLngEn[i].hash = "#s0-lang-ru"
+            }
+
+            if (resAaLngEn[i].hash === "#s1-lang-en") {
+                resAaLngEn[i].hash = "#s1-lang-ru"
+            }
+            if (resAaLngEn[i].hash === "#s1-lang-ua") {
+                resAaLngEn[i].hash = "#s1-lang-ru"
+            }
+
+        }
+        // document.getElementById('s0-en').id = "s0-ru";
+        // document.getElementById('s0-ua').id = "s0-ru";
+        // document.getElementById('s0').id = "s0-ru";
+        // document.getElementById('defaultOpen').href = '#s0-ru' 
+
+
+        // location.href = window.location.href + '-' + val;
+        // let ddd = location.href
+        // let bbb = ddd.substr(-3)
+        // console.log(ddd + '     строка поиска')
+        // console.log(bbb + '     строка поиска последние три символа')
+        // console.log(window.location.href.substring(0, window.location.href.length-3) + '-' + val + 'rrrrryyyyy')
+
+
+        // window.location.replace(window.location.href)
+        // window.location( window.location.toString( ) );
+        // location.reload(true/false);
+
+        // document.getElementById("defaultOpen").click();
+        document.getElementById("defaultOpen").click();
+        window.location.href = window.location.href;
+    }
+    // if (location.href.substr(-3) == '-en' || 
+    //         location.href.substr(-3) == '-ua' || 
+    //         location.href.substr(-3) == '-ru') {
+    //             location.href = window.location.href.substring(0, window.location.href.length-3) + '-' + val;
+
+
+    //     } 
+    //    else {
+    //     location.href = window.location.href + '-' + val;
+
+
+    //         console.log(location.href + 'rrrrryyyyy')
+    //     } 
+}
+qqqqq();
+
+
+/////////////////
+///////////////////
+// var resUrlLngEn = document.getElementsByClassName('lng-en');
+// var resUrlLngUa = document.getElementsByClassName('lng-ua');
+// var resUrlLngRu = document.getElementsByClassName('lng-ru');
+
+// 
+
+// window.onpopstate = function(event) {
+
+//     console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+//   };
+
 
 
 
@@ -343,8 +342,8 @@ function qqqqq(){
 // chageLanguage();
 
 
-   
-   
+
+
 
 
 
@@ -370,14 +369,15 @@ var jumpSlideWidth = 0;
 // console.log(container)
 // console.log(containerWidth)
 responsive = [
-        { breakPoint: { width: 0, item: 1 } },
-        { breakPoint: { width: 600, item: 2 } },
-        { breakPoint: { width: 900, item: 3 } },
-        { breakPoint: { width: 1200, item: 4 } },
-        { breakPoint: { width: 1500, item: 5 } },
-        { breakPoint: { width: 1800, item: 6 } },
-        { breakPoint: { width: 2100, item: 7 } }
-    ]
+    { breakPoint: { width: 0, item: 1 } },
+    { breakPoint: { width: 600, item: 2 } },
+    { breakPoint: { width: 900, item: 3 } },
+    { breakPoint: { width: 1200, item: 4 } },
+    { breakPoint: { width: 1500, item: 5 } },
+    { breakPoint: { width: 1800, item: 6 } },
+    { breakPoint: { width: 2100, item: 7 } }
+]
+
 function load() {
 
     for (let i = 0; i < responsive.length; i++) {
@@ -467,6 +467,3 @@ window.onload = load();
 
 
 // document.getElementById("defaultOpen").click();
-
-
-
